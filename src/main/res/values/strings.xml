@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">BarcodeReader</string>
+    <string name="activity_intent_filter_action">com.pharmeasy.BARCODE</string>
+    <string name="datawedge_intent_key_source">com.symbol.datawedge.source</string>
+    <string name="datawedge_intent_key_label_type">com.symbol.datawedge.label_type</string>
+    <string name="datawedge_intent_key_data">com.symbol.datawedge.data_string</string>
+    <string name="datawedge_intent_key_source_legacy">com.motorolasolutions.emdk.datawedge.source</string>
+    <string name="datawedge_intent_key_label_type_legacy">com.motorolasolutions.emdk.datawedge.label_type</string>
+    <string name="datawedge_intent_key_data_legacy">com.motorolasolutions.emdk.datawedge.data_string</string>
+    <string name="datawedge_intent_key_create_profile">com.symbol.datawedge.api.CREATE_PROFILE</string>
+    <string name="datawedge_intent_key_switch_profile">com.symbol.datawedge.api.ACTION_SWITCHTOPROFILE</string>
+    <string name="datawedge_intent_key_extra_profilename">com.symbol.datawedge.api.EXTRA_PROFILENAME</string>
+    <string name="datawedge_intent_key_result_action">com.symbol.datawedge.api.RESULT_ACTION</string>
+    <string name="newland_scanner_result">nlscan.action.SCANNER_RESULT</string>
+    <string name="datawedge_api_intent_action">com.symbol.datawedge.api.ACTION</string>
+    <string name="datawedge_api_intent_extra_config">com.symbol.datawedge.api.SET_CONFIG</string>
+    <string name="zebra_scanner_intent_action">com.symbol.datawedge.api.ACTION_SCANNERINPUTPLUGIN</string>
+    <string name="zebra_scanner_extra_param">com.symbol.datawedge.api.EXTRA_PARAMETER</string>
+
+</resources>
