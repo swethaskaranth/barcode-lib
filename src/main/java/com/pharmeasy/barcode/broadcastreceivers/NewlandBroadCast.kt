@@ -5,6 +5,7 @@ import android.content.Context
 import android.content.Intent
 import android.util.Log
 import com.pharmeasy.barcode.BarcodeReader
+import com.pharmeasy.barcode.Event
 
 class NewlandBroadCast : BroadcastReceiver() {
 
@@ -16,7 +17,7 @@ class NewlandBroadCast : BroadcastReceiver() {
             val barcode = intent.getStringExtra("SCAN_BARCODE1")
             if(barcode!=null){
                 Log.d(TAG,"Newland >>>>> Barcode >>>>>>${barcode}")
-                BarcodeReader.barcode.value=barcode
+                BarcodeReader.barcodeData.value= Event(barcode)
             } else{
                 Log.d(TAG,"Newland >>>>> Unable to fetch barcode")
             }

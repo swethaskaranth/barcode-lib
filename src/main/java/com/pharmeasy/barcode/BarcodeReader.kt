@@ -17,7 +17,7 @@ import com.pharmeasy.barcode.scanners.ZebraScanner
 class BarcodeReader private constructor(context: Context){
     val mContext=context
     companion object:SingletonHolder<BarcodeReader,Context>(::BarcodeReader) {
-        val barcode = MutableLiveData<String>()
+        val barcodeData = MutableLiveData<Event<String>>()
     }
 
 

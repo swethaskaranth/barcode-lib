@@ -5,6 +5,7 @@ import android.content.Context
 import android.content.Intent
 import android.util.Log
 import com.pharmeasy.barcode.BarcodeReader
+import com.pharmeasy.barcode.Event
 import com.pharmeasy.barcode.R
 import java.lang.Exception
 
@@ -42,7 +43,7 @@ class ZebraBroadcast : BroadcastReceiver() {
             decodedLabelType = initiatingIntent.getStringExtra(context?.getString(R.string.datawedge_intent_key_label_type_legacy))
         }
         Log.d(TAG,">>>>>>>> Barcode <<<<<<<<<<< :::: ${decodedData}")
-        BarcodeReader.barcode.value=decodedData
+        BarcodeReader.barcodeData.value= Event(decodedData)
 
 
     }
