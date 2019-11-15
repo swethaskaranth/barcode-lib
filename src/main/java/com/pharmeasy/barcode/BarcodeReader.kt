@@ -20,17 +20,17 @@ class BarcodeReader private constructor(context: Context){
         val barcodeData = MutableLiveData<Event<String>>()
     }
 
-
-
-     var scanner: Scanner
-     var broadcastReceiver: BroadcastReceiver
+    var scanner: Scanner
+    var broadcastReceiver: BroadcastReceiver
     var intentFilter: IntentFilter= IntentFilter()
-    lateinit var profileBroadCast:ProfileBroadCast
+    var profileBroadCast:ProfileBroadCast?=null
+
+    val isZebraDevice = Build.MANUFACTURER.contains("Zebra Technologies") || Build.MANUFACTURER.contains("Motorola Solutions")
 
     init {
 
 
-        if(Build.MANUFACTURER.contains("Zebra Technologies") || Build.MANUFACTURER.contains("Motorola Solutions")){
+        if(isZebraDevice){
             createProfileForZebraDevice()
             createBarCodeProfileForZebraDevice()
             configureOutputMethodForZebraDevice()
@@ -50,14 +50,22 @@ class BarcodeReader private constructor(context: Context){
 
     fun registerBroadcast(context: Context){
         context.registerReceiver(broadcastReceiver,intentFilter)
-        context.registerReceiver(profileBroadCast,
-            IntentFilter(context.getString(R.string.datawedge_intent_key_result_action))
-        )
+        if(isZebraDevice) {
+            context.registerReceiver(
+                profileBroadCast,
+                IntentFilter(context.getString(R.string.datawedge_intent_key_result_action))
+            )
+        }
     }
 
     fun unregisterBroadcast(context: Context){
         context.unregisterReceiver(broadcastReceiver)
-        context.unregisterReceiver(profileBroadCast)
+        if(isZebraDevice) {
+            context.unregisterReceiver(
+                profileBroadCast
+            )
+        }
+
     }
 
 
