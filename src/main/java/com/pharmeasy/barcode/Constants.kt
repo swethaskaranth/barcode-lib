@@ -1,5 +1,8 @@
 package com.pharmeasy.barcode
 
+import android.device.ScanManager
+import android.device.scanner.configuration.PropertyID
+
 const val NEWLAND_SCANNER_ACTION="ACTION_BAR_SCANCFG"
 const val NEWLAND_SCANNER_DATA="EXTRA_SCAN_POWER"
 
@@ -49,5 +52,9 @@ const val ZEBRA_SCANNER_EXTRA_VALUE_ENABLE_PLUGIN="ENABLE_PLUGIN"
 const val ZEBRA_SCANNER_EXTRA_VALUE_DISABLE_PLUGIN="DISABLE_PLUGIN"
 
 
-
 const val KEY_PARAM_LIST="PARAM_LIST"
+
+var UROVO_ACTION_BUF = arrayOf(ScanManager.ACTION_DECODE,ScanManager.BARCODE_STRING_TAG)
+val UROVO_ID_BUF = intArrayOf(PropertyID.WEDGE_INTENT_ACTION_NAME,PropertyID.WEDGE_INTENT_DATA_STRING_TAG)
+val UROVO_IDMODE_BUF= intArrayOf(PropertyID.WEDGE_KEYBOARD_ENABLE, PropertyID.TRIGGERING_MODES, PropertyID.LABEL_APPEND_ENTER)
+
