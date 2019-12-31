@@ -1,6 +1,13 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
+apply plugin: 'maven'
+apply plugin: 'maven-publish'
+
+apply plugin: 'net.linguica.maven-settings'
+
+
+
 android {
     compileSdkVersion 28
 
@@ -9,7 +16,7 @@ android {
         minSdkVersion 21
         targetSdkVersion 28
         versionCode 1
-        versionName "1.0"
+        versionName "1.1"
 
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -20,6 +27,7 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            consumerProguardFiles 'proguard-rules.pro'
         }
     }
 
@@ -35,6 +43,7 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.0.2'
     implementation 'androidx.core:core-ktx:1.0.2'
     implementation "android.arch.lifecycle:extensions:1.1.1"
+    implementation project(':urovolib')
 
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test:runner:1.1.1'
@@ -43,4 +52,29 @@ dependencies {
 
 repositories {
     mavenCentral()
+    maven {
+        name "nexus"
+        url "https://nexus.mercuryonline.co/nexus/content/groups/public"
+    }
+}
+
+
+publishing {
+    publications {
+        maven(MavenPublication) {
+            groupId = "com.pharmeasy"
+            artifactId = "barcodereader"
+            version = "1.1.1"
+
+            artifact source: "${projectDir}/build/outputs/aar/barcodereader-release.aar", extension: 'aar'
+        }
+    }
+
+    repositories {
+        maven {
+            name "nexus"
+            url "https://nexus.mercuryonline.co/nexus/content/repositories/releases/"
+        }
+
+    }
 }
