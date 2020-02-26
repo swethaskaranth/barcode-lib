@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ZebraActivity">
+
+    <TextView
+        android:id="@+id/sourceTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="source"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:id="@+id/scanDataTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="data"
+        app:layout_constraintTop_toBottomOf="@id/sourceTv"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:id="@+id/scanLabelTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="label"
+        app:layout_constraintTop_toBottomOf="@id/scanDataTv"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+
+    <Button
+        android:id="@+id/disableBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Disable"
+        app:layout_constraintTop_toBottomOf="@id/scanLabelTv"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <Button
+        android:id="@+id/enableBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enable"
+        app:layout_constraintTop_toBottomOf="@id/disableBtn"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
