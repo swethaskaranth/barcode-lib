@@ -5,8 +5,7 @@ package com.pharmeasy.barcode
  */
 
 open class Event<out T>(private val content:T) {
-    var hasBeenHandled=false
-    private set // allow external read but not write
+    private var hasBeenHandled = false
 
     /**
      * Returns the content and prevents its use again

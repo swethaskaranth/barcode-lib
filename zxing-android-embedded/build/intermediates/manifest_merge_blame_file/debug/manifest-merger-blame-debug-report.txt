@@ -1,0 +1,87 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<!--
+3 Copyright (C) 2008 ZXing authors
+4
+5 Licensed under the Apache License, Version 2.0 (the "License");
+6 you may not use this file except in compliance with the License.
+7 You may obtain a copy of the License at
+8
+9      http://www.apache.org/licenses/LICENSE-2.0
+10
+11 Unless required by applicable law or agreed to in writing, software
+12 distributed under the License is distributed on an "AS IS" BASIS,
+13 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+14 See the License for the specific language governing permissions and
+15 limitations under the License.
+16-->
+17<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+18    xmlns:tools="http://schemas.android.com/tools"
+19    package="com.google.zxing.client.android"
+20    android:versionName=".debug" >
+21
+22    <uses-sdk android:minSdkVersion="21" />
+22-->/Users/ravi/Downloads/newlandscanner/zxing-android-embedded/AndroidManifest.xml
+23
+24    <uses-permission android:name="android.permission.CAMERA" />
+24-->/Users/ravi/Downloads/newlandscanner/zxing-android-embedded/AndroidManifest.xml:21:3-62
+24-->/Users/ravi/Downloads/newlandscanner/zxing-android-embedded/AndroidManifest.xml:21:20-60
+25
+26    <!-- Don't require camera, as this requires a rear camera. This allows it to work on the Nexus 7 -->
+27    <uses-feature
+27-->/Users/ravi/Downloads/newlandscanner/zxing-android-embedded/AndroidManifest.xml:24:3-82
+28        android:name="android.hardware.camera"
+28-->/Users/ravi/Downloads/newlandscanner/zxing-android-embedded/AndroidManifest.xml:24:17-55
+29        android:required="false" />
+29-->/Users/ravi/Downloads/newlandscanner/zxing-android-embedded/AndroidManifest.xml:24:56-80
+30    <uses-feature
+30-->/Users/ravi/Downloads/newlandscanner/zxing-android-embedded/AndroidManifest.xml:25:3-88
+31        android:name="android.hardware.camera.front"
+31-->/Users/ravi/Downloads/newlandscanner/zxing-android-embedded/AndroidManifest.xml:25:17-61
+32        android:required="false" />
+32-->/Users/ravi/Downloads/newlandscanner/zxing-android-embedded/AndroidManifest.xml:25:62-86
+33    <!-- TODO replace above two with next line after Android 4.2 -->
+34    <!-- <uses-feature android:name="android.hardware.camera.any"/> -->
+35    <uses-feature
+35-->/Users/ravi/Downloads/newlandscanner/zxing-android-embedded/AndroidManifest.xml:28:3-92
+36        android:name="android.hardware.camera.autofocus"
+36-->/Users/ravi/Downloads/newlandscanner/zxing-android-embedded/AndroidManifest.xml:28:17-65
+37        android:required="false" />
+37-->/Users/ravi/Downloads/newlandscanner/zxing-android-embedded/AndroidManifest.xml:28:66-90
+38    <uses-feature
+38-->/Users/ravi/Downloads/newlandscanner/zxing-android-embedded/AndroidManifest.xml:29:3-88
+39        android:name="android.hardware.camera.flash"
+39-->/Users/ravi/Downloads/newlandscanner/zxing-android-embedded/AndroidManifest.xml:29:17-61
+40        android:required="false" />
+40-->/Users/ravi/Downloads/newlandscanner/zxing-android-embedded/AndroidManifest.xml:29:62-86
+41    <uses-feature
+41-->/Users/ravi/Downloads/newlandscanner/zxing-android-embedded/AndroidManifest.xml:30:3-93
+42        android:name="android.hardware.screen.landscape"
+42-->/Users/ravi/Downloads/newlandscanner/zxing-android-embedded/AndroidManifest.xml:30:17-65
+43        android:required="false" />
+43-->/Users/ravi/Downloads/newlandscanner/zxing-android-embedded/AndroidManifest.xml:30:66-90
+44    <uses-feature
+44-->/Users/ravi/Downloads/newlandscanner/zxing-android-embedded/AndroidManifest.xml:31:3-80
+45        android:name="android.hardware.wifi"
+45-->/Users/ravi/Downloads/newlandscanner/zxing-android-embedded/AndroidManifest.xml:31:17-53
+46        android:required="false" />
+46-->/Users/ravi/Downloads/newlandscanner/zxing-android-embedded/AndroidManifest.xml:31:54-78
+47
+48    <application>
+48-->/Users/ravi/Downloads/newlandscanner/zxing-android-embedded/AndroidManifest.xml:34:3-42:17
+49        <activity
+49-->/Users/ravi/Downloads/newlandscanner/zxing-android-embedded/AndroidManifest.xml:35:7-41:13
+50            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+50-->/Users/ravi/Downloads/newlandscanner/zxing-android-embedded/AndroidManifest.xml:35:17-78
+51            android:clearTaskOnLaunch="true"
+51-->/Users/ravi/Downloads/newlandscanner/zxing-android-embedded/AndroidManifest.xml:36:17-49
+52            android:screenOrientation="sensorLandscape"
+52-->/Users/ravi/Downloads/newlandscanner/zxing-android-embedded/AndroidManifest.xml:37:17-60
+53            android:stateNotNeeded="true"
+53-->/Users/ravi/Downloads/newlandscanner/zxing-android-embedded/AndroidManifest.xml:38:17-46
+54            android:theme="@style/zxing_CaptureTheme"
+54-->/Users/ravi/Downloads/newlandscanner/zxing-android-embedded/AndroidManifest.xml:39:17-58
+55            android:windowSoftInputMode="stateAlwaysHidden" />
+55-->/Users/ravi/Downloads/newlandscanner/zxing-android-embedded/AndroidManifest.xml:40:17-64
+56    </application>
+57
+58</manifest>

@@ -1,5 +1,6 @@
 package com.pharmeasy.barcode
 
+import android.app.Activity
 import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
@@ -8,7 +9,15 @@ import android.device.ScanManager
 import android.os.Build
 import android.os.Bundle
 import android.util.Log
+import android.widget.Toast
 import androidx.lifecycle.MutableLiveData
+import com.google.zxing.BarcodeFormat
+import com.google.zxing.ResultPoint
+import com.google.zxing.client.android.BeepManager
+import com.journeyapps.barcodescanner.BarcodeCallback
+import com.journeyapps.barcodescanner.BarcodeResult
+import com.journeyapps.barcodescanner.DecoratedBarcodeView
+import com.journeyapps.barcodescanner.DefaultDecoderFactory
 import com.pharmeasy.barcode.broadcastreceivers.NewlandBroadCast
 import com.pharmeasy.barcode.broadcastreceivers.ProfileBroadCast
 import com.pharmeasy.barcode.broadcastreceivers.UrovoBroadCast
@@ -19,22 +28,48 @@ import com.pharmeasy.barcode.scanners.UrovoScanner
 import com.pharmeasy.barcode.scanners.ZebraScanner
 
 class BarcodeReader private constructor(context: Context){
-    val TAG = BarcodeReader::class.java.simpleName
-    val mContext=context
-    companion object:SingletonHolder<BarcodeReader,Context>(::BarcodeReader) {
-        val barcodeData = MutableLiveData<Event<String>>()
-    }
+
+    private val TAG: String = BarcodeReader::class.java.simpleName
+    private val mContext=context
 
     var scanner: Scanner
     var broadcastReceiver: BroadcastReceiver
     var intentFilter: IntentFilter= IntentFilter()
-    var profileBroadCast:ProfileBroadCast?=null
-    var urovoScannerManager:ScanManager?=null
+    var profileBroadCast: ProfileBroadCast?=null
+    lateinit var urovoScannerManager: ScanManager
 
+    var barcodeView: DecoratedBarcodeView? = null
+    var beepManager: BeepManager? = null
 
-    val isZebraDevice = Build.MANUFACTURER.contains("Zebra Technologies") || Build.MANUFACTURER.contains("Motorola Solutions")
-    val isUrovo=Build.MANUFACTURER.contains("Urovo")
+    private val isZebraDevice= Build.MANUFACTURER.contains("Zebra Technologies") || Build.MANUFACTURER.contains("Motorola Solutions")
+    private val isUrovo= Build.MANUFACTURER.contains("Urovo")
+
+    var UIView: Boolean? = false
+
+    companion object:SingletonHolder<BarcodeReader,Context>(::BarcodeReader) {
+        val barcodeData = MutableLiveData<Event<String>>()
+    }
+
+    private val callback = object : BarcodeCallback {
+        override fun barcodeResult(result: BarcodeResult) {
+            if (result.text == null) {
+                // Prevent duplicate scans
+                return
+            }
+
+            barcodeView?.setStatusText(result.text)
+            beepManager?.playBeepSoundAndVibrate()
+            BarcodeReader.barcodeData.value= Event(result.text)
+
+        }
+
+        override fun possibleResultPoints(resultPoints: List<ResultPoint>) {}
+    }
+
     init {
+        Log.d("code", "code here")
+
+
         when {
             isZebraDevice -> {
                 createProfileForZebraDevice()
@@ -46,23 +81,37 @@ class BarcodeReader private constructor(context: Context){
                 profileBroadCast= ProfileBroadCast()
                 intentFilter.addCategory(Intent.CATEGORY_DEFAULT)
                 intentFilter.addAction(context.getString(R.string.activity_intent_filter_action))
+                UIView = true
             }
             isUrovo -> {
                 scanner=UrovoScanner()
                 broadcastReceiver=UrovoBroadCast()
-                urovoScannerManager=ScanManager()
+                urovoScannerManager = ScanManager()
                 initialiseUrovo()
-                val action=urovoScannerManager?.getParameterString(UROVO_ID_BUF)
-                Log.d(TAG,"Action::::${action?.get(0)}")
-                intentFilter.addAction(action?.get(0))
+                val action=urovoScannerManager.getParameterString(UROVO_ID_BUF)
+                Log.d(TAG,"Action::::${action.get(0)}")
+                intentFilter.addAction(action.get(0))
+                UIView = true
             }
             else -> {
+                Log.d("barcode", "camera")
                 scanner = NewlandScanner()
-                broadcastReceiver=NewlandBroadCast()
+                broadcastReceiver = NewlandBroadCast()
                 intentFilter.addAction(context.getString(R.string.newland_scanner_result))
 
             }
         }
+
+    }
+
+    fun initializeScanner(activity: Activity, intent: Intent){
+
+        val formats = listOf(BarcodeFormat.QR_CODE, BarcodeFormat.CODE_39)
+        barcodeView?.barcodeView?.decoderFactory = DefaultDecoderFactory(formats)
+        barcodeView?.initializeFromIntent(intent)
+        barcodeView?.decodeContinuous(callback)
+
+        beepManager = BeepManager(activity)
     }
 
     fun registerBroadcast(context: Context){
@@ -85,16 +134,13 @@ class BarcodeReader private constructor(context: Context){
 
     }
 
-
-
-     fun enableScanner(){
+    fun enableScanner(){
         this.scanner.enableScanner(mContext)
-     }
+    }
 
     fun disableScanner(){
         this.scanner.disableScanner(mContext)
     }
-
 
     private fun createBarCodeProfileForZebraDevice(){
 
@@ -119,8 +165,6 @@ class BarcodeReader private constructor(context: Context){
         mainBundle.putBundle(KEY_PLUGIN_CONFIG,barcodeBundle)
         mainBundle.putParcelableArray(KEY_APP_LIST, arrayOf(appConfig))
 
-
-
         val intent = Intent()
         intent.setAction(mContext.getString(R.string.datawedge_api_intent_action))
         intent.putExtra(mContext.getString(R.string.datawedge_api_intent_extra_config),mainBundle)
@@ -133,9 +177,7 @@ class BarcodeReader private constructor(context: Context){
      * Configures the output barcode to be sent via broadcast
      */
 
-    fun configureOutputMethodForZebraDevice(){
-
-
+    private fun configureOutputMethodForZebraDevice(){
 
         val outputBundleParams = Bundle()
         // Enable the intent output
@@ -170,7 +212,7 @@ class BarcodeReader private constructor(context: Context){
     /**
      * Create a profile with a profile name VALUE_PROFILE_NAME
      */
-    fun createProfileForZebraDevice(){
+    private fun createProfileForZebraDevice(){
        val intent = Intent()
        intent.setAction(mContext.getString(R.string.datawedge_api_intent_action))
        intent.putExtra(mContext.getString(R.string.datawedge_intent_key_create_profile), VALUE_PROFILE_NAME)
@@ -183,7 +225,7 @@ class BarcodeReader private constructor(context: Context){
      * Switch to the profile with the name @param profileName
      */
 
-    fun switchToProfile(profileName:String){
+    private fun switchToProfile(profileName:String){
         val intent = Intent()
         intent.setAction(mContext.getString(R.string.datawedge_intent_key_switch_profile))
         intent.putExtra(mContext.getString(R.string.datawedge_intent_key_extra_profilename), profileName)
@@ -192,16 +234,12 @@ class BarcodeReader private constructor(context: Context){
         mContext.sendBroadcast(intent)
     }
 
-    fun initialiseUrovo(){
+    private fun initialiseUrovo(){
         val idmode = urovoScannerManager?.getParameterInts(UROVO_IDMODE_BUF)
         UROVO_ACTION_BUF= urovoScannerManager?.getParameterString(UROVO_ID_BUF) as Array<String>
         //ZERO IS SET FOR INTENT MODE OUTPUT
         idmode?.set(0, 0)
         urovoScannerManager?.setParameterInts(UROVO_IDMODE_BUF, idmode)
     }
-
-
-
-
 
 }

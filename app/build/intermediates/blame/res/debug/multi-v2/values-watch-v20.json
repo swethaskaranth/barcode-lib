@@ -4,7 +4,7 @@
             "outputFile": "/Users/ravi/Downloads/newlandscanner/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-watch-v20/values-watch-v20.xml",
             "map": [
                 {
-                    "source": "/Users/ravi/.gradle/caches/transforms-2/files-2.1/ccbc62481af5391fd55731810ed03943/appcompat-1.0.2/res/values-watch-v20/values-watch-v20.xml",
+                    "source": "/Users/ravi/.gradle/caches/transforms-2/files-2.1/566d1e46e0838bf61e19abf304a5091c/appcompat-1.1.0/res/values-watch-v20/values-watch-v20.xml",
                     "from": {
                         "startLines": "2,5,8",
                         "startColumns": "4,4,4",

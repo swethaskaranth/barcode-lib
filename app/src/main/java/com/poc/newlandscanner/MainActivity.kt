@@ -51,8 +51,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         intent.putExtra("EXTRA_SCAN_MODE",3)
         this.sendBroadcast(intent)
 
-        this
-            .registerReceiver(newlandBroadcast, IntentFilter("nlscan.action.SCANNER_RESULT"))
+        this.registerReceiver(newlandBroadcast, IntentFilter("nlscan.action.SCANNER_RESULT"))
 
 
     }
@@ -74,8 +73,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 intent.putExtra("EXTRA_SCAN_POWER",1)
                 this.sendBroadcast(intent)
             }
-
-
 
         }
         return super.onKeyDown(keyCode, event)

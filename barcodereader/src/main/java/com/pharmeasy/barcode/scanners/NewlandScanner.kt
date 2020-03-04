@@ -9,7 +9,7 @@ import com.pharmeasy.barcode.interfaces.Scanner
 
 class NewlandScanner : Scanner {
 
-    val TAG = NewlandScanner::class.java.simpleName
+    private val TAG = NewlandScanner::class.java.simpleName
 
     override fun enableScanner(context: Context) {
         Log.d(TAG,">>>>>>>> ENABLING SCANNER <<<<<<<<<<<")

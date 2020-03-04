@@ -11,6 +11,7 @@
             <option value="$PROJECT_DIR$/Urovolib_v4.0.0115" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/barcodereader" />
+            <option value="$PROJECT_DIR$/zxing-android-embedded" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

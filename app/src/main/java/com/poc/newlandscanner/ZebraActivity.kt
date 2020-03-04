@@ -84,13 +84,9 @@ class ZebraActivity : AppCompatActivity(), View.OnClickListener {
        /* val intentFilter = IntentFilter()
         intentFilter.addCategory(Intent.CATEGORY_DEFAULT)
         intentFilter.addAction(resources.getString(R.string.activity_intent_filter_action))
-        registerReceiver(dataWedgeBroadcast,intentFilter)
+        registerReceiver(dataWedgeBroadcast,intentFilter) */
 
-
-*/
         barcodeReader=BarcodeReader.getInstance(this)
-
-
 
         disableBtn.setOnClickListener(this)
         enableBtn.setOnClickListener(this)

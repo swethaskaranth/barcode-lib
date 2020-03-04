@@ -1,2 +1,2 @@
-include ':app', ':barcodereader', ':Urovolib_v4.0.0115'
+include ':app', ':barcodereader', ':Urovolib_v4.0.0115', ':zxing-android-embedded'
 rootProject.name='newlandscanner'

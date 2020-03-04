@@ -6,11 +6,7 @@ import com.pharmeasy.barcode.interfaces.Scanner
 
 class UrovoScanner:Scanner{
 
-    var mScanManager:ScanManager
-
-    init {
-        mScanManager= ScanManager()
-    }
+    private var mScanManager:ScanManager = ScanManager()
 
     override fun enableScanner(context: Context) {
         mScanManager.unlockTrigger()

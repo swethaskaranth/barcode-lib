@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/barcodereader/barcodereader.iml" filepath="$PROJECT_DIR$/barcodereader/barcodereader.iml" />
       <module fileurl="file://$PROJECT_DIR$/newlandscanner.iml" filepath="$PROJECT_DIR$/newlandscanner.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zxing-android-embedded/zxing-android-embedded.iml" filepath="$PROJECT_DIR$/zxing-android-embedded/zxing-android-embedded.iml" />
     </modules>
   </component>
 </project>

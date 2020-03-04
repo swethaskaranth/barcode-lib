@@ -13,11 +13,9 @@ class ZebraBroadcast : BroadcastReceiver() {
 
     val TAG = ZebraBroadcast::class.java.simpleName
 
-
     override fun onReceive(context: Context?, intent: Intent?) {
         val action = intent?.action
         val bundle = intent?.extras
-
 
         Log.d(TAG,">>>>>> onReceive:: ZebraBroadcast <<<<<< Action:${action}, bundle:${bundle}")
 
