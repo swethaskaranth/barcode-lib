@@ -1,0 +1,68 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/ravi/Downloads/newlandscanner/zxing-android-embedded/build/intermediates/res/merged/production/values-fi/values-fi.xml",
+            "map": [
+                {
+                    "source": "/Users/ravi/Downloads/newlandscanner/zxing-android-embedded/res-orig/values-fi/zxing_strings.xml",
+                    "from": {
+                        "startLines": "17,18,19,20",
+                        "startColumns": "2,2,2,2",
+                        "startOffsets": "632,689,734,892",
+                        "endColumns": "56,44,157,101",
+                        "endOffsets": "686,731,889,991"
+                    },
+                    "to": {
+                        "startLines": "3,4,5,6",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "156,215,262,422",
+                        "endColumns": "58,46,159,103",
+                        "endOffsets": "210,257,417,521"
+                    }
+                },
+                {
+                    "source": "/Users/ravi/.gradle/caches/transforms-2/files-2.1/f37a914674b5262faa2cb4c2ea1a3326/core-1.0.0/res/values-fi/values-fi.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/Users/ravi/Downloads/newlandscanner/zxing-android-embedded/build/intermediates/incremental/mergeProductionResources/merged.dir/values-fi/values-fi.xml",
+            "map": [
+                {
+                    "source": "/Users/ravi/Downloads/newlandscanner/zxing-android-embedded/res-orig/values-fi/zxing_strings.xml",
+                    "from": {
+                        "startLines": "17,18,19,20",
+                        "startColumns": "2,2,2,2",
+                        "startOffsets": "632,689,734,892",
+                        "endColumns": "56,44,157,101",
+                        "endOffsets": "686,731,889,991"
+                    },
+                    "to": {
+                        "startLines": "3,4,5,6",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "156,215,262,422",
+                        "endColumns": "58,46,159,103",
+                        "endOffsets": "210,257,417,521"
+                    }
+                },
+                {
+                    "source": "/Users/ravi/.gradle/caches/transforms-2/files-2.1/f37a914674b5262faa2cb4c2ea1a3326/core-1.0.0/res/values-fi/values-fi.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        }
+    ]
+}

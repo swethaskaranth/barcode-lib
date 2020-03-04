@@ -1,0 +1,68 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/ravi/Downloads/newlandscanner/zxing-android-embedded/build/intermediates/res/merged/production/values-bg/values-bg.xml",
+            "map": [
+                {
+                    "source": "/Users/ravi/.gradle/caches/transforms-2/files-2.1/f37a914674b5262faa2cb4c2ea1a3326/core-1.0.0/res/values-bg/values-bg.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                },
+                {
+                    "source": "/Users/ravi/Downloads/newlandscanner/zxing-android-embedded/res-orig/values-bg/zxing_strings.xml",
+                    "from": {
+                        "startLines": "17,18,19,20",
+                        "startColumns": "2,2,2,2",
+                        "startOffsets": "632,687,732,882",
+                        "endColumns": "54,44,149,108",
+                        "endOffsets": "684,729,879,988"
+                    },
+                    "to": {
+                        "startLines": "3,4,5,6",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "156,213,260,412",
+                        "endColumns": "56,46,151,110",
+                        "endOffsets": "208,255,407,518"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/Users/ravi/Downloads/newlandscanner/zxing-android-embedded/build/intermediates/incremental/mergeProductionResources/merged.dir/values-bg/values-bg.xml",
+            "map": [
+                {
+                    "source": "/Users/ravi/.gradle/caches/transforms-2/files-2.1/f37a914674b5262faa2cb4c2ea1a3326/core-1.0.0/res/values-bg/values-bg.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                },
+                {
+                    "source": "/Users/ravi/Downloads/newlandscanner/zxing-android-embedded/res-orig/values-bg/zxing_strings.xml",
+                    "from": {
+                        "startLines": "17,18,19,20",
+                        "startColumns": "2,2,2,2",
+                        "startOffsets": "632,687,732,882",
+                        "endColumns": "54,44,149,108",
+                        "endOffsets": "684,729,879,988"
+                    },
+                    "to": {
+                        "startLines": "3,4,5,6",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "156,213,260,412",
+                        "endColumns": "56,46,151,110",
+                        "endOffsets": "208,255,407,518"
+                    }
+                }
+            ]
+        }
+    ]
+}

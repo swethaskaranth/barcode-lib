@@ -1,0 +1,1 @@
+[{"outputType":{"type":"MERGED_MANIFESTS"},"apkData":{"type":"MAIN","splits":[],"versionCode":-1,"enabled":true,"outputFile":"zxing-android-embedded-production.aar","fullName":"production","baseName":"production"},"path":"../../library_manifest/production/AndroidManifest.xml","properties":{"packageId":"com.google.zxing.client.android","split":""}}]

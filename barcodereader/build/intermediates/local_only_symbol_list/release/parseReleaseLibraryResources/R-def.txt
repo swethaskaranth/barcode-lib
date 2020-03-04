@@ -1,0 +1,19 @@
+R_DEF: Internal format may change without notice
+local
+string activity_intent_filter_action
+string app_name
+string datawedge_api_intent_action
+string datawedge_api_intent_extra_config
+string datawedge_intent_key_create_profile
+string datawedge_intent_key_data
+string datawedge_intent_key_data_legacy
+string datawedge_intent_key_extra_profilename
+string datawedge_intent_key_label_type
+string datawedge_intent_key_label_type_legacy
+string datawedge_intent_key_result_action
+string datawedge_intent_key_source
+string datawedge_intent_key_source_legacy
+string datawedge_intent_key_switch_profile
+string newland_scanner_result
+string zebra_scanner_extra_param
+string zebra_scanner_intent_action

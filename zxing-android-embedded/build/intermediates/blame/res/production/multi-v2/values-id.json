@@ -1,0 +1,48 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/ravi/Downloads/newlandscanner/zxing-android-embedded/build/intermediates/res/merged/production/values-id/values-id.xml",
+            "map": [
+                {
+                    "source": "/Users/ravi/Downloads/newlandscanner/zxing-android-embedded/res-orig/values-id/zxing_strings.xml",
+                    "from": {
+                        "startLines": "17,18,19,20",
+                        "startColumns": "2,2,2,2",
+                        "startOffsets": "632,689,734,864",
+                        "endColumns": "56,44,129,106",
+                        "endOffsets": "686,731,861,968"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,114,161,293",
+                        "endColumns": "58,46,131,108",
+                        "endOffsets": "109,156,288,397"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/Users/ravi/Downloads/newlandscanner/zxing-android-embedded/build/intermediates/incremental/mergeProductionResources/merged.dir/values-id/values-id.xml",
+            "map": [
+                {
+                    "source": "/Users/ravi/Downloads/newlandscanner/zxing-android-embedded/res-orig/values-id/zxing_strings.xml",
+                    "from": {
+                        "startLines": "17,18,19,20",
+                        "startColumns": "2,2,2,2",
+                        "startOffsets": "632,689,734,864",
+                        "endColumns": "56,44,129,106",
+                        "endOffsets": "686,731,861,968"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,114,161,293",
+                        "endColumns": "58,46,131,108",
+                        "endOffsets": "109,156,288,397"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,34 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/ravi/Downloads/newlandscanner/barcodereader/build/intermediates/res/merged/release/values-port/values-port.xml",
+            "map": [
+                {
+                    "source": "/Users/ravi/.gradle/caches/transforms-2/files-2.1/18359238bb239dde4561dcc8443edc42/appcompat-1.0.2/res/values-port/values-port.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "55",
+                        "endOffsets": "106"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/Users/ravi/Downloads/newlandscanner/barcodereader/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-port/values-port.xml",
+            "map": [
+                {
+                    "source": "/Users/ravi/.gradle/caches/transforms-2/files-2.1/18359238bb239dde4561dcc8443edc42/appcompat-1.0.2/res/values-port/values-port.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "55",
+                        "endOffsets": "106"
+                    }
+                }
+            ]
+        }
+    ]
+}

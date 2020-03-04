@@ -29,6 +29,9 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
             consumerProguardFiles 'proguard-rules.pro'
         }
+        debug{
+            minifyEnabled false
+        }
     }
 
     dataBinding {
@@ -69,7 +72,7 @@ publishing {
         maven(MavenPublication) {
             groupId = "com.pharmeasy"
             artifactId = "barcodereader"
-            version = "1.1.4"
+            version = "1.2.4"
 
             artifact source: "${projectDir}/build/outputs/aar/barcodereader-release.aar", extension: 'aar'
         }

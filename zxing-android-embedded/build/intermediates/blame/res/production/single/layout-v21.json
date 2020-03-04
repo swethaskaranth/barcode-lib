@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/ravi/Downloads/newlandscanner/zxing-android-embedded/build/intermediates/res/merged/production/layout-v21/notification_action.xml",
+        "source": "/Users/ravi/.gradle/caches/transforms-2/files-2.1/f37a914674b5262faa2cb4c2ea1a3326/core-1.0.0/res/layout-v21/notification_action.xml"
+    },
+    {
+        "merged": "/Users/ravi/Downloads/newlandscanner/zxing-android-embedded/build/intermediates/res/merged/production/layout-v21/notification_action_tombstone.xml",
+        "source": "/Users/ravi/.gradle/caches/transforms-2/files-2.1/f37a914674b5262faa2cb4c2ea1a3326/core-1.0.0/res/layout-v21/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/Users/ravi/Downloads/newlandscanner/zxing-android-embedded/build/intermediates/res/merged/production/layout-v21/notification_template_icon_group.xml",
+        "source": "/Users/ravi/.gradle/caches/transforms-2/files-2.1/f37a914674b5262faa2cb4c2ea1a3326/core-1.0.0/res/layout-v21/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "/Users/ravi/Downloads/newlandscanner/zxing-android-embedded/build/intermediates/res/merged/production/layout-v21/notification_template_custom_big.xml",
+        "source": "/Users/ravi/.gradle/caches/transforms-2/files-2.1/f37a914674b5262faa2cb4c2ea1a3326/core-1.0.0/res/layout-v21/notification_template_custom_big.xml"
+    }
+]

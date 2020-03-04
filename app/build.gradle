@@ -10,8 +10,8 @@ android {
         applicationId "com.poc.newlandscanner"
         minSdkVersion 23
         targetSdkVersion 28
-        versionCode 1
-        versionName "1.0"
+        versionCode 4
+        versionName "1.2"
         multiDexEnabled true
         vectorDrawables.useSupportLibrary = true
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
