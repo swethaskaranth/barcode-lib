@@ -24,14 +24,18 @@ android {
     }
 
     buildTypes {
+
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
             consumerProguardFiles 'proguard-rules.pro'
+
         }
-        debug{
+        debug {
             minifyEnabled false
+
         }
+
     }
 
     dataBinding {
@@ -48,7 +52,7 @@ dependencies {
     implementation "android.arch.lifecycle:extensions:1.1.1"
     implementation project('::Urovolib_v4.0.0115')
 
-    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test:runner:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
 
@@ -72,7 +76,7 @@ publishing {
         maven(MavenPublication) {
             groupId = "com.pharmeasy"
             artifactId = "barcodereader"
-            version = "1.2.4"
+            version = "1.1.6"
 
             artifact source: "${projectDir}/build/outputs/aar/barcodereader-release.aar", extension: 'aar'
         }

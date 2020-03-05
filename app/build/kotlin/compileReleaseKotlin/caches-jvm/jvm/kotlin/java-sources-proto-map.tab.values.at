@@ -675,34 +675,4 @@ showCustom
  
 
  
- Ç    †20B R0X†Pº	(À>R	0X†Pº	(
-À>R0X†Pº	 À>R0X†Pº	(À>R0X†Pº	À>R0X†Pº	(À>   ¹
-com
-poc
-newlandscanner
-BuildConfig
-kotlin
-Any
-APPLICATION_ID
-String
-com.poc.newlandscanner
-
-BUILD_TYPE
-release
-DEBUG
-Boolean
-FLAVOR
- 
-VERSION_CODE
-Int
-VERSION_NAME
-1.2   <
- 
- 
-
- 
-
- 
- 
- 
- 
+ 

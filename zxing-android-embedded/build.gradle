@@ -57,17 +57,7 @@ android {
             debuggable = true
             resValue "string", "app_version", "${defaultConfig.versionName}"
         }
-        dev {
-            debuggable = true
-            resValue "string", "app_version", "${defaultConfig.versionName}"
-        }
-        staging {
-            debuggable = true
-            resValue "string", "app_version", "${defaultConfig.versionName}"
-        }
-        production {
-            resValue "string", "app_version", "${defaultConfig.versionName}"
-        }
+
 
     }
 }
