@@ -104,8 +104,9 @@ class BarcodeReader private constructor(context: Context){
 
     }
 
-    fun initializeScanner(activity: Activity, intent: Intent){
+    fun initializeScanner(activity: Activity, intent: Intent, i: Int){
 
+        barcodeView = activity.findViewById(i)
         val formats = listOf(BarcodeFormat.QR_CODE, BarcodeFormat.CODE_39)
         barcodeView?.barcodeView?.decoderFactory = DefaultDecoderFactory(formats)
         barcodeView?.initializeFromIntent(intent)
@@ -140,6 +141,14 @@ class BarcodeReader private constructor(context: Context){
 
     fun disableScanner(){
         this.scanner.disableScanner(mContext)
+    }
+
+    fun onResume(){
+        barcodeView?.resume()
+    }
+
+    fun onPause(){
+        barcodeView?.pause()
     }
 
     private fun createBarCodeProfileForZebraDevice(){

@@ -28,6 +28,7 @@ class ZxingScanActivity : AppCompatActivity(), DecoratedBarcodeView.TorchListene
     }
 
     lateinit var barcodeReader: BarcodeReader
+    var barcodeView: DecoratedBarcodeView? = null
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -36,8 +37,8 @@ class ZxingScanActivity : AppCompatActivity(), DecoratedBarcodeView.TorchListene
 
         barcodeReader = BarcodeReader.getInstance(this)
 
-        barcodeReader.barcodeView = findViewById(R.id.zxing_scanner_view)
-        barcodeReader.initializeScanner(this, intent)
+        //barcodeReader.barcodeView = findViewById(R.id.zxing_scanner_view)
+        barcodeReader.initializeScanner(this, intent, R.id.zxing_scanner_view)
 
         if(barcodeReader.UIView!!)
             scan_lay.visibility = View.VISIBLE
@@ -49,7 +50,7 @@ class ZxingScanActivity : AppCompatActivity(), DecoratedBarcodeView.TorchListene
     override fun onResume() {
         super.onResume()
         if(!barcodeReader.UIView!!)
-            barcodeReader.barcodeView?.resume()
+            barcodeReader.onResume()
         else
             barcodeReader.registerBroadcast(this)
 
@@ -66,7 +67,7 @@ class ZxingScanActivity : AppCompatActivity(), DecoratedBarcodeView.TorchListene
     override fun onPause() {
         super.onPause()
         if(!barcodeReader.UIView!!)
-            barcodeReader.barcodeView?.pause()
+            barcodeReader.onPause()
         else
             barcodeReader.unregisterBroadcast(this)
     }
