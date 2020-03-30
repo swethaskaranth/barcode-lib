@@ -1,315 +1,315 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:2:1-39:12
-INJECTED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:2:1-39:12
-INJECTED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:2:1-39:12
-INJECTED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:2:1-39:12
-MERGED from [:barcodereader] /Users/ravi/Downloads/newlandscanner/barcodereader/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
-MERGED from [com.mikepenz:aboutlibraries:6.2.3] /Users/ravi/.gradle/caches/transforms-2/files-2.1/e966692e20ee0109e198e7fea3495a6e/jetified-aboutlibraries-6.2.3/AndroidManifest.xml:2:1-15:12
-MERGED from [com.mikepenz:iconics-core:3.2.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/d247755fae7b574508d31b5dbf081be4/iconics-core-3.2.0/AndroidManifest.xml:2:1-11:12
-MERGED from [com.mikepenz:fastadapter:3.3.1] /Users/ravi/.gradle/caches/transforms-2/files-2.1/3858fc80bb6720ef307632cdb9d0d3f2/jetified-fastadapter-3.3.1/AndroidManifest.xml:2:1-11:12
-MERGED from [androidx.appcompat:appcompat:1.1.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/566d1e46e0838bf61e19abf304a5091c/appcompat-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.core:core-ktx:1.2.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/d62a342a3614a1d738372a63f8ca2611/core-ktx-1.2.0/AndroidManifest.xml:2:1-9:12
-MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/b09e2ae9acad8541b1062bfca08e6466/lifecycle-extensions-2.0.0/AndroidManifest.xml:17:1-25:12
-MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/75edc08a440b8fa574458ae0f7900615/appcompat-resources-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/bc3da91c1bef798eca611298ecef502a/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/ravi/.gradle/caches/transforms-2/files-2.1/99368945d51d3412af77b12d64b873f0/constraintlayout-1.1.3/AndroidManifest.xml:2:1-11:12
-MERGED from [androidx.multidex:multidex:2.0.1] /Users/ravi/.gradle/caches/transforms-2/files-2.1/e2f4b2d36d7dc3cbe2d009c346bfc380/multidex-2.0.1/AndroidManifest.xml:17:1-22:12
-MERGED from [:zxing-android-embedded] /Users/ravi/Downloads/newlandscanner/zxing-android-embedded/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:1-58:12
-MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/bee3f63da3c933be90d159cbe00904f8/legacy-support-v4-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.recyclerview:recyclerview:1.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/ac43edf34ccda5b91fc13419c124ab92/recyclerview-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/142269935d2ba8a52fff71ae9b4fe50d/legacy-support-core-ui-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/688550447b2b37d881a2f0823d2fe0c6/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.fragment:fragment:1.1.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/258a1dd38f1fe25d2e75221fa66f80bd/fragment-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/00fbe2536638acf882caf8dcb5bff4e6/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/5578f3967bceed69bc4b75c9d09a8b64/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/3f1daa9cc4f56a28a09bfb7e067df107/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/1be850916ab8a17baafaf2e86bf3b60e/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.loader:loader:1.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/61dec60ba2cab0c95f3764688267048e/loader-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.activity:activity:1.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/e1637f914a35fd80738fe9bd0181160f/activity-1.0.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/aa046fbb73c038dfe8f133557ac5cfa3/coordinatorlayout-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/31855e4c6b5d70f158c1e8ea8a8caaa3/slidingpanelayout-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.customview:customview:1.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/633f02b0d85003a350a41f4cc034dbdd/customview-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.media:media:1.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/0479d6d4b34f2a232587d5064f6a44e5/media-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/44d5b1413637a61c6ef4dac9f17807e6/swiperefreshlayout-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/457b6d752c24d6e982c02bd3bb36ff4e/asynclayoutinflater-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.core:core:1.2.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/d2da4d231d5bb16fc9b06788df71bfab/core-1.2.0/AndroidManifest.xml:17:1-26:12
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/25da9757f00d363793aad97f96cd50b6/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/fb3d2a63a18e9007e8aa9c689934d0bf/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/ad8c68a11485ae63452bc41d9c6de763/core-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.databinding:databinding-adapters:3.5.3] /Users/ravi/.gradle/caches/transforms-2/files-2.1/ba864689183012a844f3eeebfa0315da/databinding-adapters-3.5.3/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.databinding:databinding-runtime:3.5.3] /Users/ravi/.gradle/caches/transforms-2/files-2.1/a6c0c009bc9a8feb2b028cfe64a1027e/databinding-runtime-3.5.3/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/09a5b3035ea3a901f985999a72c93186/versionedparcelable-1.1.0/AndroidManifest.xml:17:1-27:12
-MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/f8dc6ce0eaebbc46edb75bc93c6684b0/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.cardview:cardview:1.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/2b3a9ceaaff802918be7393b71782dd9/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-process:2.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/ec70dd48c4f661531bdd7c673ea4efcd/lifecycle-process-2.0.0/AndroidManifest.xml:17:1-30:12
-MERGED from [androidx.lifecycle:lifecycle-service:2.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/b7e0c1fc3a8c2ec24655aa660a684b0d/lifecycle-service-2.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/ba0bbc4ad84ad1b1f3fbd3ac6108755f/lifecycle-runtime-2.1.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/55ed0813ba4f9cbbad593d958b2f6336/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/7f89c89062f41e5b7f2ec9a6f2dadadb/savedstate-1.0.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/6bab464d6f87c28d12265b5475d79454/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/367a1bce94c6148c2354d5ab0cd078ec/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.print:print:1.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/67e09ddbc76b0ac1e204b1abedfe5a8e/print-1.0.0/AndroidManifest.xml:17:1-22:12
-INJECTED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:2:1-39:12
-INJECTED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:2:1-39:12
-INJECTED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:2:1-39:12
+ADDED from /Users/swetha/Projects/barcode-lib/app/src/main/AndroidManifest.xml:2:1-39:12
+INJECTED from /Users/swetha/Projects/barcode-lib/app/src/main/AndroidManifest.xml:2:1-39:12
+INJECTED from /Users/swetha/Projects/barcode-lib/app/src/main/AndroidManifest.xml:2:1-39:12
+INJECTED from /Users/swetha/Projects/barcode-lib/app/src/main/AndroidManifest.xml:2:1-39:12
+MERGED from [:barcodereader] /Users/swetha/Projects/barcode-lib/barcodereader/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [com.mikepenz:aboutlibraries:6.2.3] /Users/swetha/.gradle/caches/transforms-2/files-2.1/0f9a46f54c61eb8a7111089b3725677b/jetified-aboutlibraries-6.2.3/AndroidManifest.xml:2:1-15:12
+MERGED from [com.mikepenz:iconics-core:3.2.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/d247755fae7b574508d31b5dbf081be4/iconics-core-3.2.0/AndroidManifest.xml:2:1-11:12
+MERGED from [com.mikepenz:fastadapter:3.3.1] /Users/swetha/.gradle/caches/transforms-2/files-2.1/f6b78fdbedad3ec20e32c8f8a8a25f34/jetified-fastadapter-3.3.1/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.appcompat:appcompat:1.1.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/566d1e46e0838bf61e19abf304a5091c/appcompat-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core-ktx:1.2.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/d62a342a3614a1d738372a63f8ca2611/core-ktx-1.2.0/AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/b09e2ae9acad8541b1062bfca08e6466/lifecycle-extensions-2.0.0/AndroidManifest.xml:17:1-25:12
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/75edc08a440b8fa574458ae0f7900615/appcompat-resources-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/bc3da91c1bef798eca611298ecef502a/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/swetha/.gradle/caches/transforms-2/files-2.1/99368945d51d3412af77b12d64b873f0/constraintlayout-1.1.3/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.multidex:multidex:2.0.1] /Users/swetha/.gradle/caches/transforms-2/files-2.1/e2f4b2d36d7dc3cbe2d009c346bfc380/multidex-2.0.1/AndroidManifest.xml:17:1-22:12
+MERGED from [:zxing-android-embedded] /Users/swetha/Projects/barcode-lib/zxing-android-embedded/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:1-58:12
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/bee3f63da3c933be90d159cbe00904f8/legacy-support-v4-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/ac43edf34ccda5b91fc13419c124ab92/recyclerview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/142269935d2ba8a52fff71ae9b4fe50d/legacy-support-core-ui-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/688550447b2b37d881a2f0823d2fe0c6/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.fragment:fragment:1.1.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/258a1dd38f1fe25d2e75221fa66f80bd/fragment-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/00fbe2536638acf882caf8dcb5bff4e6/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/5578f3967bceed69bc4b75c9d09a8b64/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/3f1daa9cc4f56a28a09bfb7e067df107/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/1be850916ab8a17baafaf2e86bf3b60e/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/61dec60ba2cab0c95f3764688267048e/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.0.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/e1637f914a35fd80738fe9bd0181160f/activity-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/aa046fbb73c038dfe8f133557ac5cfa3/coordinatorlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/31855e4c6b5d70f158c1e8ea8a8caaa3/slidingpanelayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/633f02b0d85003a350a41f4cc034dbdd/customview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.media:media:1.0.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/0479d6d4b34f2a232587d5064f6a44e5/media-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/44d5b1413637a61c6ef4dac9f17807e6/swiperefreshlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/457b6d752c24d6e982c02bd3bb36ff4e/asynclayoutinflater-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.2.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/d2da4d231d5bb16fc9b06788df71bfab/core-1.2.0/AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/25da9757f00d363793aad97f96cd50b6/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/fb3d2a63a18e9007e8aa9c689934d0bf/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/ad8c68a11485ae63452bc41d9c6de763/core-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.databinding:databinding-adapters:3.5.3] /Users/swetha/.gradle/caches/transforms-2/files-2.1/ba864689183012a844f3eeebfa0315da/databinding-adapters-3.5.3/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.databinding:databinding-runtime:3.5.3] /Users/swetha/.gradle/caches/transforms-2/files-2.1/a6c0c009bc9a8feb2b028cfe64a1027e/databinding-runtime-3.5.3/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/09a5b3035ea3a901f985999a72c93186/versionedparcelable-1.1.0/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/f8dc6ce0eaebbc46edb75bc93c6684b0/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/2b3a9ceaaff802918be7393b71782dd9/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.0.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/ec70dd48c4f661531bdd7c673ea4efcd/lifecycle-process-2.0.0/AndroidManifest.xml:17:1-30:12
+MERGED from [androidx.lifecycle:lifecycle-service:2.0.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/b7e0c1fc3a8c2ec24655aa660a684b0d/lifecycle-service-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/ba0bbc4ad84ad1b1f3fbd3ac6108755f/lifecycle-runtime-2.1.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/55ed0813ba4f9cbbad593d958b2f6336/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/7f89c89062f41e5b7f2ec9a6f2dadadb/savedstate-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/6bab464d6f87c28d12265b5475d79454/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/367a1bce94c6148c2354d5ab0cd078ec/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/67e09ddbc76b0ac1e204b1abedfe5a8e/print-1.0.0/AndroidManifest.xml:17:1-22:12
+INJECTED from /Users/swetha/Projects/barcode-lib/app/src/main/AndroidManifest.xml:2:1-39:12
+INJECTED from /Users/swetha/Projects/barcode-lib/app/src/main/AndroidManifest.xml:2:1-39:12
+INJECTED from /Users/swetha/Projects/barcode-lib/app/src/main/AndroidManifest.xml:2:1-39:12
 	package
-		ADDED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:4:5-37
-		INJECTED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml
+		ADDED from /Users/swetha/Projects/barcode-lib/app/src/main/AndroidManifest.xml:4:5-37
+		INJECTED from /Users/swetha/Projects/barcode-lib/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/swetha/Projects/barcode-lib/app/src/main/AndroidManifest.xml
 	android:versionName
-		INJECTED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml
-		ADDED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:2:1-39:12
-		INJECTED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/swetha/Projects/barcode-lib/app/src/main/AndroidManifest.xml
+		ADDED from /Users/swetha/Projects/barcode-lib/app/src/main/AndroidManifest.xml:2:1-39:12
+		INJECTED from /Users/swetha/Projects/barcode-lib/app/src/main/AndroidManifest.xml
 	xmlns:tools
-		ADDED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:3:5-51
+		ADDED from /Users/swetha/Projects/barcode-lib/app/src/main/AndroidManifest.xml:3:5-51
 	android:versionCode
-		INJECTED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml
-		ADDED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:2:1-39:12
-		INJECTED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/swetha/Projects/barcode-lib/app/src/main/AndroidManifest.xml
+		ADDED from /Users/swetha/Projects/barcode-lib/app/src/main/AndroidManifest.xml:2:1-39:12
+		INJECTED from /Users/swetha/Projects/barcode-lib/app/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:2:11-69
+		ADDED from /Users/swetha/Projects/barcode-lib/app/src/main/AndroidManifest.xml:2:11-69
 uses-permission#android.permission.CAMERA
-ADDED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:6:5-65
-MERGED from [:zxing-android-embedded] /Users/ravi/Downloads/newlandscanner/zxing-android-embedded/build/intermediates/library_manifest/debug/AndroidManifest.xml:24:5-65
-MERGED from [:zxing-android-embedded] /Users/ravi/Downloads/newlandscanner/zxing-android-embedded/build/intermediates/library_manifest/debug/AndroidManifest.xml:24:5-65
+ADDED from /Users/swetha/Projects/barcode-lib/app/src/main/AndroidManifest.xml:6:5-65
+MERGED from [:zxing-android-embedded] /Users/swetha/Projects/barcode-lib/zxing-android-embedded/build/intermediates/library_manifest/debug/AndroidManifest.xml:24:5-65
+MERGED from [:zxing-android-embedded] /Users/swetha/Projects/barcode-lib/zxing-android-embedded/build/intermediates/library_manifest/debug/AndroidManifest.xml:24:5-65
 	android:name
-		ADDED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:6:22-62
+		ADDED from /Users/swetha/Projects/barcode-lib/app/src/main/AndroidManifest.xml:6:22-62
 uses-feature#android.hardware.camera
-ADDED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:8:5-60
-MERGED from [:zxing-android-embedded] /Users/ravi/Downloads/newlandscanner/zxing-android-embedded/build/intermediates/library_manifest/debug/AndroidManifest.xml:27:5-29:36
-MERGED from [:zxing-android-embedded] /Users/ravi/Downloads/newlandscanner/zxing-android-embedded/build/intermediates/library_manifest/debug/AndroidManifest.xml:27:5-29:36
+ADDED from /Users/swetha/Projects/barcode-lib/app/src/main/AndroidManifest.xml:8:5-60
+MERGED from [:zxing-android-embedded] /Users/swetha/Projects/barcode-lib/zxing-android-embedded/build/intermediates/library_manifest/debug/AndroidManifest.xml:27:5-29:36
+MERGED from [:zxing-android-embedded] /Users/swetha/Projects/barcode-lib/zxing-android-embedded/build/intermediates/library_manifest/debug/AndroidManifest.xml:27:5-29:36
 	android:name
-		ADDED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:8:19-57
+		ADDED from /Users/swetha/Projects/barcode-lib/app/src/main/AndroidManifest.xml:8:19-57
 uses-feature#android.hardware.camera.autofocus
-ADDED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:9:5-70
-MERGED from [:zxing-android-embedded] /Users/ravi/Downloads/newlandscanner/zxing-android-embedded/build/intermediates/library_manifest/debug/AndroidManifest.xml:35:5-37:36
-MERGED from [:zxing-android-embedded] /Users/ravi/Downloads/newlandscanner/zxing-android-embedded/build/intermediates/library_manifest/debug/AndroidManifest.xml:35:5-37:36
+ADDED from /Users/swetha/Projects/barcode-lib/app/src/main/AndroidManifest.xml:9:5-70
+MERGED from [:zxing-android-embedded] /Users/swetha/Projects/barcode-lib/zxing-android-embedded/build/intermediates/library_manifest/debug/AndroidManifest.xml:35:5-37:36
+MERGED from [:zxing-android-embedded] /Users/swetha/Projects/barcode-lib/zxing-android-embedded/build/intermediates/library_manifest/debug/AndroidManifest.xml:35:5-37:36
 	android:name
-		ADDED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:9:19-67
+		ADDED from /Users/swetha/Projects/barcode-lib/app/src/main/AndroidManifest.xml:9:19-67
 uses-feature#android.hardware.camera.flash
-ADDED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:10:5-90
-MERGED from [:zxing-android-embedded] /Users/ravi/Downloads/newlandscanner/zxing-android-embedded/build/intermediates/library_manifest/debug/AndroidManifest.xml:38:5-40:36
-MERGED from [:zxing-android-embedded] /Users/ravi/Downloads/newlandscanner/zxing-android-embedded/build/intermediates/library_manifest/debug/AndroidManifest.xml:38:5-40:36
+ADDED from /Users/swetha/Projects/barcode-lib/app/src/main/AndroidManifest.xml:10:5-90
+MERGED from [:zxing-android-embedded] /Users/swetha/Projects/barcode-lib/zxing-android-embedded/build/intermediates/library_manifest/debug/AndroidManifest.xml:38:5-40:36
+MERGED from [:zxing-android-embedded] /Users/swetha/Projects/barcode-lib/zxing-android-embedded/build/intermediates/library_manifest/debug/AndroidManifest.xml:38:5-40:36
 	android:required
-		ADDED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:10:64-88
+		ADDED from /Users/swetha/Projects/barcode-lib/app/src/main/AndroidManifest.xml:10:64-88
 	android:name
-		ADDED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:10:19-63
+		ADDED from /Users/swetha/Projects/barcode-lib/app/src/main/AndroidManifest.xml:10:19-63
 uses-feature#android.hardware.wifi
-ADDED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:11:5-82
-MERGED from [:zxing-android-embedded] /Users/ravi/Downloads/newlandscanner/zxing-android-embedded/build/intermediates/library_manifest/debug/AndroidManifest.xml:44:5-46:36
-MERGED from [:zxing-android-embedded] /Users/ravi/Downloads/newlandscanner/zxing-android-embedded/build/intermediates/library_manifest/debug/AndroidManifest.xml:44:5-46:36
+ADDED from /Users/swetha/Projects/barcode-lib/app/src/main/AndroidManifest.xml:11:5-82
+MERGED from [:zxing-android-embedded] /Users/swetha/Projects/barcode-lib/zxing-android-embedded/build/intermediates/library_manifest/debug/AndroidManifest.xml:44:5-46:36
+MERGED from [:zxing-android-embedded] /Users/swetha/Projects/barcode-lib/zxing-android-embedded/build/intermediates/library_manifest/debug/AndroidManifest.xml:44:5-46:36
 	android:required
-		ADDED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:11:56-80
+		ADDED from /Users/swetha/Projects/barcode-lib/app/src/main/AndroidManifest.xml:11:56-80
 	android:name
-		ADDED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:11:19-55
+		ADDED from /Users/swetha/Projects/barcode-lib/app/src/main/AndroidManifest.xml:11:19-55
 application
-ADDED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:13:5-37:19
-MERGED from [com.mikepenz:aboutlibraries:6.2.3] /Users/ravi/.gradle/caches/transforms-2/files-2.1/e966692e20ee0109e198e7fea3495a6e/jetified-aboutlibraries-6.2.3/AndroidManifest.xml:11:5-13:19
-MERGED from [com.mikepenz:aboutlibraries:6.2.3] /Users/ravi/.gradle/caches/transforms-2/files-2.1/e966692e20ee0109e198e7fea3495a6e/jetified-aboutlibraries-6.2.3/AndroidManifest.xml:11:5-13:19
-MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/b09e2ae9acad8541b1062bfca08e6466/lifecycle-extensions-2.0.0/AndroidManifest.xml:22:5-23:19
-MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/b09e2ae9acad8541b1062bfca08e6466/lifecycle-extensions-2.0.0/AndroidManifest.xml:22:5-23:19
-MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/ravi/.gradle/caches/transforms-2/files-2.1/99368945d51d3412af77b12d64b873f0/constraintlayout-1.1.3/AndroidManifest.xml:9:5-20
-MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/ravi/.gradle/caches/transforms-2/files-2.1/99368945d51d3412af77b12d64b873f0/constraintlayout-1.1.3/AndroidManifest.xml:9:5-20
-MERGED from [:zxing-android-embedded] /Users/ravi/Downloads/newlandscanner/zxing-android-embedded/build/intermediates/library_manifest/debug/AndroidManifest.xml:48:5-56:19
-MERGED from [:zxing-android-embedded] /Users/ravi/Downloads/newlandscanner/zxing-android-embedded/build/intermediates/library_manifest/debug/AndroidManifest.xml:48:5-56:19
-MERGED from [androidx.core:core:1.2.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/d2da4d231d5bb16fc9b06788df71bfab/core-1.2.0/AndroidManifest.xml:24:5-89
-MERGED from [androidx.core:core:1.2.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/d2da4d231d5bb16fc9b06788df71bfab/core-1.2.0/AndroidManifest.xml:24:5-89
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/09a5b3035ea3a901f985999a72c93186/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/09a5b3035ea3a901f985999a72c93186/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
-MERGED from [androidx.lifecycle:lifecycle-process:2.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/ec70dd48c4f661531bdd7c673ea4efcd/lifecycle-process-2.0.0/AndroidManifest.xml:22:5-28:19
-MERGED from [androidx.lifecycle:lifecycle-process:2.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/ec70dd48c4f661531bdd7c673ea4efcd/lifecycle-process-2.0.0/AndroidManifest.xml:22:5-28:19
+ADDED from /Users/swetha/Projects/barcode-lib/app/src/main/AndroidManifest.xml:13:5-37:19
+MERGED from [com.mikepenz:aboutlibraries:6.2.3] /Users/swetha/.gradle/caches/transforms-2/files-2.1/0f9a46f54c61eb8a7111089b3725677b/jetified-aboutlibraries-6.2.3/AndroidManifest.xml:11:5-13:19
+MERGED from [com.mikepenz:aboutlibraries:6.2.3] /Users/swetha/.gradle/caches/transforms-2/files-2.1/0f9a46f54c61eb8a7111089b3725677b/jetified-aboutlibraries-6.2.3/AndroidManifest.xml:11:5-13:19
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/b09e2ae9acad8541b1062bfca08e6466/lifecycle-extensions-2.0.0/AndroidManifest.xml:22:5-23:19
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/b09e2ae9acad8541b1062bfca08e6466/lifecycle-extensions-2.0.0/AndroidManifest.xml:22:5-23:19
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/swetha/.gradle/caches/transforms-2/files-2.1/99368945d51d3412af77b12d64b873f0/constraintlayout-1.1.3/AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/swetha/.gradle/caches/transforms-2/files-2.1/99368945d51d3412af77b12d64b873f0/constraintlayout-1.1.3/AndroidManifest.xml:9:5-20
+MERGED from [:zxing-android-embedded] /Users/swetha/Projects/barcode-lib/zxing-android-embedded/build/intermediates/library_manifest/debug/AndroidManifest.xml:48:5-56:19
+MERGED from [:zxing-android-embedded] /Users/swetha/Projects/barcode-lib/zxing-android-embedded/build/intermediates/library_manifest/debug/AndroidManifest.xml:48:5-56:19
+MERGED from [androidx.core:core:1.2.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/d2da4d231d5bb16fc9b06788df71bfab/core-1.2.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.2.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/d2da4d231d5bb16fc9b06788df71bfab/core-1.2.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/09a5b3035ea3a901f985999a72c93186/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/09a5b3035ea3a901f985999a72c93186/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.0.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/ec70dd48c4f661531bdd7c673ea4efcd/lifecycle-process-2.0.0/AndroidManifest.xml:22:5-28:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.0.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/ec70dd48c4f661531bdd7c673ea4efcd/lifecycle-process-2.0.0/AndroidManifest.xml:22:5-28:19
 	android:appComponentFactory
-		ADDED from [androidx.core:core:1.2.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/d2da4d231d5bb16fc9b06788df71bfab/core-1.2.0/AndroidManifest.xml:24:18-86
+		ADDED from [androidx.core:core:1.2.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/d2da4d231d5bb16fc9b06788df71bfab/core-1.2.0/AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:18:9-35
+		ADDED from /Users/swetha/Projects/barcode-lib/app/src/main/AndroidManifest.xml:18:9-35
 	android:label
-		ADDED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:16:9-41
+		ADDED from /Users/swetha/Projects/barcode-lib/app/src/main/AndroidManifest.xml:16:9-41
 	tools:ignore
-		ADDED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:20:9-48
+		ADDED from /Users/swetha/Projects/barcode-lib/app/src/main/AndroidManifest.xml:20:9-48
 	android:roundIcon
-		ADDED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:17:9-54
+		ADDED from /Users/swetha/Projects/barcode-lib/app/src/main/AndroidManifest.xml:17:9-54
 	android:icon
-		ADDED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:15:9-43
+		ADDED from /Users/swetha/Projects/barcode-lib/app/src/main/AndroidManifest.xml:15:9-43
 	android:allowBackup
-		ADDED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:14:9-35
+		ADDED from /Users/swetha/Projects/barcode-lib/app/src/main/AndroidManifest.xml:14:9-35
 	android:theme
-		ADDED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:19:9-40
+		ADDED from /Users/swetha/Projects/barcode-lib/app/src/main/AndroidManifest.xml:19:9-40
 activity#com.poc.newlandscanner.ZxingScanActivity
-ADDED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:21:9-55
+ADDED from /Users/swetha/Projects/barcode-lib/app/src/main/AndroidManifest.xml:21:9-55
 	android:name
-		ADDED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:21:19-52
+		ADDED from /Users/swetha/Projects/barcode-lib/app/src/main/AndroidManifest.xml:21:19-52
 activity#com.poc.newlandscanner.ZebraActivity
-ADDED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:23:9-51
+ADDED from /Users/swetha/Projects/barcode-lib/app/src/main/AndroidManifest.xml:23:9-51
 	android:name
-		ADDED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:23:19-48
+		ADDED from /Users/swetha/Projects/barcode-lib/app/src/main/AndroidManifest.xml:23:19-48
 activity#com.poc.newlandscanner.ZxingActivity
-ADDED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:25:9-32:20
+ADDED from /Users/swetha/Projects/barcode-lib/app/src/main/AndroidManifest.xml:25:9-32:20
 	android:theme
-		ADDED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:26:13-44
+		ADDED from /Users/swetha/Projects/barcode-lib/app/src/main/AndroidManifest.xml:26:13-44
 	android:name
-		ADDED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:25:19-48
+		ADDED from /Users/swetha/Projects/barcode-lib/app/src/main/AndroidManifest.xml:25:19-48
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:27:13-31:29
+ADDED from /Users/swetha/Projects/barcode-lib/app/src/main/AndroidManifest.xml:27:13-31:29
 action#android.intent.action.MAIN
-ADDED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:28:17-69
+ADDED from /Users/swetha/Projects/barcode-lib/app/src/main/AndroidManifest.xml:28:17-69
 	android:name
-		ADDED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:28:25-66
+		ADDED from /Users/swetha/Projects/barcode-lib/app/src/main/AndroidManifest.xml:28:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:30:17-77
+ADDED from /Users/swetha/Projects/barcode-lib/app/src/main/AndroidManifest.xml:30:17-77
 	android:name
-		ADDED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:30:27-74
+		ADDED from /Users/swetha/Projects/barcode-lib/app/src/main/AndroidManifest.xml:30:27-74
 activity#com.poc.newlandscanner.MainActivity
-ADDED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:34:9-50
+ADDED from /Users/swetha/Projects/barcode-lib/app/src/main/AndroidManifest.xml:34:9-50
 	android:name
-		ADDED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:34:19-47
+		ADDED from /Users/swetha/Projects/barcode-lib/app/src/main/AndroidManifest.xml:34:19-47
 activity#com.poc.newlandscanner.SmallCaptureActivity
-ADDED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:35:9-58
+ADDED from /Users/swetha/Projects/barcode-lib/app/src/main/AndroidManifest.xml:35:9-58
 	android:name
-		ADDED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:35:19-55
+		ADDED from /Users/swetha/Projects/barcode-lib/app/src/main/AndroidManifest.xml:35:19-55
 uses-sdk
-INJECTED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml
-INJECTED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml
-MERGED from [:barcodereader] /Users/ravi/Downloads/newlandscanner/barcodereader/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:barcodereader] /Users/ravi/Downloads/newlandscanner/barcodereader/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [com.mikepenz:aboutlibraries:6.2.3] /Users/ravi/.gradle/caches/transforms-2/files-2.1/e966692e20ee0109e198e7fea3495a6e/jetified-aboutlibraries-6.2.3/AndroidManifest.xml:7:5-9:41
-MERGED from [com.mikepenz:aboutlibraries:6.2.3] /Users/ravi/.gradle/caches/transforms-2/files-2.1/e966692e20ee0109e198e7fea3495a6e/jetified-aboutlibraries-6.2.3/AndroidManifest.xml:7:5-9:41
-MERGED from [com.mikepenz:iconics-core:3.2.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/d247755fae7b574508d31b5dbf081be4/iconics-core-3.2.0/AndroidManifest.xml:7:5-9:41
-MERGED from [com.mikepenz:iconics-core:3.2.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/d247755fae7b574508d31b5dbf081be4/iconics-core-3.2.0/AndroidManifest.xml:7:5-9:41
-MERGED from [com.mikepenz:fastadapter:3.3.1] /Users/ravi/.gradle/caches/transforms-2/files-2.1/3858fc80bb6720ef307632cdb9d0d3f2/jetified-fastadapter-3.3.1/AndroidManifest.xml:7:5-9:41
-MERGED from [com.mikepenz:fastadapter:3.3.1] /Users/ravi/.gradle/caches/transforms-2/files-2.1/3858fc80bb6720ef307632cdb9d0d3f2/jetified-fastadapter-3.3.1/AndroidManifest.xml:7:5-9:41
-MERGED from [androidx.appcompat:appcompat:1.1.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/566d1e46e0838bf61e19abf304a5091c/appcompat-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.appcompat:appcompat:1.1.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/566d1e46e0838bf61e19abf304a5091c/appcompat-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.core:core-ktx:1.2.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/d62a342a3614a1d738372a63f8ca2611/core-ktx-1.2.0/AndroidManifest.xml:5:5-7:41
-MERGED from [androidx.core:core-ktx:1.2.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/d62a342a3614a1d738372a63f8ca2611/core-ktx-1.2.0/AndroidManifest.xml:5:5-7:41
-MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/b09e2ae9acad8541b1062bfca08e6466/lifecycle-extensions-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/b09e2ae9acad8541b1062bfca08e6466/lifecycle-extensions-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/75edc08a440b8fa574458ae0f7900615/appcompat-resources-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/75edc08a440b8fa574458ae0f7900615/appcompat-resources-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/bc3da91c1bef798eca611298ecef502a/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/bc3da91c1bef798eca611298ecef502a/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/ravi/.gradle/caches/transforms-2/files-2.1/99368945d51d3412af77b12d64b873f0/constraintlayout-1.1.3/AndroidManifest.xml:5:5-7:41
-MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/ravi/.gradle/caches/transforms-2/files-2.1/99368945d51d3412af77b12d64b873f0/constraintlayout-1.1.3/AndroidManifest.xml:5:5-7:41
-MERGED from [androidx.multidex:multidex:2.0.1] /Users/ravi/.gradle/caches/transforms-2/files-2.1/e2f4b2d36d7dc3cbe2d009c346bfc380/multidex-2.0.1/AndroidManifest.xml:20:5-43
-MERGED from [androidx.multidex:multidex:2.0.1] /Users/ravi/.gradle/caches/transforms-2/files-2.1/e2f4b2d36d7dc3cbe2d009c346bfc380/multidex-2.0.1/AndroidManifest.xml:20:5-43
-MERGED from [:zxing-android-embedded] /Users/ravi/Downloads/newlandscanner/zxing-android-embedded/build/intermediates/library_manifest/debug/AndroidManifest.xml:22:5-44
-MERGED from [:zxing-android-embedded] /Users/ravi/Downloads/newlandscanner/zxing-android-embedded/build/intermediates/library_manifest/debug/AndroidManifest.xml:22:5-44
-MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/bee3f63da3c933be90d159cbe00904f8/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/bee3f63da3c933be90d159cbe00904f8/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.recyclerview:recyclerview:1.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/ac43edf34ccda5b91fc13419c124ab92/recyclerview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.recyclerview:recyclerview:1.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/ac43edf34ccda5b91fc13419c124ab92/recyclerview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/142269935d2ba8a52fff71ae9b4fe50d/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/142269935d2ba8a52fff71ae9b4fe50d/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/688550447b2b37d881a2f0823d2fe0c6/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/688550447b2b37d881a2f0823d2fe0c6/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.fragment:fragment:1.1.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/258a1dd38f1fe25d2e75221fa66f80bd/fragment-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.fragment:fragment:1.1.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/258a1dd38f1fe25d2e75221fa66f80bd/fragment-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/00fbe2536638acf882caf8dcb5bff4e6/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/00fbe2536638acf882caf8dcb5bff4e6/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/5578f3967bceed69bc4b75c9d09a8b64/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/5578f3967bceed69bc4b75c9d09a8b64/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/3f1daa9cc4f56a28a09bfb7e067df107/viewpager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/3f1daa9cc4f56a28a09bfb7e067df107/viewpager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/1be850916ab8a17baafaf2e86bf3b60e/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/1be850916ab8a17baafaf2e86bf3b60e/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/61dec60ba2cab0c95f3764688267048e/loader-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/61dec60ba2cab0c95f3764688267048e/loader-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.activity:activity:1.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/e1637f914a35fd80738fe9bd0181160f/activity-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.activity:activity:1.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/e1637f914a35fd80738fe9bd0181160f/activity-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/aa046fbb73c038dfe8f133557ac5cfa3/coordinatorlayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/aa046fbb73c038dfe8f133557ac5cfa3/coordinatorlayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/31855e4c6b5d70f158c1e8ea8a8caaa3/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/31855e4c6b5d70f158c1e8ea8a8caaa3/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.customview:customview:1.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/633f02b0d85003a350a41f4cc034dbdd/customview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.customview:customview:1.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/633f02b0d85003a350a41f4cc034dbdd/customview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.media:media:1.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/0479d6d4b34f2a232587d5064f6a44e5/media-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.media:media:1.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/0479d6d4b34f2a232587d5064f6a44e5/media-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/44d5b1413637a61c6ef4dac9f17807e6/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/44d5b1413637a61c6ef4dac9f17807e6/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/457b6d752c24d6e982c02bd3bb36ff4e/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/457b6d752c24d6e982c02bd3bb36ff4e/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.core:core:1.2.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/d2da4d231d5bb16fc9b06788df71bfab/core-1.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.core:core:1.2.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/d2da4d231d5bb16fc9b06788df71bfab/core-1.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/25da9757f00d363793aad97f96cd50b6/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/25da9757f00d363793aad97f96cd50b6/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/fb3d2a63a18e9007e8aa9c689934d0bf/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/fb3d2a63a18e9007e8aa9c689934d0bf/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/ad8c68a11485ae63452bc41d9c6de763/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/ad8c68a11485ae63452bc41d9c6de763/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.databinding:databinding-adapters:3.5.3] /Users/ravi/.gradle/caches/transforms-2/files-2.1/ba864689183012a844f3eeebfa0315da/databinding-adapters-3.5.3/AndroidManifest.xml:22:5-44
-MERGED from [androidx.databinding:databinding-adapters:3.5.3] /Users/ravi/.gradle/caches/transforms-2/files-2.1/ba864689183012a844f3eeebfa0315da/databinding-adapters-3.5.3/AndroidManifest.xml:22:5-44
-MERGED from [androidx.databinding:databinding-runtime:3.5.3] /Users/ravi/.gradle/caches/transforms-2/files-2.1/a6c0c009bc9a8feb2b028cfe64a1027e/databinding-runtime-3.5.3/AndroidManifest.xml:22:5-44
-MERGED from [androidx.databinding:databinding-runtime:3.5.3] /Users/ravi/.gradle/caches/transforms-2/files-2.1/a6c0c009bc9a8feb2b028cfe64a1027e/databinding-runtime-3.5.3/AndroidManifest.xml:22:5-44
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/09a5b3035ea3a901f985999a72c93186/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/09a5b3035ea3a901f985999a72c93186/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/f8dc6ce0eaebbc46edb75bc93c6684b0/interpolator-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/f8dc6ce0eaebbc46edb75bc93c6684b0/interpolator-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.cardview:cardview:1.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/2b3a9ceaaff802918be7393b71782dd9/cardview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.cardview:cardview:1.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/2b3a9ceaaff802918be7393b71782dd9/cardview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-process:2.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/ec70dd48c4f661531bdd7c673ea4efcd/lifecycle-process-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-process:2.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/ec70dd48c4f661531bdd7c673ea4efcd/lifecycle-process-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-service:2.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/b7e0c1fc3a8c2ec24655aa660a684b0d/lifecycle-service-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-service:2.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/b7e0c1fc3a8c2ec24655aa660a684b0d/lifecycle-service-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/ba0bbc4ad84ad1b1f3fbd3ac6108755f/lifecycle-runtime-2.1.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/ba0bbc4ad84ad1b1f3fbd3ac6108755f/lifecycle-runtime-2.1.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/55ed0813ba4f9cbbad593d958b2f6336/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/55ed0813ba4f9cbbad593d958b2f6336/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/7f89c89062f41e5b7f2ec9a6f2dadadb/savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/7f89c89062f41e5b7f2ec9a6f2dadadb/savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/6bab464d6f87c28d12265b5475d79454/documentfile-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/6bab464d6f87c28d12265b5475d79454/documentfile-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/367a1bce94c6148c2354d5ab0cd078ec/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/367a1bce94c6148c2354d5ab0cd078ec/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.print:print:1.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/67e09ddbc76b0ac1e204b1abedfe5a8e/print-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.print:print:1.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/67e09ddbc76b0ac1e204b1abedfe5a8e/print-1.0.0/AndroidManifest.xml:20:5-44
-INJECTED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml
-INJECTED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml
+INJECTED from /Users/swetha/Projects/barcode-lib/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/swetha/Projects/barcode-lib/app/src/main/AndroidManifest.xml
+INJECTED from /Users/swetha/Projects/barcode-lib/app/src/main/AndroidManifest.xml
+MERGED from [:barcodereader] /Users/swetha/Projects/barcode-lib/barcodereader/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:barcodereader] /Users/swetha/Projects/barcode-lib/barcodereader/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [com.mikepenz:aboutlibraries:6.2.3] /Users/swetha/.gradle/caches/transforms-2/files-2.1/0f9a46f54c61eb8a7111089b3725677b/jetified-aboutlibraries-6.2.3/AndroidManifest.xml:7:5-9:41
+MERGED from [com.mikepenz:aboutlibraries:6.2.3] /Users/swetha/.gradle/caches/transforms-2/files-2.1/0f9a46f54c61eb8a7111089b3725677b/jetified-aboutlibraries-6.2.3/AndroidManifest.xml:7:5-9:41
+MERGED from [com.mikepenz:iconics-core:3.2.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/d247755fae7b574508d31b5dbf081be4/iconics-core-3.2.0/AndroidManifest.xml:7:5-9:41
+MERGED from [com.mikepenz:iconics-core:3.2.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/d247755fae7b574508d31b5dbf081be4/iconics-core-3.2.0/AndroidManifest.xml:7:5-9:41
+MERGED from [com.mikepenz:fastadapter:3.3.1] /Users/swetha/.gradle/caches/transforms-2/files-2.1/f6b78fdbedad3ec20e32c8f8a8a25f34/jetified-fastadapter-3.3.1/AndroidManifest.xml:7:5-9:41
+MERGED from [com.mikepenz:fastadapter:3.3.1] /Users/swetha/.gradle/caches/transforms-2/files-2.1/f6b78fdbedad3ec20e32c8f8a8a25f34/jetified-fastadapter-3.3.1/AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.appcompat:appcompat:1.1.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/566d1e46e0838bf61e19abf304a5091c/appcompat-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.1.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/566d1e46e0838bf61e19abf304a5091c/appcompat-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core-ktx:1.2.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/d62a342a3614a1d738372a63f8ca2611/core-ktx-1.2.0/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.core:core-ktx:1.2.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/d62a342a3614a1d738372a63f8ca2611/core-ktx-1.2.0/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/b09e2ae9acad8541b1062bfca08e6466/lifecycle-extensions-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/b09e2ae9acad8541b1062bfca08e6466/lifecycle-extensions-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/75edc08a440b8fa574458ae0f7900615/appcompat-resources-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/75edc08a440b8fa574458ae0f7900615/appcompat-resources-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/bc3da91c1bef798eca611298ecef502a/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/bc3da91c1bef798eca611298ecef502a/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/swetha/.gradle/caches/transforms-2/files-2.1/99368945d51d3412af77b12d64b873f0/constraintlayout-1.1.3/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/swetha/.gradle/caches/transforms-2/files-2.1/99368945d51d3412af77b12d64b873f0/constraintlayout-1.1.3/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.multidex:multidex:2.0.1] /Users/swetha/.gradle/caches/transforms-2/files-2.1/e2f4b2d36d7dc3cbe2d009c346bfc380/multidex-2.0.1/AndroidManifest.xml:20:5-43
+MERGED from [androidx.multidex:multidex:2.0.1] /Users/swetha/.gradle/caches/transforms-2/files-2.1/e2f4b2d36d7dc3cbe2d009c346bfc380/multidex-2.0.1/AndroidManifest.xml:20:5-43
+MERGED from [:zxing-android-embedded] /Users/swetha/Projects/barcode-lib/zxing-android-embedded/build/intermediates/library_manifest/debug/AndroidManifest.xml:22:5-44
+MERGED from [:zxing-android-embedded] /Users/swetha/Projects/barcode-lib/zxing-android-embedded/build/intermediates/library_manifest/debug/AndroidManifest.xml:22:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/bee3f63da3c933be90d159cbe00904f8/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/bee3f63da3c933be90d159cbe00904f8/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/ac43edf34ccda5b91fc13419c124ab92/recyclerview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/ac43edf34ccda5b91fc13419c124ab92/recyclerview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/142269935d2ba8a52fff71ae9b4fe50d/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/142269935d2ba8a52fff71ae9b4fe50d/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/688550447b2b37d881a2f0823d2fe0c6/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/688550447b2b37d881a2f0823d2fe0c6/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.1.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/258a1dd38f1fe25d2e75221fa66f80bd/fragment-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.1.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/258a1dd38f1fe25d2e75221fa66f80bd/fragment-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/00fbe2536638acf882caf8dcb5bff4e6/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/00fbe2536638acf882caf8dcb5bff4e6/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/5578f3967bceed69bc4b75c9d09a8b64/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/5578f3967bceed69bc4b75c9d09a8b64/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/3f1daa9cc4f56a28a09bfb7e067df107/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/3f1daa9cc4f56a28a09bfb7e067df107/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/1be850916ab8a17baafaf2e86bf3b60e/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/1be850916ab8a17baafaf2e86bf3b60e/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/61dec60ba2cab0c95f3764688267048e/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/61dec60ba2cab0c95f3764688267048e/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.0.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/e1637f914a35fd80738fe9bd0181160f/activity-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.0.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/e1637f914a35fd80738fe9bd0181160f/activity-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/aa046fbb73c038dfe8f133557ac5cfa3/coordinatorlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/aa046fbb73c038dfe8f133557ac5cfa3/coordinatorlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/31855e4c6b5d70f158c1e8ea8a8caaa3/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/31855e4c6b5d70f158c1e8ea8a8caaa3/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/633f02b0d85003a350a41f4cc034dbdd/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/633f02b0d85003a350a41f4cc034dbdd/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/0479d6d4b34f2a232587d5064f6a44e5/media-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/0479d6d4b34f2a232587d5064f6a44e5/media-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/44d5b1413637a61c6ef4dac9f17807e6/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/44d5b1413637a61c6ef4dac9f17807e6/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/457b6d752c24d6e982c02bd3bb36ff4e/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/457b6d752c24d6e982c02bd3bb36ff4e/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.2.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/d2da4d231d5bb16fc9b06788df71bfab/core-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.2.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/d2da4d231d5bb16fc9b06788df71bfab/core-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/25da9757f00d363793aad97f96cd50b6/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/25da9757f00d363793aad97f96cd50b6/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/fb3d2a63a18e9007e8aa9c689934d0bf/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/fb3d2a63a18e9007e8aa9c689934d0bf/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/ad8c68a11485ae63452bc41d9c6de763/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/ad8c68a11485ae63452bc41d9c6de763/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.databinding:databinding-adapters:3.5.3] /Users/swetha/.gradle/caches/transforms-2/files-2.1/ba864689183012a844f3eeebfa0315da/databinding-adapters-3.5.3/AndroidManifest.xml:22:5-44
+MERGED from [androidx.databinding:databinding-adapters:3.5.3] /Users/swetha/.gradle/caches/transforms-2/files-2.1/ba864689183012a844f3eeebfa0315da/databinding-adapters-3.5.3/AndroidManifest.xml:22:5-44
+MERGED from [androidx.databinding:databinding-runtime:3.5.3] /Users/swetha/.gradle/caches/transforms-2/files-2.1/a6c0c009bc9a8feb2b028cfe64a1027e/databinding-runtime-3.5.3/AndroidManifest.xml:22:5-44
+MERGED from [androidx.databinding:databinding-runtime:3.5.3] /Users/swetha/.gradle/caches/transforms-2/files-2.1/a6c0c009bc9a8feb2b028cfe64a1027e/databinding-runtime-3.5.3/AndroidManifest.xml:22:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/09a5b3035ea3a901f985999a72c93186/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/09a5b3035ea3a901f985999a72c93186/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/f8dc6ce0eaebbc46edb75bc93c6684b0/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/f8dc6ce0eaebbc46edb75bc93c6684b0/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/2b3a9ceaaff802918be7393b71782dd9/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/2b3a9ceaaff802918be7393b71782dd9/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.0.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/ec70dd48c4f661531bdd7c673ea4efcd/lifecycle-process-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.0.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/ec70dd48c4f661531bdd7c673ea4efcd/lifecycle-process-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-service:2.0.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/b7e0c1fc3a8c2ec24655aa660a684b0d/lifecycle-service-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-service:2.0.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/b7e0c1fc3a8c2ec24655aa660a684b0d/lifecycle-service-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/ba0bbc4ad84ad1b1f3fbd3ac6108755f/lifecycle-runtime-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/ba0bbc4ad84ad1b1f3fbd3ac6108755f/lifecycle-runtime-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/55ed0813ba4f9cbbad593d958b2f6336/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/55ed0813ba4f9cbbad593d958b2f6336/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/7f89c89062f41e5b7f2ec9a6f2dadadb/savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/7f89c89062f41e5b7f2ec9a6f2dadadb/savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/6bab464d6f87c28d12265b5475d79454/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/6bab464d6f87c28d12265b5475d79454/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/367a1bce94c6148c2354d5ab0cd078ec/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/367a1bce94c6148c2354d5ab0cd078ec/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/67e09ddbc76b0ac1e204b1abedfe5a8e/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/67e09ddbc76b0ac1e204b1abedfe5a8e/print-1.0.0/AndroidManifest.xml:20:5-44
+INJECTED from /Users/swetha/Projects/barcode-lib/app/src/main/AndroidManifest.xml
+INJECTED from /Users/swetha/Projects/barcode-lib/app/src/main/AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml
-		ADDED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/swetha/Projects/barcode-lib/app/src/main/AndroidManifest.xml
+		ADDED from /Users/swetha/Projects/barcode-lib/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/swetha/Projects/barcode-lib/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml
-		ADDED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/swetha/Projects/barcode-lib/app/src/main/AndroidManifest.xml
+		ADDED from /Users/swetha/Projects/barcode-lib/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/swetha/Projects/barcode-lib/app/src/main/AndroidManifest.xml
 activity#com.mikepenz.aboutlibraries.ui.LibsActivity
-ADDED from [com.mikepenz:aboutlibraries:6.2.3] /Users/ravi/.gradle/caches/transforms-2/files-2.1/e966692e20ee0109e198e7fea3495a6e/jetified-aboutlibraries-6.2.3/AndroidManifest.xml:12:9-80
+ADDED from [com.mikepenz:aboutlibraries:6.2.3] /Users/swetha/.gradle/caches/transforms-2/files-2.1/0f9a46f54c61eb8a7111089b3725677b/jetified-aboutlibraries-6.2.3/AndroidManifest.xml:12:9-80
 	android:name
-		ADDED from [com.mikepenz:aboutlibraries:6.2.3] /Users/ravi/.gradle/caches/transforms-2/files-2.1/e966692e20ee0109e198e7fea3495a6e/jetified-aboutlibraries-6.2.3/AndroidManifest.xml:12:19-77
+		ADDED from [com.mikepenz:aboutlibraries:6.2.3] /Users/swetha/.gradle/caches/transforms-2/files-2.1/0f9a46f54c61eb8a7111089b3725677b/jetified-aboutlibraries-6.2.3/AndroidManifest.xml:12:19-77
 uses-feature#android.hardware.camera.front
-ADDED from [:zxing-android-embedded] /Users/ravi/Downloads/newlandscanner/zxing-android-embedded/build/intermediates/library_manifest/debug/AndroidManifest.xml:30:5-32:36
+ADDED from [:zxing-android-embedded] /Users/swetha/Projects/barcode-lib/zxing-android-embedded/build/intermediates/library_manifest/debug/AndroidManifest.xml:30:5-32:36
 	android:required
-		ADDED from [:zxing-android-embedded] /Users/ravi/Downloads/newlandscanner/zxing-android-embedded/build/intermediates/library_manifest/debug/AndroidManifest.xml:32:9-33
+		ADDED from [:zxing-android-embedded] /Users/swetha/Projects/barcode-lib/zxing-android-embedded/build/intermediates/library_manifest/debug/AndroidManifest.xml:32:9-33
 	android:name
-		ADDED from [:zxing-android-embedded] /Users/ravi/Downloads/newlandscanner/zxing-android-embedded/build/intermediates/library_manifest/debug/AndroidManifest.xml:31:9-53
+		ADDED from [:zxing-android-embedded] /Users/swetha/Projects/barcode-lib/zxing-android-embedded/build/intermediates/library_manifest/debug/AndroidManifest.xml:31:9-53
 uses-feature#android.hardware.screen.landscape
-ADDED from [:zxing-android-embedded] /Users/ravi/Downloads/newlandscanner/zxing-android-embedded/build/intermediates/library_manifest/debug/AndroidManifest.xml:41:5-43:36
+ADDED from [:zxing-android-embedded] /Users/swetha/Projects/barcode-lib/zxing-android-embedded/build/intermediates/library_manifest/debug/AndroidManifest.xml:41:5-43:36
 	android:required
-		ADDED from [:zxing-android-embedded] /Users/ravi/Downloads/newlandscanner/zxing-android-embedded/build/intermediates/library_manifest/debug/AndroidManifest.xml:43:9-33
+		ADDED from [:zxing-android-embedded] /Users/swetha/Projects/barcode-lib/zxing-android-embedded/build/intermediates/library_manifest/debug/AndroidManifest.xml:43:9-33
 	android:name
-		ADDED from [:zxing-android-embedded] /Users/ravi/Downloads/newlandscanner/zxing-android-embedded/build/intermediates/library_manifest/debug/AndroidManifest.xml:42:9-57
+		ADDED from [:zxing-android-embedded] /Users/swetha/Projects/barcode-lib/zxing-android-embedded/build/intermediates/library_manifest/debug/AndroidManifest.xml:42:9-57
 activity#com.journeyapps.barcodescanner.CaptureActivity
-ADDED from [:zxing-android-embedded] /Users/ravi/Downloads/newlandscanner/zxing-android-embedded/build/intermediates/library_manifest/debug/AndroidManifest.xml:49:9-55:63
+ADDED from [:zxing-android-embedded] /Users/swetha/Projects/barcode-lib/zxing-android-embedded/build/intermediates/library_manifest/debug/AndroidManifest.xml:49:9-55:63
 	android:screenOrientation
-		ADDED from [:zxing-android-embedded] /Users/ravi/Downloads/newlandscanner/zxing-android-embedded/build/intermediates/library_manifest/debug/AndroidManifest.xml:52:13-56
+		ADDED from [:zxing-android-embedded] /Users/swetha/Projects/barcode-lib/zxing-android-embedded/build/intermediates/library_manifest/debug/AndroidManifest.xml:52:13-56
 	android:clearTaskOnLaunch
-		ADDED from [:zxing-android-embedded] /Users/ravi/Downloads/newlandscanner/zxing-android-embedded/build/intermediates/library_manifest/debug/AndroidManifest.xml:51:13-45
+		ADDED from [:zxing-android-embedded] /Users/swetha/Projects/barcode-lib/zxing-android-embedded/build/intermediates/library_manifest/debug/AndroidManifest.xml:51:13-45
 	android:stateNotNeeded
-		ADDED from [:zxing-android-embedded] /Users/ravi/Downloads/newlandscanner/zxing-android-embedded/build/intermediates/library_manifest/debug/AndroidManifest.xml:53:13-42
+		ADDED from [:zxing-android-embedded] /Users/swetha/Projects/barcode-lib/zxing-android-embedded/build/intermediates/library_manifest/debug/AndroidManifest.xml:53:13-42
 	android:windowSoftInputMode
-		ADDED from [:zxing-android-embedded] /Users/ravi/Downloads/newlandscanner/zxing-android-embedded/build/intermediates/library_manifest/debug/AndroidManifest.xml:55:13-60
+		ADDED from [:zxing-android-embedded] /Users/swetha/Projects/barcode-lib/zxing-android-embedded/build/intermediates/library_manifest/debug/AndroidManifest.xml:55:13-60
 	android:theme
-		ADDED from [:zxing-android-embedded] /Users/ravi/Downloads/newlandscanner/zxing-android-embedded/build/intermediates/library_manifest/debug/AndroidManifest.xml:54:13-54
+		ADDED from [:zxing-android-embedded] /Users/swetha/Projects/barcode-lib/zxing-android-embedded/build/intermediates/library_manifest/debug/AndroidManifest.xml:54:13-54
 	android:name
-		ADDED from [:zxing-android-embedded] /Users/ravi/Downloads/newlandscanner/zxing-android-embedded/build/intermediates/library_manifest/debug/AndroidManifest.xml:50:13-74
+		ADDED from [:zxing-android-embedded] /Users/swetha/Projects/barcode-lib/zxing-android-embedded/build/intermediates/library_manifest/debug/AndroidManifest.xml:50:13-74
 provider#androidx.lifecycle.ProcessLifecycleOwnerInitializer
-ADDED from [androidx.lifecycle:lifecycle-process:2.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/ec70dd48c4f661531bdd7c673ea4efcd/lifecycle-process-2.0.0/AndroidManifest.xml:23:9-27:43
+ADDED from [androidx.lifecycle:lifecycle-process:2.0.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/ec70dd48c4f661531bdd7c673ea4efcd/lifecycle-process-2.0.0/AndroidManifest.xml:23:9-27:43
 	android:authorities
-		ADDED from [androidx.lifecycle:lifecycle-process:2.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/ec70dd48c4f661531bdd7c673ea4efcd/lifecycle-process-2.0.0/AndroidManifest.xml:25:13-69
+		ADDED from [androidx.lifecycle:lifecycle-process:2.0.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/ec70dd48c4f661531bdd7c673ea4efcd/lifecycle-process-2.0.0/AndroidManifest.xml:25:13-69
 	android:multiprocess
-		ADDED from [androidx.lifecycle:lifecycle-process:2.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/ec70dd48c4f661531bdd7c673ea4efcd/lifecycle-process-2.0.0/AndroidManifest.xml:27:13-40
+		ADDED from [androidx.lifecycle:lifecycle-process:2.0.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/ec70dd48c4f661531bdd7c673ea4efcd/lifecycle-process-2.0.0/AndroidManifest.xml:27:13-40
 	android:exported
-		ADDED from [androidx.lifecycle:lifecycle-process:2.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/ec70dd48c4f661531bdd7c673ea4efcd/lifecycle-process-2.0.0/AndroidManifest.xml:26:13-37
+		ADDED from [androidx.lifecycle:lifecycle-process:2.0.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/ec70dd48c4f661531bdd7c673ea4efcd/lifecycle-process-2.0.0/AndroidManifest.xml:26:13-37
 	android:name
-		ADDED from [androidx.lifecycle:lifecycle-process:2.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/ec70dd48c4f661531bdd7c673ea4efcd/lifecycle-process-2.0.0/AndroidManifest.xml:24:13-79
+		ADDED from [androidx.lifecycle:lifecycle-process:2.0.0] /Users/swetha/.gradle/caches/transforms-2/files-2.1/ec70dd48c4f661531bdd7c673ea4efcd/lifecycle-process-2.0.0/AndroidManifest.xml:24:13-79

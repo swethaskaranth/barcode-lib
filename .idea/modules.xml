@@ -4,7 +4,6 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Urovolib_v4.0.0115/Urovolib_v4.0.0115.iml" filepath="$PROJECT_DIR$/Urovolib_v4.0.0115/Urovolib_v4.0.0115.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/zxing-android-embedded/barcode-lib-zxing-android-embedded.iml" filepath="$PROJECT_DIR$/zxing-android-embedded/barcode-lib-zxing-android-embedded.iml" />
       <module fileurl="file://$PROJECT_DIR$/barcodereader/barcodereader.iml" filepath="$PROJECT_DIR$/barcodereader/barcodereader.iml" />
       <module fileurl="file://$PROJECT_DIR$/newlandscanner.iml" filepath="$PROJECT_DIR$/newlandscanner.iml" />
       <module fileurl="file://$PROJECT_DIR$/zxing-android-embedded/zxing-android-embedded.iml" filepath="$PROJECT_DIR$/zxing-android-embedded/zxing-android-embedded.iml" />

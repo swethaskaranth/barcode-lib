@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/ravi/Downloads/newlandscanner/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-bn/values-bn.xml",
+            "outputFile": "/Users/swetha/Projects/barcode-lib/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-bn/values-bn.xml",
             "map": [
                 {
-                    "source": "/Users/ravi/.gradle/caches/transforms-2/files-2.1/566d1e46e0838bf61e19abf304a5091c/appcompat-1.1.0/res/values-bn/values-bn.xml",
+                    "source": "/Users/swetha/.gradle/caches/transforms-2/files-2.1/566d1e46e0838bf61e19abf304a5091c/appcompat-1.1.0/res/values-bn/values-bn.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "/Users/ravi/.gradle/caches/transforms-2/files-2.1/d2da4d231d5bb16fc9b06788df71bfab/core-1.2.0/res/values-bn/values-bn.xml",
+                    "source": "/Users/swetha/.gradle/caches/transforms-2/files-2.1/d2da4d231d5bb16fc9b06788df71bfab/core-1.2.0/res/values-bn/values-bn.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

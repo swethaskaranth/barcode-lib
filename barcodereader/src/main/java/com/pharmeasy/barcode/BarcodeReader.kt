@@ -115,6 +115,8 @@ class BarcodeReader private constructor(context: Context){
         barcodeView?.decodeContinuous(callback)
 
         beepManager = BeepManager(activity)
+
+        lastText = ""
     }
 
     fun registerBroadcast(context: Context){
