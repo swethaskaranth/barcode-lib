@@ -23,6 +23,5 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" exported="" name="Gradle: Urovolib_v4.0.0115.platform_sdk_v4.0.0115" level="project" />
   </component>
 </module>

@@ -4,6 +4,6 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.pharmeasy</groupId>
   <artifactId>barcodereader</artifactId>
-  <version>1.1.7</version>
+  <version>1.1.8</version>
   <packaging>aar</packaging>
 </project>

@@ -27,7 +27,7 @@ import com.pharmeasy.barcode.scanners.NewlandScanner
 import com.pharmeasy.barcode.scanners.UrovoScanner
 import com.pharmeasy.barcode.scanners.ZebraScanner
 
-class BarcodeReader private constructor(context: Context){
+class BarcodeReader private constructor(context: Context) : DecoratedBarcodeView.TorchListener{
 
     private val TAG: String = BarcodeReader::class.java.simpleName
     private val mContext=context
@@ -112,6 +112,7 @@ class BarcodeReader private constructor(context: Context){
         barcodeView?.initializeFromIntent(intent)
         barcodeView?.decodeContinuous(callback)
 
+        barcodeView?.setTorchListener(this)
         beepManager = BeepManager(activity)
     }
 
@@ -149,6 +150,14 @@ class BarcodeReader private constructor(context: Context){
 
     fun onPause(){
         barcodeView?.pause()
+    }
+
+    override fun onTorchOn() {
+
+    }
+
+    override fun onTorchOff() {
+
     }
 
     private fun createBarCodeProfileForZebraDevice(){
