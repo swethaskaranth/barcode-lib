@@ -41,6 +41,8 @@ class BarcodeReader private constructor(context: Context){
     var barcodeView: DecoratedBarcodeView? = null
     var beepManager: BeepManager? = null
 
+    private var lastText : String = ""
+
     private val isZebraDevice= Build.MANUFACTURER.contains("Zebra Technologies") || Build.MANUFACTURER.contains("Motorola Solutions")
     private val isUrovo= Build.MANUFACTURER.contains("Urovo")
 
@@ -52,11 +54,12 @@ class BarcodeReader private constructor(context: Context){
 
     private val callback = object : BarcodeCallback {
         override fun barcodeResult(result: BarcodeResult) {
-            if (result.text == null) {
+            if (result.text == null || result.text == lastText) {
                 // Prevent duplicate scans
                 return
             }
 
+            lastText = result.text
             barcodeView?.setStatusText(result.text)
             beepManager?.playBeepSoundAndVibrate()
             BarcodeReader.barcodeData.value= Event(result.text)
