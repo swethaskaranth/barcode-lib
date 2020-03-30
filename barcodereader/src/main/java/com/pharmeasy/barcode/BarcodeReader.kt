@@ -117,6 +117,8 @@ class BarcodeReader private constructor(context: Context) : DecoratedBarcodeView
 
         barcodeView?.setTorchListener(this)
         beepManager = BeepManager(activity)
+
+        lastText = ""
     }
 
     fun registerBroadcast(context: Context){
