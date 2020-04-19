@@ -1,15 +1,11 @@
 package com.poc.newlandscanner
 
 import android.Manifest
-import android.content.Context
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.os.Build
 import android.os.Bundle
-import android.text.Editable
-import android.text.TextWatcher
 import android.view.View
-import android.view.inputmethod.InputMethodManager
 import android.widget.Toast
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
@@ -19,13 +15,14 @@ import androidx.lifecycle.Observer
 import com.journeyapps.barcodescanner.DecoratedBarcodeView
 import com.pharmeasy.barcode.BarcodeReader
 import com.pharmeasy.barcode.Event
+import com.pharmeasy.barcode.ModeSelectedListener
+import com.pharmeasy.barcode.ScannerType
 import kotlinx.android.synthetic.main.activity_zxing_scan.*
 import kotlinx.android.synthetic.main.scan_content.*
 
 
 class ZxingActivity : AppCompatActivity(), DecoratedBarcodeView.TorchListener {
 
-    lateinit var barcodeReader: BarcodeReader
 
     private var barcodeView: DecoratedBarcodeView? = null
 
@@ -35,7 +32,6 @@ class ZxingActivity : AppCompatActivity(), DecoratedBarcodeView.TorchListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_zxing_scan)
 
-        //barcodeReader = BarcodeReader.getInstance(this)
 
         initScanner()
 
@@ -53,42 +49,39 @@ class ZxingActivity : AppCompatActivity(), DecoratedBarcodeView.TorchListener {
 
     private fun initScanner() {
 
+        val listener = object : ModeSelectedListener{
+            override fun onModeSelected(mode: String) {
+                when (mode) {
+                    ScannerType.BLUETOOTH_SCANNER.name -> {
+                        scan_lay.visibility = View.VISIBLE
+                        cameraView.visibility = View.GONE
+                        editText.visibility = View.GONE
+                    }
+                    ScannerType.OTG_SCANNER.name -> {
+                        scan_lay.visibility = View.VISIBLE
+                        cameraView.visibility = View.GONE
+                        editText.visibility = View.VISIBLE
+                    }
+                    ScannerType.CAMERA_SCANNER.name -> {
+                        scan_lay.visibility = View.GONE
+                        cameraView.visibility = View.VISIBLE
+                        editText.visibility = View.GONE
+                    }
+                }
+            }
+        }
 
         if (MyApplication.getAppClass().getBarcodeReader().UIView!!) {
             cameraView.visibility = View.GONE
             scan_lay.visibility = View.VISIBLE
 
         } else {
-            //
-            MyApplication.getAppClass().getBarcodeReader().initializeScanner(this, intent, R.id.zxing_scanner_view, editText)
-            scan_lay.visibility = View.GONE
-            cameraView.visibility = View.VISIBLE
+
+            MyApplication.getAppClass().getBarcodeReader().initializeScanner(this, intent, R.id.zxing_scanner_view, editText,listener)
             barcodeView = findViewById(R.id.zxing_scanner_view)
             barcodeView?.setTorchListener(this)
         }
 
-        /* editText?.requestFocus()
-         editText?.addTextChangedListener(object : TextWatcher {
-             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-
-             }
-
-             override fun afterTextChanged(s: Editable?) {
-                 // if(s!= null)
-                 Toast.makeText(this@ZxingActivity,s?.toString()?:"No Text",Toast.LENGTH_SHORT).show()
-             }
-
-             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
-                // editText.text.clear()
-             }
-         })
-
-
-         editText.setOnFocusChangeListener(View.OnFocusChangeListener { v, hasFocus ->
-             editText.requestFocus()
-             val imm = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
-             imm.showSoftInput(editText, InputMethodManager.SHOW_IMPLICIT)
-         })*/
 
         val barcodeObserver = Observer<Event<String>> {
             it.getContentIfNotHandled()?.let { i ->
