@@ -3,30 +3,23 @@ package com.poc.newlandscanner
 import android.Manifest
 import android.content.pm.PackageManager
 import android.os.Build
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import android.widget.Toast
 import androidx.annotation.RequiresApi
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.lifecycle.Observer
-import com.google.zxing.BarcodeFormat
-import com.google.zxing.ResultPoint
-import com.google.zxing.client.android.BeepManager
-import com.journeyapps.barcodescanner.BarcodeCallback
-import com.journeyapps.barcodescanner.BarcodeResult
 import com.journeyapps.barcodescanner.DecoratedBarcodeView
-import com.journeyapps.barcodescanner.DefaultDecoderFactory
 import com.pharmeasy.barcode.BarcodeReader
 import com.pharmeasy.barcode.Event
+import com.pharmeasy.barcode.ModeSelectedListener
+import com.pharmeasy.barcode.ScannerType
 import kotlinx.android.synthetic.main.scan_content.*
 
 class ZxingScanActivity : AppCompatActivity(), DecoratedBarcodeView.TorchListener {
 
-
-    lateinit var barcodeReader: BarcodeReader
     var barcodeView: DecoratedBarcodeView? = null
 
     val CAMERA_REQ = 100
@@ -44,31 +37,50 @@ class ZxingScanActivity : AppCompatActivity(), DecoratedBarcodeView.TorchListene
 
     }
 
-     /* //  barcodeReader = BarcodeReader.getInstance(this)
+    /* //  barcodeReader = BarcodeReader.getInstance(this)
 
-        //barcodeReader.barcodeView = findViewById(R.id.zxing_scanner_view)
-        barcodeReader.initializeScanner(this, intent, R.id.zxing_scanner_view,null)
+       //barcodeReader.barcodeView = findViewById(R.id.zxing_scanner_view)
+       barcodeReader.initializeScanner(this, intent, R.id.zxing_scanner_view,null)
 
-        if(barcodeReader.UIView!!)
-            scan_lay.visibility = View.VISIBLE
-        else
-            cameraView.visibility = View.VISIBLE
+       if(barcodeReader.UIView!!)
+           scan_lay.visibility = View.VISIBLE
+       else
+           cameraView.visibility = View.VISIBLE
 
-    }*/
+   }*/
 
-    private fun initScanner(){
+    private fun initScanner() {
+
+        val listener = object : ModeSelectedListener{
+            override fun onModeSelected(mode: String) {
+                when (mode) {
+                    ScannerType.BLUETOOTH_SCANNER.name -> {
+                        scan_lay.visibility = View.VISIBLE
+                        cameraView.visibility = View.GONE
+                        editText.visibility = View.GONE
+                    }
+                    ScannerType.OTG_SCANNER.name -> {
+                        scan_lay.visibility = View.VISIBLE
+                        cameraView.visibility = View.GONE
+                        editText.visibility = View.VISIBLE
+                    }
+                    ScannerType.CAMERA_SCANNER.name -> {
+                        scan_lay.visibility = View.GONE
+                        cameraView.visibility = View.VISIBLE
+                        editText.visibility = View.GONE
+                    }
+                }
+            }
+        }
 
 
-
-        if(MyApplication.getAppClass().getBarcodeReader().UIView!!){
+        if (MyApplication.getAppClass().getBarcodeReader().UIView!!) {
             cameraView.visibility = View.GONE
             scan_lay.visibility = View.VISIBLE
 
         } else {
             //
-            MyApplication.getAppClass().getBarcodeReader().initializeScanner(this, intent, R.id.zxing_scanner_view,editText)
-            scan_lay.visibility = View.GONE
-            cameraView.visibility = View.VISIBLE
+            MyApplication.getAppClass().getBarcodeReader().initializeScanner(this, intent, R.id.zxing_scanner_view, editText, listener)
             barcodeView = findViewById(R.id.zxing_scanner_view)
             barcodeView?.setTorchListener(this)
         }
@@ -98,7 +110,7 @@ class ZxingScanActivity : AppCompatActivity(), DecoratedBarcodeView.TorchListene
 
         val barcodeObserver = Observer<Event<String>> {
             it.getContentIfNotHandled()?.let { i ->
-                Toast.makeText(this,i,Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, i, Toast.LENGTH_SHORT).show()
             }
         }
 
@@ -111,8 +123,7 @@ class ZxingScanActivity : AppCompatActivity(), DecoratedBarcodeView.TorchListene
         if (!MyApplication.getAppClass().getBarcodeReader().UIView!!) {
             MyApplication.getAppClass().getBarcodeReader().onResume()
             barcodeView?.resume()
-        }
-        else
+        } else
             MyApplication.getAppClass().getBarcodeReader().registerBroadcast(
                     this
             )
@@ -124,8 +135,7 @@ class ZxingScanActivity : AppCompatActivity(), DecoratedBarcodeView.TorchListene
         if (!MyApplication.getAppClass().getBarcodeReader().UIView!!) {
             MyApplication.getAppClass().getBarcodeReader().onPause()
             barcodeView?.pause()
-        }
-        else
+        } else
             MyApplication.getAppClass().getBarcodeReader().unregisterBroadcast(
                     this
             )
@@ -162,8 +172,7 @@ class ZxingScanActivity : AppCompatActivity(), DecoratedBarcodeView.TorchListene
                     if (!MyApplication.getAppClass().getBarcodeReader().UIView!!) {
                         MyApplication.getAppClass().getBarcodeReader().onResume()
                         barcodeView?.resume()
-                    }
-                    else
+                    } else
                         MyApplication.getAppClass().getBarcodeReader().registerBroadcast(
                                 this
                         )
