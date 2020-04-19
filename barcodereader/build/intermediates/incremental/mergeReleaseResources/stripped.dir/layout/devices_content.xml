@@ -11,7 +11,7 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="54dp"
-        android:background="#061c3f"
+        android:background="#121d2e"
         />
 
     <ProgressBar
