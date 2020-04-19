@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/ravi/Downloads/newlandscanner/barcodereader/build/intermediates/res/merged/release/values-id/values-id.xml",
+            "outputFile": "/Users/swetha/Projects/barcode-lib/barcodereader/build/intermediates/res/merged/release/values-id/values-id.xml",
             "map": [
                 {
-                    "source": "/Users/ravi/Downloads/newlandscanner/zxing-android-embedded/build/intermediates/packaged_res/release/values-id/values-id.xml",
+                    "source": "/Users/swetha/Projects/barcode-lib/zxing-android-embedded/build/intermediates/packaged_res/release/values-id/values-id.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
@@ -16,10 +16,10 @@
             ]
         },
         {
-            "outputFile": "/Users/ravi/Downloads/newlandscanner/barcodereader/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-id/values-id.xml",
+            "outputFile": "/Users/swetha/Projects/barcode-lib/barcodereader/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-id/values-id.xml",
             "map": [
                 {
-                    "source": "/Users/ravi/Downloads/newlandscanner/zxing-android-embedded/build/intermediates/packaged_res/release/values-id/values-id.xml",
+                    "source": "/Users/swetha/Projects/barcode-lib/zxing-android-embedded/build/intermediates/packaged_res/release/values-id/values-id.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
