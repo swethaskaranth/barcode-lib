@@ -10,6 +10,7 @@ import android.view.MenuItem
 import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.pharmeasy.barcode.R
 import kotlinx.android.synthetic.main.devices_content.*
@@ -26,22 +27,15 @@ class DevicesActivity : AppCompatActivity(), ScannerActionListener {
 
         title = getString(R.string.devices)
 
+        toolbar.setTitleTextColor(ContextCompat.getColor(this,R.color.white))
+
         setSupportActionBar(toolbar)
-        supportActionBar!!.setDisplayHomeAsUpEnabled(true)
+        supportActionBar!!.setDisplayHomeAsUpEnabled(false)
 
         val layoutManager = LinearLayoutManager(this)
         layoutManager.orientation = LinearLayoutManager.VERTICAL
         list.layoutManager = layoutManager
 
-        /*mode = intent.getStringExtra("mode")
-        if(mode != null){
-            title = getString(R.string.select_scanner)
-        }
-
-        toolbar.setNavigationOnClickListener {
-            if(mode == null)
-                finish()
-        }*/
 
         val mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter()
         val pairedDevices = mBluetoothAdapter.bondedDevices

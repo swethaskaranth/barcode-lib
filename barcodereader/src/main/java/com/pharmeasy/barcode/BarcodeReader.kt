@@ -119,24 +119,21 @@ class BarcodeReader private constructor(context: Context) : DecoratedBarcodeView
 
     }
 
-    fun initializeScanner(activity: Activity, intent: Intent, i: Int, editText: EditText?) {
+    fun initializeScanner(activity: Activity, intent: Intent, i: Int, editText: EditText?, listener : ModeSelectedListener) {
 
         if (mode == null) {
 
-            showAlertDialog(activity, intent, i, editText)
+            showAlertDialog(activity, intent, i, editText,listener)
         } else {
             when (mode) {
-               /* "Newland Bluetooth Scanner" -> {
-                    ScannerService.register(this@BarcodeReader)
-                    startDevicesActivity(activity)
-                }*/
-                "Retsol OTG Scanner" -> {
+                ScannerType.OTG_SCANNER.displayName -> {
                     setupOTGScanner(editText,activity)
                 }
-                "Camera Scanner" -> {
+                ScannerType.CAMERA_SCANNER.displayName -> {
                     setupZxingScanner(activity,intent,i)
                 }
             }
+            listener.onModeSelected(mode!!)
         }
     }
 
@@ -145,33 +142,33 @@ class BarcodeReader private constructor(context: Context) : DecoratedBarcodeView
         ScannerService.deregister(this)
     }
 
-    private fun showAlertDialog(activity: Activity, intent: Intent, i: Int, editText: EditText?) {
-        val items = arrayOf<CharSequence>("Newland Bluetooth Scanner", "Retsol OTG Scanner", "Camera Scanner")
+    private fun showAlertDialog(activity: Activity, intent: Intent, i: Int, editText: EditText?, listener: ModeSelectedListener) {
+        val items = ScannerType.toStringList().toTypedArray()
 
         mode = items[2].toString()
 
         val builder = AlertDialog.Builder(activity)//ERROR ShowDialog cannot be resolved to a type
-        builder.setTitle("Alert Dialog with ListView and Radio button")
+        builder.setTitle("Choose Scanner")
         builder.setSingleChoiceItems(items, 2) { dialog, item ->
             mode = items[item].toString()
-            Toast.makeText(mContext, items[item],
-                    Toast.LENGTH_SHORT).show()
         }
 
 
         builder.setPositiveButton("OK") { dialog, id ->
             when (mode) {
-                "Newland Bluetooth Scanner" -> {
+                ScannerType.BLUETOOTH_SCANNER.displayName -> {
                     ScannerService.register(this@BarcodeReader)
                     startDevicesActivity(activity)
                 }
-                "Retsol OTG Scanner" -> {
+                ScannerType.OTG_SCANNER.displayName -> {
                     setupOTGScanner(editText,activity)
                 }
-                "Camera Scanner" -> {
+                ScannerType.CAMERA_SCANNER.displayName -> {
                    setupZxingScanner(activity,intent,i)
                 }
             }
+
+            listener.onModeSelected(mode!!)
         }
 
         val alert = builder.create()
