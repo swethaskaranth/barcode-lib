@@ -17,4 +17,13 @@
     <string name="zebra_scanner_intent_action">com.symbol.datawedge.api.ACTION_SCANNERINPUTPLUGIN</string>
     <string name="zebra_scanner_extra_param">com.symbol.datawedge.api.EXTRA_PARAMETER</string>
 
+    <string name="devices">Devices</string>
+    <string name="no_scanners">No Scanners</string>
+    <string name="select_scanner">Select Scanner</string>
+    <string name="refresh">Refresh</string>
+    <string name="bt_not_enabled">Bluetooth Not Enabled</string>
+    <string name="continu">Continue</string>
+    <string name="cancel">Cancel</string>
+    <string name="disconnect">Disconnect</string>
+
 </resources>

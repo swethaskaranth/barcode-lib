@@ -1,18 +1,18 @@
 [
     {
-        "merged": "/Users/ravi/Downloads/newlandscanner/barcodereader/build/intermediates/res/merged/release/layout-v21/notification_template_icon_group.xml",
-        "source": "/Users/ravi/.gradle/caches/transforms-2/files-2.1/ee2996d260f47b9f82bc5d29436b8a8c/core-1.0.2/res/layout-v21/notification_template_icon_group.xml"
+        "merged": "/Users/swetha/Projects/barcode-lib/barcodereader/build/intermediates/res/merged/release/layout-v21/notification_template_icon_group.xml",
+        "source": "/Users/swetha/.gradle/caches/transforms-2/files-2.1/ee2996d260f47b9f82bc5d29436b8a8c/core-1.0.2/res/layout-v21/notification_template_icon_group.xml"
     },
     {
-        "merged": "/Users/ravi/Downloads/newlandscanner/barcodereader/build/intermediates/res/merged/release/layout-v21/notification_action_tombstone.xml",
-        "source": "/Users/ravi/.gradle/caches/transforms-2/files-2.1/ee2996d260f47b9f82bc5d29436b8a8c/core-1.0.2/res/layout-v21/notification_action_tombstone.xml"
+        "merged": "/Users/swetha/Projects/barcode-lib/barcodereader/build/intermediates/res/merged/release/layout-v21/notification_action.xml",
+        "source": "/Users/swetha/.gradle/caches/transforms-2/files-2.1/ee2996d260f47b9f82bc5d29436b8a8c/core-1.0.2/res/layout-v21/notification_action.xml"
     },
     {
-        "merged": "/Users/ravi/Downloads/newlandscanner/barcodereader/build/intermediates/res/merged/release/layout-v21/notification_action.xml",
-        "source": "/Users/ravi/.gradle/caches/transforms-2/files-2.1/ee2996d260f47b9f82bc5d29436b8a8c/core-1.0.2/res/layout-v21/notification_action.xml"
+        "merged": "/Users/swetha/Projects/barcode-lib/barcodereader/build/intermediates/res/merged/release/layout-v21/notification_action_tombstone.xml",
+        "source": "/Users/swetha/.gradle/caches/transforms-2/files-2.1/ee2996d260f47b9f82bc5d29436b8a8c/core-1.0.2/res/layout-v21/notification_action_tombstone.xml"
     },
     {
-        "merged": "/Users/ravi/Downloads/newlandscanner/barcodereader/build/intermediates/res/merged/release/layout-v21/notification_template_custom_big.xml",
-        "source": "/Users/ravi/.gradle/caches/transforms-2/files-2.1/ee2996d260f47b9f82bc5d29436b8a8c/core-1.0.2/res/layout-v21/notification_template_custom_big.xml"
+        "merged": "/Users/swetha/Projects/barcode-lib/barcodereader/build/intermediates/res/merged/release/layout-v21/notification_template_custom_big.xml",
+        "source": "/Users/swetha/.gradle/caches/transforms-2/files-2.1/ee2996d260f47b9f82bc5d29436b8a8c/core-1.0.2/res/layout-v21/notification_template_custom_big.xml"
     }
 ]

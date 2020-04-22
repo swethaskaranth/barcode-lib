@@ -1,3 +1,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.pharmeasy.barcode" >
+
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <application>
+        <activity android:name=".scanners.bluetoothScanner.DevicesActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+    </application>
 </manifest>
