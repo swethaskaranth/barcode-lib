@@ -50,7 +50,7 @@ MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/ravi/.gradle/caches/tr
 MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/6bab464d6f87c28d12265b5475d79454/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/367a1bce94c6148c2354d5ab0cd078ec/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/67e09ddbc76b0ac1e204b1abedfe5a8e/print-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [io.reactivex.rxjava2:rxandroid:2.0.2] /Users/ravi/.gradle/caches/transforms-2/files-2.1/851c6ae4dfa7231260586342e099fe13/rxandroid-2.0.2/AndroidManifest.xml:15:1-21:12
+MERGED from [io.reactivex.rxjava2:rxandroid:2.1.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/835978a048ef235b56ecbaa9074d4624/rxandroid-2.1.0/AndroidManifest.xml:15:1-20:12
 INJECTED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:2:1-40:12
 INJECTED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:2:1-40:12
 INJECTED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:2:1-40:12
@@ -268,8 +268,8 @@ MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/367a1bce94c6148c2354d5ab0cd078ec/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.print:print:1.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/67e09ddbc76b0ac1e204b1abedfe5a8e/print-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.print:print:1.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/67e09ddbc76b0ac1e204b1abedfe5a8e/print-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [io.reactivex.rxjava2:rxandroid:2.0.2] /Users/ravi/.gradle/caches/transforms-2/files-2.1/851c6ae4dfa7231260586342e099fe13/rxandroid-2.0.2/AndroidManifest.xml:19:5-43
-MERGED from [io.reactivex.rxjava2:rxandroid:2.0.2] /Users/ravi/.gradle/caches/transforms-2/files-2.1/851c6ae4dfa7231260586342e099fe13/rxandroid-2.0.2/AndroidManifest.xml:19:5-43
+MERGED from [io.reactivex.rxjava2:rxandroid:2.1.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/835978a048ef235b56ecbaa9074d4624/rxandroid-2.1.0/AndroidManifest.xml:18:5-43
+MERGED from [io.reactivex.rxjava2:rxandroid:2.1.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/835978a048ef235b56ecbaa9074d4624/rxandroid-2.1.0/AndroidManifest.xml:18:5-43
 INJECTED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml
 INJECTED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml
 	android:targetSdkVersion

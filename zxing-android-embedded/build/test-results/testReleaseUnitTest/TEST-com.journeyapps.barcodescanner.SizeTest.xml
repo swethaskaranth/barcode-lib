@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.journeyapps.barcodescanner.SizeTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2020-04-22T09:04:49" hostname="Ravis-MacBook-Pro.local" time="0.003">
+  <properties/>
+  <testcase name="testScaleCrop" classname="com.journeyapps.barcodescanner.SizeTest" time="0.002"/>
+  <testcase name="testScale" classname="com.journeyapps.barcodescanner.SizeTest" time="0.0"/>
+  <testcase name="testScaleFit" classname="com.journeyapps.barcodescanner.SizeTest" time="0.0"/>
+  <testcase name="testCompare" classname="com.journeyapps.barcodescanner.SizeTest" time="0.0"/>
+  <testcase name="testFitsIn" classname="com.journeyapps.barcodescanner.SizeTest" time="0.0"/>
+  <testcase name="testRotate" classname="com.journeyapps.barcodescanner.SizeTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

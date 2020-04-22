@@ -21,7 +21,7 @@ class ZebraBroadcast : BroadcastReceiver() {
 
         if(action?.equals(context?.getString(R.string.activity_intent_filter_action))!!){
             try {
-                displayResults(intent!!,"via broadcast",context)
+                displayResults(intent,"via broadcast",context)
             }catch (e: Exception){
 
 

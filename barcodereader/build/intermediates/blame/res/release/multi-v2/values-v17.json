@@ -4,7 +4,7 @@
             "outputFile": "/Users/ravi/Downloads/newlandscanner/barcodereader/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-v17/values-v17.xml",
             "map": [
                 {
-                    "source": "/Users/ravi/.gradle/caches/transforms-2/files-2.1/18359238bb239dde4561dcc8443edc42/appcompat-1.0.2/res/values-v17/values-v17.xml",
+                    "source": "/Users/ravi/.gradle/caches/transforms-2/files-2.1/566d1e46e0838bf61e19abf304a5091c/appcompat-1.1.0/res/values-v17/values-v17.xml",
                     "from": {
                         "startLines": "2,5,9,12,15,18,22,25,29,33,37,40,43,46,50,53,57",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -20,7 +20,7 @@
             "outputFile": "/Users/ravi/Downloads/newlandscanner/barcodereader/build/intermediates/res/merged/release/values-v17/values-v17.xml",
             "map": [
                 {
-                    "source": "/Users/ravi/.gradle/caches/transforms-2/files-2.1/18359238bb239dde4561dcc8443edc42/appcompat-1.0.2/res/values-v17/values-v17.xml",
+                    "source": "/Users/ravi/.gradle/caches/transforms-2/files-2.1/566d1e46e0838bf61e19abf304a5091c/appcompat-1.1.0/res/values-v17/values-v17.xml",
                     "from": {
                         "startLines": "2,5,9,12,15,18,22,25,29,33,37,40,43,46,50,53,57",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

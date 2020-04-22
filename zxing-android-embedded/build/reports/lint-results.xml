@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="5" by="lint 3.5.3">
+
+    <issue
+        id="CanvasSize"
+        severity="Warning"
+        message="Calling `Canvas.getWidth()` is usually wrong; you should be calling `getWidth()` instead"
+        category="Correctness"
+        priority="6"
+        summary="Wrong Canvas Size"
+        explanation="In a custom view&apos;s draw implementation, you should normally call `getWidth` and `getHeight` on the custom view itself, not on the `canvas` instance.&#xA;&#xA;Canvas width and height are the width and height of the `Canvas`, which is not always the same as size of the view.&#xA;&#xA;In the hardware accelerated path the width and height of the canvas typically always match that of the `View` because every view goes to its own recorded `DisplayList`. But in software rendering there&apos;s just one canvas that is clipped and transformed as it makes its way through the `View` tree, and otherwise remains the same `Canvas` object for every View&apos;s draw method.&#xA;&#xA;You should only use Canvas state to adjust how much you draw, such as a quick-reject for early work avoidance if it&apos;s going to be clipped away, but not what you draw."
+        errorLine1="        final int width = canvas.getWidth();"
+        errorLine2="                          ~~~~~~~~~~~~~~~~~">
+        <location
+            file="/Users/ravi/Downloads/newlandscanner/zxing-android-embedded/src/com/journeyapps/barcodescanner/ViewfinderView.java"
+            line="151"
+            column="27"/>
+    </issue>
+
+    <issue
+        id="CanvasSize"
+        severity="Warning"
+        message="Calling `Canvas.getHeight()` is usually wrong; you should be calling `getHeight()` instead"
+        category="Correctness"
+        priority="6"
+        summary="Wrong Canvas Size"
+        explanation="In a custom view&apos;s draw implementation, you should normally call `getWidth` and `getHeight` on the custom view itself, not on the `canvas` instance.&#xA;&#xA;Canvas width and height are the width and height of the `Canvas`, which is not always the same as size of the view.&#xA;&#xA;In the hardware accelerated path the width and height of the canvas typically always match that of the `View` because every view goes to its own recorded `DisplayList`. But in software rendering there&apos;s just one canvas that is clipped and transformed as it makes its way through the `View` tree, and otherwise remains the same `Canvas` object for every View&apos;s draw method.&#xA;&#xA;You should only use Canvas state to adjust how much you draw, such as a quick-reject for early work avoidance if it&apos;s going to be clipped away, but not what you draw."
+        errorLine1="        final int height = canvas.getHeight();"
+        errorLine2="                           ~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/Users/ravi/Downloads/newlandscanner/zxing-android-embedded/src/com/journeyapps/barcodescanner/ViewfinderView.java"
+            line="152"
+            column="28"/>
+    </issue>
+
+    <issue
+        id="ObsoleteSdkInt"
+        severity="Warning"
+        message="Unnecessary; SDK_INT is always >= 21"
+        category="Performance"
+        priority="6"
+        summary="Obsolete SDK_INT Version Check"
+        explanation="This check flags version checks that are not necessary, because the `minSdkVersion` (or surrounding known API level) is already at least as high as the version checked for.&#xA;&#xA;Similarly, it also looks for resources in `-vNN` folders, such as `values-v14` where the version qualifier is less than or equal to the `minSdkVersion`, where the contents should be merged into the best folder."
+        errorLine1="                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.ICE_CREAM_SANDWICH_MR1) {"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="/Users/ravi/Downloads/newlandscanner/zxing-android-embedded/src/com/journeyapps/barcodescanner/camera/CameraManager.java"
+            line="284"
+            column="21"/>
+    </issue>
+
+</issues>
