@@ -1,35 +1,30 @@
 [
     {
-        "merged": "/Users/swetha/Projects/barcode-lib/barcodereader/build/intermediates/res/merged/release/drawable-v21/abc_edit_text_material.xml",
-        "source": "/Users/swetha/.gradle/caches/transforms-2/files-2.1/18359238bb239dde4561dcc8443edc42/appcompat-1.0.2/res/drawable-v21/abc_edit_text_material.xml"
+        "merged": "/Users/ravi/Downloads/newlandscanner/barcodereader/build/intermediates/res/merged/release/drawable-v21/abc_btn_colored_material.xml",
+        "source": "/Users/ravi/.gradle/caches/transforms-2/files-2.1/18359238bb239dde4561dcc8443edc42/appcompat-1.0.2/res/drawable-v21/abc_btn_colored_material.xml"
     },
     {
-        "merged": "/Users/swetha/Projects/barcode-lib/barcodereader/build/intermediates/res/merged/release/drawable-v21/abc_action_bar_item_background_material.xml",
-        "source": "/Users/swetha/.gradle/caches/transforms-2/files-2.1/18359238bb239dde4561dcc8443edc42/appcompat-1.0.2/res/drawable-v21/abc_action_bar_item_background_material.xml"
+        "merged": "/Users/ravi/Downloads/newlandscanner/barcodereader/build/intermediates/res/merged/release/drawable-v21/notification_action_background.xml",
+        "source": "/Users/ravi/.gradle/caches/transforms-2/files-2.1/ee2996d260f47b9f82bc5d29436b8a8c/core-1.0.2/res/drawable-v21/notification_action_background.xml"
     },
     {
-<<<<<<< HEAD
         "merged": "/Users/ravi/Downloads/newlandscanner/barcodereader/build/intermediates/res/merged/release/drawable-v21/button_rect_normal.xml",
         "source": "/Users/ravi/.gradle/caches/transforms-2/files-2.1/2e33f2ce65d22b42b397567bf14e2e65/jetified-aboutlibraries-6.2.3/res/drawable-v21/button_rect_normal.xml"
-=======
-        "merged": "/Users/swetha/Projects/barcode-lib/barcodereader/build/intermediates/res/merged/release/drawable-v21/button_rect_normal.xml",
-        "source": "/Users/swetha/.gradle/caches/transforms-2/files-2.1/fd14bcf6f3413ca58348fd13a3649774/jetified-aboutlibraries-6.2.3/res/drawable-v21/button_rect_normal.xml"
->>>>>>> bluetooth_scanner
     },
     {
-        "merged": "/Users/swetha/Projects/barcode-lib/barcodereader/build/intermediates/res/merged/release/drawable-v21/abc_btn_colored_material.xml",
-        "source": "/Users/swetha/.gradle/caches/transforms-2/files-2.1/18359238bb239dde4561dcc8443edc42/appcompat-1.0.2/res/drawable-v21/abc_btn_colored_material.xml"
+        "merged": "/Users/ravi/Downloads/newlandscanner/barcodereader/build/intermediates/res/merged/release/drawable-v21/abc_action_bar_item_background_material.xml",
+        "source": "/Users/ravi/.gradle/caches/transforms-2/files-2.1/18359238bb239dde4561dcc8443edc42/appcompat-1.0.2/res/drawable-v21/abc_action_bar_item_background_material.xml"
     },
     {
-        "merged": "/Users/swetha/Projects/barcode-lib/barcodereader/build/intermediates/res/merged/release/drawable-v21/notification_action_background.xml",
-        "source": "/Users/swetha/.gradle/caches/transforms-2/files-2.1/ee2996d260f47b9f82bc5d29436b8a8c/core-1.0.2/res/drawable-v21/notification_action_background.xml"
+        "merged": "/Users/ravi/Downloads/newlandscanner/barcodereader/build/intermediates/res/merged/release/drawable-v21/abc_edit_text_material.xml",
+        "source": "/Users/ravi/.gradle/caches/transforms-2/files-2.1/18359238bb239dde4561dcc8443edc42/appcompat-1.0.2/res/drawable-v21/abc_edit_text_material.xml"
     },
     {
-        "merged": "/Users/swetha/Projects/barcode-lib/barcodereader/build/intermediates/res/merged/release/drawable-v21/abc_list_divider_material.xml",
-        "source": "/Users/swetha/.gradle/caches/transforms-2/files-2.1/18359238bb239dde4561dcc8443edc42/appcompat-1.0.2/res/drawable-v21/abc_list_divider_material.xml"
+        "merged": "/Users/ravi/Downloads/newlandscanner/barcodereader/build/intermediates/res/merged/release/drawable-v21/abc_list_divider_material.xml",
+        "source": "/Users/ravi/.gradle/caches/transforms-2/files-2.1/18359238bb239dde4561dcc8443edc42/appcompat-1.0.2/res/drawable-v21/abc_list_divider_material.xml"
     },
     {
-        "merged": "/Users/swetha/Projects/barcode-lib/barcodereader/build/intermediates/res/merged/release/drawable-v21/abc_dialog_material_background.xml",
-        "source": "/Users/swetha/.gradle/caches/transforms-2/files-2.1/18359238bb239dde4561dcc8443edc42/appcompat-1.0.2/res/drawable-v21/abc_dialog_material_background.xml"
+        "merged": "/Users/ravi/Downloads/newlandscanner/barcodereader/build/intermediates/res/merged/release/drawable-v21/abc_dialog_material_background.xml",
+        "source": "/Users/ravi/.gradle/caches/transforms-2/files-2.1/18359238bb239dde4561dcc8443edc42/appcompat-1.0.2/res/drawable-v21/abc_dialog_material_background.xml"
     }
 ]

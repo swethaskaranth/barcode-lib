@@ -47,23 +47,23 @@ public final class R {
     public static final class color {
         private color() {}
 
-        public static final int notification_action_color_filter = 0x7f040057;
-        public static final int notification_icon_bg_color = 0x7f040058;
-        public static final int notification_material_background_media_default_color = 0x7f040059;
-        public static final int primary_text_default_material_dark = 0x7f04005e;
-        public static final int ripple_material_light = 0x7f040063;
-        public static final int secondary_text_default_material_dark = 0x7f040064;
-        public static final int secondary_text_default_material_light = 0x7f040065;
-        public static final int zxing_custom_possible_result_points = 0x7f040073;
-        public static final int zxing_custom_result_view = 0x7f040074;
-        public static final int zxing_custom_viewfinder_laser = 0x7f040075;
-        public static final int zxing_custom_viewfinder_mask = 0x7f040076;
-        public static final int zxing_possible_result_points = 0x7f040077;
-        public static final int zxing_result_view = 0x7f040078;
-        public static final int zxing_status_text = 0x7f040079;
-        public static final int zxing_transparent = 0x7f04007a;
-        public static final int zxing_viewfinder_laser = 0x7f04007b;
-        public static final int zxing_viewfinder_mask = 0x7f04007c;
+        public static final int notification_action_color_filter = 0x7f040064;
+        public static final int notification_icon_bg_color = 0x7f040065;
+        public static final int notification_material_background_media_default_color = 0x7f040066;
+        public static final int primary_text_default_material_dark = 0x7f04006c;
+        public static final int ripple_material_light = 0x7f040072;
+        public static final int secondary_text_default_material_dark = 0x7f040075;
+        public static final int secondary_text_default_material_light = 0x7f040076;
+        public static final int zxing_custom_possible_result_points = 0x7f040088;
+        public static final int zxing_custom_result_view = 0x7f040089;
+        public static final int zxing_custom_viewfinder_laser = 0x7f04008a;
+        public static final int zxing_custom_viewfinder_mask = 0x7f04008b;
+        public static final int zxing_possible_result_points = 0x7f04008c;
+        public static final int zxing_result_view = 0x7f04008d;
+        public static final int zxing_status_text = 0x7f04008e;
+        public static final int zxing_transparent = 0x7f04008f;
+        public static final int zxing_viewfinder_laser = 0x7f040090;
+        public static final int zxing_viewfinder_mask = 0x7f040091;
     }
     public static final class dimen {
         private dimen() {}
@@ -98,18 +98,18 @@ public final class R {
     public static final class drawable {
         private drawable() {}
 
-        public static final int notification_action_background = 0x7f060065;
-        public static final int notification_bg = 0x7f060066;
-        public static final int notification_bg_low = 0x7f060067;
-        public static final int notification_bg_low_normal = 0x7f060068;
-        public static final int notification_bg_low_pressed = 0x7f060069;
-        public static final int notification_bg_normal = 0x7f06006a;
-        public static final int notification_bg_normal_pressed = 0x7f06006b;
-        public static final int notification_icon_background = 0x7f06006c;
-        public static final int notification_template_icon_bg = 0x7f06006d;
-        public static final int notification_template_icon_low_bg = 0x7f06006e;
-        public static final int notification_tile_bg = 0x7f06006f;
-        public static final int notify_panel_notification_icon_bg = 0x7f060070;
+        public static final int notification_action_background = 0x7f060066;
+        public static final int notification_bg = 0x7f060067;
+        public static final int notification_bg_low = 0x7f060068;
+        public static final int notification_bg_low_normal = 0x7f060069;
+        public static final int notification_bg_low_pressed = 0x7f06006a;
+        public static final int notification_bg_normal = 0x7f06006b;
+        public static final int notification_bg_normal_pressed = 0x7f06006c;
+        public static final int notification_icon_background = 0x7f06006d;
+        public static final int notification_template_icon_bg = 0x7f06006e;
+        public static final int notification_template_icon_low_bg = 0x7f06006f;
+        public static final int notification_tile_bg = 0x7f060070;
+        public static final int notify_panel_notification_icon_bg = 0x7f060071;
     }
     public static final class id {
         private id() {}
@@ -126,50 +126,50 @@ public final class R {
         public static final int cancel_action = 0x7f070052;
         public static final int centerCrop = 0x7f070055;
         public static final int chronometer = 0x7f07005b;
-        public static final int end = 0x7f07006f;
-        public static final int end_padder = 0x7f070070;
-        public static final int fitCenter = 0x7f070078;
-        public static final int fitXY = 0x7f070079;
-        public static final int forever = 0x7f07007a;
-        public static final int icon = 0x7f070082;
-        public static final int icon_group = 0x7f070083;
-        public static final int info = 0x7f07008a;
-        public static final int italic = 0x7f07008c;
-        public static final int left = 0x7f07008e;
-        public static final int line1 = 0x7f070098;
-        public static final int line3 = 0x7f070099;
-        public static final int media_actions = 0x7f07009d;
-        public static final int none = 0x7f0700a2;
-        public static final int normal = 0x7f0700a3;
-        public static final int notification_background = 0x7f0700a4;
-        public static final int notification_main_column = 0x7f0700a5;
-        public static final int notification_main_column_container = 0x7f0700a6;
-        public static final int right = 0x7f0700b3;
-        public static final int right_icon = 0x7f0700b4;
-        public static final int right_side = 0x7f0700b5;
-        public static final int start = 0x7f0700d8;
-        public static final int status_bar_latest_event_content = 0x7f0700d9;
-        public static final int tag_transition_group = 0x7f0700e2;
-        public static final int tag_unhandled_key_event_manager = 0x7f0700e3;
-        public static final int tag_unhandled_key_listeners = 0x7f0700e4;
-        public static final int text = 0x7f0700e5;
-        public static final int text2 = 0x7f0700e6;
-        public static final int time = 0x7f0700ea;
-        public static final int title = 0x7f0700eb;
-        public static final int top = 0x7f0700ef;
-        public static final int zxing_back_button = 0x7f0700f8;
-        public static final int zxing_barcode_scanner = 0x7f0700f9;
-        public static final int zxing_barcode_surface = 0x7f0700fa;
-        public static final int zxing_camera_closed = 0x7f0700fb;
-        public static final int zxing_camera_error = 0x7f0700fc;
-        public static final int zxing_decode = 0x7f0700fd;
-        public static final int zxing_decode_failed = 0x7f0700fe;
-        public static final int zxing_decode_succeeded = 0x7f0700ff;
-        public static final int zxing_possible_result_points = 0x7f070100;
-        public static final int zxing_preview_failed = 0x7f070101;
-        public static final int zxing_prewiew_size_ready = 0x7f070102;
-        public static final int zxing_status_view = 0x7f070104;
-        public static final int zxing_viewfinder_view = 0x7f070105;
+        public static final int end = 0x7f070072;
+        public static final int end_padder = 0x7f070073;
+        public static final int fitCenter = 0x7f07007b;
+        public static final int fitXY = 0x7f07007c;
+        public static final int forever = 0x7f07007d;
+        public static final int icon = 0x7f070085;
+        public static final int icon_group = 0x7f070086;
+        public static final int info = 0x7f07008d;
+        public static final int italic = 0x7f07008f;
+        public static final int left = 0x7f070091;
+        public static final int line1 = 0x7f07009b;
+        public static final int line3 = 0x7f07009c;
+        public static final int media_actions = 0x7f0700a1;
+        public static final int none = 0x7f0700a7;
+        public static final int normal = 0x7f0700a8;
+        public static final int notification_background = 0x7f0700a9;
+        public static final int notification_main_column = 0x7f0700aa;
+        public static final int notification_main_column_container = 0x7f0700ab;
+        public static final int right = 0x7f0700ba;
+        public static final int right_icon = 0x7f0700bb;
+        public static final int right_side = 0x7f0700bc;
+        public static final int start = 0x7f0700df;
+        public static final int status_bar_latest_event_content = 0x7f0700e0;
+        public static final int tag_transition_group = 0x7f0700e9;
+        public static final int tag_unhandled_key_event_manager = 0x7f0700ea;
+        public static final int tag_unhandled_key_listeners = 0x7f0700eb;
+        public static final int text = 0x7f0700ec;
+        public static final int text2 = 0x7f0700ed;
+        public static final int time = 0x7f0700f1;
+        public static final int title = 0x7f0700f2;
+        public static final int top = 0x7f0700f6;
+        public static final int zxing_back_button = 0x7f0700ff;
+        public static final int zxing_barcode_scanner = 0x7f070100;
+        public static final int zxing_barcode_surface = 0x7f070101;
+        public static final int zxing_camera_closed = 0x7f070102;
+        public static final int zxing_camera_error = 0x7f070103;
+        public static final int zxing_decode = 0x7f070104;
+        public static final int zxing_decode_failed = 0x7f070105;
+        public static final int zxing_decode_succeeded = 0x7f070106;
+        public static final int zxing_possible_result_points = 0x7f070107;
+        public static final int zxing_preview_failed = 0x7f070108;
+        public static final int zxing_prewiew_size_ready = 0x7f070109;
+        public static final int zxing_status_view = 0x7f07010b;
+        public static final int zxing_viewfinder_view = 0x7f07010c;
     }
     public static final class integer {
         private integer() {}
@@ -180,66 +180,66 @@ public final class R {
     public static final class layout {
         private layout() {}
 
-        public static final int notification_action = 0x7f0a0029;
-        public static final int notification_action_tombstone = 0x7f0a002a;
-        public static final int notification_media_action = 0x7f0a002b;
-        public static final int notification_media_cancel_action = 0x7f0a002c;
-        public static final int notification_template_big_media = 0x7f0a002d;
-        public static final int notification_template_big_media_custom = 0x7f0a002e;
-        public static final int notification_template_big_media_narrow = 0x7f0a002f;
-        public static final int notification_template_big_media_narrow_custom = 0x7f0a0030;
-        public static final int notification_template_custom_big = 0x7f0a0031;
-        public static final int notification_template_icon_group = 0x7f0a0032;
-        public static final int notification_template_lines_media = 0x7f0a0033;
-        public static final int notification_template_media = 0x7f0a0034;
-        public static final int notification_template_media_custom = 0x7f0a0035;
-        public static final int notification_template_part_chronometer = 0x7f0a0036;
-        public static final int notification_template_part_time = 0x7f0a0037;
-        public static final int zxing_barcode_scanner = 0x7f0a003d;
-        public static final int zxing_capture = 0x7f0a003e;
+        public static final int notification_action = 0x7f0a002b;
+        public static final int notification_action_tombstone = 0x7f0a002c;
+        public static final int notification_media_action = 0x7f0a002d;
+        public static final int notification_media_cancel_action = 0x7f0a002e;
+        public static final int notification_template_big_media = 0x7f0a002f;
+        public static final int notification_template_big_media_custom = 0x7f0a0030;
+        public static final int notification_template_big_media_narrow = 0x7f0a0031;
+        public static final int notification_template_big_media_narrow_custom = 0x7f0a0032;
+        public static final int notification_template_custom_big = 0x7f0a0033;
+        public static final int notification_template_icon_group = 0x7f0a0034;
+        public static final int notification_template_lines_media = 0x7f0a0035;
+        public static final int notification_template_media = 0x7f0a0036;
+        public static final int notification_template_media_custom = 0x7f0a0037;
+        public static final int notification_template_part_chronometer = 0x7f0a0038;
+        public static final int notification_template_part_time = 0x7f0a0039;
+        public static final int zxing_barcode_scanner = 0x7f0a003f;
+        public static final int zxing_capture = 0x7f0a0040;
     }
     public static final class raw {
         private raw() {}
 
-        public static final int zxing_beep = 0x7f0c0000;
+        public static final int zxing_beep = 0x7f0d0000;
     }
     public static final class string {
         private string() {}
 
-        public static final int app_version = 0x7f0d001e;
-        public static final int define_zxingandroidembedded = 0x7f0d0128;
-        public static final int library_zxingandroidembedded_author = 0x7f0d0ae6;
-        public static final int library_zxingandroidembedded_authorWebsite = 0x7f0d0ae7;
-        public static final int library_zxingandroidembedded_isOpenSource = 0x7f0d0ae8;
-        public static final int library_zxingandroidembedded_libraryDescription = 0x7f0d0ae9;
-        public static final int library_zxingandroidembedded_libraryName = 0x7f0d0aea;
-        public static final int library_zxingandroidembedded_libraryVersion = 0x7f0d0aeb;
-        public static final int library_zxingandroidembedded_libraryWebsite = 0x7f0d0aec;
-        public static final int library_zxingandroidembedded_licenseId = 0x7f0d0aed;
-        public static final int library_zxingandroidembedded_repositoryLink = 0x7f0d0aee;
-        public static final int status_bar_notification_info_overflow = 0x7f0d0b27;
-        public static final int zxing_app_name = 0x7f0d0b2b;
-        public static final int zxing_button_ok = 0x7f0d0b2c;
-        public static final int zxing_msg_camera_framework_bug = 0x7f0d0b2d;
-        public static final int zxing_msg_default_status = 0x7f0d0b2e;
+        public static final int app_version = 0x7f0e001e;
+        public static final int define_zxingandroidembedded = 0x7f0e012b;
+        public static final int library_zxingandroidembedded_author = 0x7f0e0aeb;
+        public static final int library_zxingandroidembedded_authorWebsite = 0x7f0e0aec;
+        public static final int library_zxingandroidembedded_isOpenSource = 0x7f0e0aed;
+        public static final int library_zxingandroidembedded_libraryDescription = 0x7f0e0aee;
+        public static final int library_zxingandroidembedded_libraryName = 0x7f0e0aef;
+        public static final int library_zxingandroidembedded_libraryVersion = 0x7f0e0af0;
+        public static final int library_zxingandroidembedded_libraryWebsite = 0x7f0e0af1;
+        public static final int library_zxingandroidembedded_licenseId = 0x7f0e0af2;
+        public static final int library_zxingandroidembedded_repositoryLink = 0x7f0e0af3;
+        public static final int status_bar_notification_info_overflow = 0x7f0e0b2f;
+        public static final int zxing_app_name = 0x7f0e0b33;
+        public static final int zxing_button_ok = 0x7f0e0b34;
+        public static final int zxing_msg_camera_framework_bug = 0x7f0e0b35;
+        public static final int zxing_msg_default_status = 0x7f0e0b36;
     }
     public static final class style {
         private style() {}
 
-        public static final int TextAppearance_Compat_Notification = 0x7f0e00f6;
-        public static final int TextAppearance_Compat_Notification_Info = 0x7f0e00f7;
-        public static final int TextAppearance_Compat_Notification_Info_Media = 0x7f0e00f8;
-        public static final int TextAppearance_Compat_Notification_Line2 = 0x7f0e00f9;
-        public static final int TextAppearance_Compat_Notification_Line2_Media = 0x7f0e00fa;
-        public static final int TextAppearance_Compat_Notification_Media = 0x7f0e00fb;
-        public static final int TextAppearance_Compat_Notification_Time = 0x7f0e00fc;
-        public static final int TextAppearance_Compat_Notification_Time_Media = 0x7f0e00fd;
-        public static final int TextAppearance_Compat_Notification_Title = 0x7f0e00fe;
-        public static final int TextAppearance_Compat_Notification_Title_Media = 0x7f0e00ff;
-        public static final int Widget_Compat_NotificationActionContainer = 0x7f0e016a;
-        public static final int Widget_Compat_NotificationActionText = 0x7f0e016b;
-        public static final int Widget_Support_CoordinatorLayout = 0x7f0e016c;
-        public static final int zxing_CaptureTheme = 0x7f0e016d;
+        public static final int TextAppearance_Compat_Notification = 0x7f0f00f8;
+        public static final int TextAppearance_Compat_Notification_Info = 0x7f0f00f9;
+        public static final int TextAppearance_Compat_Notification_Info_Media = 0x7f0f00fa;
+        public static final int TextAppearance_Compat_Notification_Line2 = 0x7f0f00fb;
+        public static final int TextAppearance_Compat_Notification_Line2_Media = 0x7f0f00fc;
+        public static final int TextAppearance_Compat_Notification_Media = 0x7f0f00fd;
+        public static final int TextAppearance_Compat_Notification_Time = 0x7f0f00fe;
+        public static final int TextAppearance_Compat_Notification_Time_Media = 0x7f0f00ff;
+        public static final int TextAppearance_Compat_Notification_Title = 0x7f0f0100;
+        public static final int TextAppearance_Compat_Notification_Title_Media = 0x7f0f0101;
+        public static final int Widget_Compat_NotificationActionContainer = 0x7f0f016c;
+        public static final int Widget_Compat_NotificationActionText = 0x7f0f016d;
+        public static final int Widget_Support_CoordinatorLayout = 0x7f0f016e;
+        public static final int zxing_CaptureTheme = 0x7f0f016f;
     }
     public static final class styleable {
         private styleable() {}

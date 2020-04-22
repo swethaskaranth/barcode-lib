@@ -32,92 +32,108 @@
 19-->/Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:11:19-55
 20        android:required="false" />
 20-->/Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:11:56-80
-21    <uses-feature
-21-->[:zxing-android-embedded] /Users/ravi/Downloads/newlandscanner/zxing-android-embedded/build/intermediates/library_manifest/release/AndroidManifest.xml:29:5-31:36
-22        android:name="android.hardware.camera.front"
-22-->[:zxing-android-embedded] /Users/ravi/Downloads/newlandscanner/zxing-android-embedded/build/intermediates/library_manifest/release/AndroidManifest.xml:30:9-53
-23        android:required="false" />
-23-->[:zxing-android-embedded] /Users/ravi/Downloads/newlandscanner/zxing-android-embedded/build/intermediates/library_manifest/release/AndroidManifest.xml:31:9-33
-24    <uses-feature
-24-->[:zxing-android-embedded] /Users/ravi/Downloads/newlandscanner/zxing-android-embedded/build/intermediates/library_manifest/release/AndroidManifest.xml:40:5-42:36
-25        android:name="android.hardware.screen.landscape"
-25-->[:zxing-android-embedded] /Users/ravi/Downloads/newlandscanner/zxing-android-embedded/build/intermediates/library_manifest/release/AndroidManifest.xml:41:9-57
-26        android:required="false" />
-26-->[:zxing-android-embedded] /Users/ravi/Downloads/newlandscanner/zxing-android-embedded/build/intermediates/library_manifest/release/AndroidManifest.xml:42:9-33
-27
-28    <application
-28-->/Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:13:5-37:19
-29        android:allowBackup="true"
-29-->/Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:14:9-35
-30        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-30-->[androidx.core:core:1.2.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/d2da4d231d5bb16fc9b06788df71bfab/core-1.2.0/AndroidManifest.xml:24:18-86
-31        android:icon="@mipmap/ic_launcher"
-31-->/Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:15:9-43
-32        android:label="@string/app_name"
-32-->/Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:16:9-41
-33        android:roundIcon="@mipmap/ic_launcher_round"
-33-->/Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:17:9-54
-34        android:supportsRtl="true"
-34-->/Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:18:9-35
-35        android:theme="@style/AppTheme" >
-35-->/Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:19:9-40
-36        <activity android:name="com.poc.newlandscanner.ZxingScanActivity" />
-36-->/Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:21:9-55
-36-->/Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:21:19-52
-37        <activity android:name="com.poc.newlandscanner.ZebraActivity" />
-37-->/Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:23:9-51
-37-->/Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:23:19-48
-38        <activity
-38-->/Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:25:9-32:20
-39            android:name="com.poc.newlandscanner.ZxingActivity"
-39-->/Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:25:19-48
-40            android:theme="@style/AppTheme" >
-40-->/Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:26:13-44
-41            <intent-filter>
-41-->/Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:27:13-31:29
-42                <action android:name="android.intent.action.MAIN" />
-42-->/Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:28:17-69
-42-->/Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:28:25-66
-43
-44                <category android:name="android.intent.category.LAUNCHER" />
-44-->/Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:30:17-77
-44-->/Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:30:27-74
-45            </intent-filter>
-46        </activity>
-47        <activity android:name="com.poc.newlandscanner.MainActivity" />
-47-->/Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:34:9-50
-47-->/Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:34:19-47
-48        <activity android:name="com.poc.newlandscanner.SmallCaptureActivity" />
-48-->/Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:35:9-58
-48-->/Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:35:19-55
-49        <activity android:name="com.mikepenz.aboutlibraries.ui.LibsActivity" />
-49-->[com.mikepenz:aboutlibraries:6.2.3] /Users/ravi/.gradle/caches/transforms-2/files-2.1/2e33f2ce65d22b42b397567bf14e2e65/jetified-aboutlibraries-6.2.3/AndroidManifest.xml:12:9-80
-49-->[com.mikepenz:aboutlibraries:6.2.3] /Users/ravi/.gradle/caches/transforms-2/files-2.1/2e33f2ce65d22b42b397567bf14e2e65/jetified-aboutlibraries-6.2.3/AndroidManifest.xml:12:19-77
-50        <activity
-50-->[:zxing-android-embedded] /Users/ravi/Downloads/newlandscanner/zxing-android-embedded/build/intermediates/library_manifest/release/AndroidManifest.xml:48:9-54:63
-51            android:name="com.journeyapps.barcodescanner.CaptureActivity"
-51-->[:zxing-android-embedded] /Users/ravi/Downloads/newlandscanner/zxing-android-embedded/build/intermediates/library_manifest/release/AndroidManifest.xml:49:13-74
-52            android:clearTaskOnLaunch="true"
-52-->[:zxing-android-embedded] /Users/ravi/Downloads/newlandscanner/zxing-android-embedded/build/intermediates/library_manifest/release/AndroidManifest.xml:50:13-45
-53            android:screenOrientation="sensorLandscape"
-53-->[:zxing-android-embedded] /Users/ravi/Downloads/newlandscanner/zxing-android-embedded/build/intermediates/library_manifest/release/AndroidManifest.xml:51:13-56
-54            android:stateNotNeeded="true"
-54-->[:zxing-android-embedded] /Users/ravi/Downloads/newlandscanner/zxing-android-embedded/build/intermediates/library_manifest/release/AndroidManifest.xml:52:13-42
-55            android:theme="@style/zxing_CaptureTheme"
-55-->[:zxing-android-embedded] /Users/ravi/Downloads/newlandscanner/zxing-android-embedded/build/intermediates/library_manifest/release/AndroidManifest.xml:53:13-54
-56            android:windowSoftInputMode="stateAlwaysHidden" />
-56-->[:zxing-android-embedded] /Users/ravi/Downloads/newlandscanner/zxing-android-embedded/build/intermediates/library_manifest/release/AndroidManifest.xml:54:13-60
-57
-58        <provider
-58-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/ec70dd48c4f661531bdd7c673ea4efcd/lifecycle-process-2.0.0/AndroidManifest.xml:23:9-27:43
-59            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
-59-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/ec70dd48c4f661531bdd7c673ea4efcd/lifecycle-process-2.0.0/AndroidManifest.xml:24:13-79
-60            android:authorities="com.poc.newlandscanner.lifecycle-process"
-60-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/ec70dd48c4f661531bdd7c673ea4efcd/lifecycle-process-2.0.0/AndroidManifest.xml:25:13-69
-61            android:exported="false"
-61-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/ec70dd48c4f661531bdd7c673ea4efcd/lifecycle-process-2.0.0/AndroidManifest.xml:26:13-37
-62            android:multiprocess="true" />
-62-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/ec70dd48c4f661531bdd7c673ea4efcd/lifecycle-process-2.0.0/AndroidManifest.xml:27:13-40
-63    </application>
-64
-65</manifest>
+21
+22    <uses-permission android:name="android.permission.BLUETOOTH" />
+22-->[:barcodereader] /Users/ravi/Downloads/newlandscanner/barcodereader/build/intermediates/library_manifest/release/AndroidManifest.xml:11:5-68
+22-->[:barcodereader] /Users/ravi/Downloads/newlandscanner/barcodereader/build/intermediates/library_manifest/release/AndroidManifest.xml:11:22-65
+23    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+23-->[:barcodereader] /Users/ravi/Downloads/newlandscanner/barcodereader/build/intermediates/library_manifest/release/AndroidManifest.xml:12:5-74
+23-->[:barcodereader] /Users/ravi/Downloads/newlandscanner/barcodereader/build/intermediates/library_manifest/release/AndroidManifest.xml:12:22-71
+24
+25    <uses-feature
+25-->[:zxing-android-embedded] /Users/ravi/Downloads/newlandscanner/zxing-android-embedded/build/intermediates/library_manifest/release/AndroidManifest.xml:29:5-31:36
+26        android:name="android.hardware.camera.front"
+26-->[:zxing-android-embedded] /Users/ravi/Downloads/newlandscanner/zxing-android-embedded/build/intermediates/library_manifest/release/AndroidManifest.xml:30:9-53
+27        android:required="false" />
+27-->[:zxing-android-embedded] /Users/ravi/Downloads/newlandscanner/zxing-android-embedded/build/intermediates/library_manifest/release/AndroidManifest.xml:31:9-33
+28    <uses-feature
+28-->[:zxing-android-embedded] /Users/ravi/Downloads/newlandscanner/zxing-android-embedded/build/intermediates/library_manifest/release/AndroidManifest.xml:40:5-42:36
+29        android:name="android.hardware.screen.landscape"
+29-->[:zxing-android-embedded] /Users/ravi/Downloads/newlandscanner/zxing-android-embedded/build/intermediates/library_manifest/release/AndroidManifest.xml:41:9-57
+30        android:required="false" />
+30-->[:zxing-android-embedded] /Users/ravi/Downloads/newlandscanner/zxing-android-embedded/build/intermediates/library_manifest/release/AndroidManifest.xml:42:9-33
+31
+32    <application
+32-->/Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:13:5-38:19
+33        android:name="com.poc.newlandscanner.MyApplication"
+33-->/Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:14:9-38
+34        android:allowBackup="true"
+34-->/Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:15:9-35
+35        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+35-->[androidx.core:core:1.2.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/d2da4d231d5bb16fc9b06788df71bfab/core-1.2.0/AndroidManifest.xml:24:18-86
+36        android:icon="@mipmap/ic_launcher"
+36-->/Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:16:9-43
+37        android:label="@string/app_name"
+37-->/Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:17:9-41
+38        android:roundIcon="@mipmap/ic_launcher_round"
+38-->/Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:18:9-54
+39        android:supportsRtl="true"
+39-->/Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:19:9-35
+40        android:theme="@style/AppTheme" >
+40-->/Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:20:9-40
+41        <activity android:name="com.poc.newlandscanner.ZxingScanActivity" />
+41-->/Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:22:9-55
+41-->/Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:22:19-52
+42        <activity android:name="com.poc.newlandscanner.ZebraActivity" />
+42-->/Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:24:9-51
+42-->/Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:24:19-48
+43        <activity
+43-->/Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:26:9-33:20
+44            android:name="com.poc.newlandscanner.ZxingActivity"
+44-->/Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:26:19-48
+45            android:theme="@style/AppTheme" >
+45-->/Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:27:13-44
+46            <intent-filter>
+46-->/Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:28:13-32:29
+47                <action android:name="android.intent.action.MAIN" />
+47-->/Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:29:17-69
+47-->/Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:29:25-66
+48
+49                <category android:name="android.intent.category.LAUNCHER" />
+49-->/Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:31:17-77
+49-->/Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:31:27-74
+50            </intent-filter>
+51        </activity>
+52        <activity android:name="com.poc.newlandscanner.MainActivity" />
+52-->/Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:35:9-50
+52-->/Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:35:19-47
+53        <activity android:name="com.poc.newlandscanner.SmallCaptureActivity" />
+53-->/Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:36:9-58
+53-->/Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:36:19-55
+54        <activity
+54-->[:barcodereader] /Users/ravi/Downloads/newlandscanner/barcodereader/build/intermediates/library_manifest/release/AndroidManifest.xml:15:9-17:59
+55            android:name="com.pharmeasy.barcode.scanners.bluetoothScanner.DevicesActivity"
+55-->[:barcodereader] /Users/ravi/Downloads/newlandscanner/barcodereader/build/intermediates/library_manifest/release/AndroidManifest.xml:16:13-91
+56            android:theme="@style/AppTheme.NoActionBar" />
+56-->[:barcodereader] /Users/ravi/Downloads/newlandscanner/barcodereader/build/intermediates/library_manifest/release/AndroidManifest.xml:17:13-56
+57        <activity android:name="com.mikepenz.aboutlibraries.ui.LibsActivity" />
+57-->[com.mikepenz:aboutlibraries:6.2.3] /Users/ravi/.gradle/caches/transforms-2/files-2.1/2e33f2ce65d22b42b397567bf14e2e65/jetified-aboutlibraries-6.2.3/AndroidManifest.xml:12:9-80
+57-->[com.mikepenz:aboutlibraries:6.2.3] /Users/ravi/.gradle/caches/transforms-2/files-2.1/2e33f2ce65d22b42b397567bf14e2e65/jetified-aboutlibraries-6.2.3/AndroidManifest.xml:12:19-77
+58        <activity
+58-->[:zxing-android-embedded] /Users/ravi/Downloads/newlandscanner/zxing-android-embedded/build/intermediates/library_manifest/release/AndroidManifest.xml:48:9-54:63
+59            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+59-->[:zxing-android-embedded] /Users/ravi/Downloads/newlandscanner/zxing-android-embedded/build/intermediates/library_manifest/release/AndroidManifest.xml:49:13-74
+60            android:clearTaskOnLaunch="true"
+60-->[:zxing-android-embedded] /Users/ravi/Downloads/newlandscanner/zxing-android-embedded/build/intermediates/library_manifest/release/AndroidManifest.xml:50:13-45
+61            android:screenOrientation="sensorLandscape"
+61-->[:zxing-android-embedded] /Users/ravi/Downloads/newlandscanner/zxing-android-embedded/build/intermediates/library_manifest/release/AndroidManifest.xml:51:13-56
+62            android:stateNotNeeded="true"
+62-->[:zxing-android-embedded] /Users/ravi/Downloads/newlandscanner/zxing-android-embedded/build/intermediates/library_manifest/release/AndroidManifest.xml:52:13-42
+63            android:theme="@style/zxing_CaptureTheme"
+63-->[:zxing-android-embedded] /Users/ravi/Downloads/newlandscanner/zxing-android-embedded/build/intermediates/library_manifest/release/AndroidManifest.xml:53:13-54
+64            android:windowSoftInputMode="stateAlwaysHidden" />
+64-->[:zxing-android-embedded] /Users/ravi/Downloads/newlandscanner/zxing-android-embedded/build/intermediates/library_manifest/release/AndroidManifest.xml:54:13-60
+65
+66        <provider
+66-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/ec70dd48c4f661531bdd7c673ea4efcd/lifecycle-process-2.0.0/AndroidManifest.xml:23:9-27:43
+67            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+67-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/ec70dd48c4f661531bdd7c673ea4efcd/lifecycle-process-2.0.0/AndroidManifest.xml:24:13-79
+68            android:authorities="com.poc.newlandscanner.lifecycle-process"
+68-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/ec70dd48c4f661531bdd7c673ea4efcd/lifecycle-process-2.0.0/AndroidManifest.xml:25:13-69
+69            android:exported="false"
+69-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/ec70dd48c4f661531bdd7c673ea4efcd/lifecycle-process-2.0.0/AndroidManifest.xml:26:13-37
+70            android:multiprocess="true" />
+70-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/ec70dd48c4f661531bdd7c673ea4efcd/lifecycle-process-2.0.0/AndroidManifest.xml:27:13-40
+71    </application>
+72
+73</manifest>

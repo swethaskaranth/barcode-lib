@@ -19,68 +19,68 @@
 19    package="com.google.zxing.client.android" >
 20
 21    <uses-sdk android:minSdkVersion="21" />
-21-->/Users/swetha/Projects/barcode-lib/zxing-android-embedded/AndroidManifest.xml
+21-->/Users/ravi/Downloads/newlandscanner/zxing-android-embedded/AndroidManifest.xml
 22
 23    <uses-permission android:name="android.permission.CAMERA" />
-23-->/Users/swetha/Projects/barcode-lib/zxing-android-embedded/AndroidManifest.xml:21:3-62
-23-->/Users/swetha/Projects/barcode-lib/zxing-android-embedded/AndroidManifest.xml:21:20-60
+23-->/Users/ravi/Downloads/newlandscanner/zxing-android-embedded/AndroidManifest.xml:21:3-62
+23-->/Users/ravi/Downloads/newlandscanner/zxing-android-embedded/AndroidManifest.xml:21:20-60
 24
 25    <!-- Don't require camera, as this requires a rear camera. This allows it to work on the Nexus 7 -->
 26    <uses-feature
-26-->/Users/swetha/Projects/barcode-lib/zxing-android-embedded/AndroidManifest.xml:24:3-82
+26-->/Users/ravi/Downloads/newlandscanner/zxing-android-embedded/AndroidManifest.xml:24:3-82
 27        android:name="android.hardware.camera"
-27-->/Users/swetha/Projects/barcode-lib/zxing-android-embedded/AndroidManifest.xml:24:17-55
+27-->/Users/ravi/Downloads/newlandscanner/zxing-android-embedded/AndroidManifest.xml:24:17-55
 28        android:required="false" />
-28-->/Users/swetha/Projects/barcode-lib/zxing-android-embedded/AndroidManifest.xml:24:56-80
+28-->/Users/ravi/Downloads/newlandscanner/zxing-android-embedded/AndroidManifest.xml:24:56-80
 29    <uses-feature
-29-->/Users/swetha/Projects/barcode-lib/zxing-android-embedded/AndroidManifest.xml:25:3-88
+29-->/Users/ravi/Downloads/newlandscanner/zxing-android-embedded/AndroidManifest.xml:25:3-88
 30        android:name="android.hardware.camera.front"
-30-->/Users/swetha/Projects/barcode-lib/zxing-android-embedded/AndroidManifest.xml:25:17-61
+30-->/Users/ravi/Downloads/newlandscanner/zxing-android-embedded/AndroidManifest.xml:25:17-61
 31        android:required="false" />
-31-->/Users/swetha/Projects/barcode-lib/zxing-android-embedded/AndroidManifest.xml:25:62-86
+31-->/Users/ravi/Downloads/newlandscanner/zxing-android-embedded/AndroidManifest.xml:25:62-86
 32    <!-- TODO replace above two with next line after Android 4.2 -->
 33    <!-- <uses-feature android:name="android.hardware.camera.any"/> -->
 34    <uses-feature
-34-->/Users/swetha/Projects/barcode-lib/zxing-android-embedded/AndroidManifest.xml:28:3-92
+34-->/Users/ravi/Downloads/newlandscanner/zxing-android-embedded/AndroidManifest.xml:28:3-92
 35        android:name="android.hardware.camera.autofocus"
-35-->/Users/swetha/Projects/barcode-lib/zxing-android-embedded/AndroidManifest.xml:28:17-65
+35-->/Users/ravi/Downloads/newlandscanner/zxing-android-embedded/AndroidManifest.xml:28:17-65
 36        android:required="false" />
-36-->/Users/swetha/Projects/barcode-lib/zxing-android-embedded/AndroidManifest.xml:28:66-90
+36-->/Users/ravi/Downloads/newlandscanner/zxing-android-embedded/AndroidManifest.xml:28:66-90
 37    <uses-feature
-37-->/Users/swetha/Projects/barcode-lib/zxing-android-embedded/AndroidManifest.xml:29:3-88
+37-->/Users/ravi/Downloads/newlandscanner/zxing-android-embedded/AndroidManifest.xml:29:3-88
 38        android:name="android.hardware.camera.flash"
-38-->/Users/swetha/Projects/barcode-lib/zxing-android-embedded/AndroidManifest.xml:29:17-61
+38-->/Users/ravi/Downloads/newlandscanner/zxing-android-embedded/AndroidManifest.xml:29:17-61
 39        android:required="false" />
-39-->/Users/swetha/Projects/barcode-lib/zxing-android-embedded/AndroidManifest.xml:29:62-86
+39-->/Users/ravi/Downloads/newlandscanner/zxing-android-embedded/AndroidManifest.xml:29:62-86
 40    <uses-feature
-40-->/Users/swetha/Projects/barcode-lib/zxing-android-embedded/AndroidManifest.xml:30:3-93
+40-->/Users/ravi/Downloads/newlandscanner/zxing-android-embedded/AndroidManifest.xml:30:3-93
 41        android:name="android.hardware.screen.landscape"
-41-->/Users/swetha/Projects/barcode-lib/zxing-android-embedded/AndroidManifest.xml:30:17-65
+41-->/Users/ravi/Downloads/newlandscanner/zxing-android-embedded/AndroidManifest.xml:30:17-65
 42        android:required="false" />
-42-->/Users/swetha/Projects/barcode-lib/zxing-android-embedded/AndroidManifest.xml:30:66-90
+42-->/Users/ravi/Downloads/newlandscanner/zxing-android-embedded/AndroidManifest.xml:30:66-90
 43    <uses-feature
-43-->/Users/swetha/Projects/barcode-lib/zxing-android-embedded/AndroidManifest.xml:31:3-80
+43-->/Users/ravi/Downloads/newlandscanner/zxing-android-embedded/AndroidManifest.xml:31:3-80
 44        android:name="android.hardware.wifi"
-44-->/Users/swetha/Projects/barcode-lib/zxing-android-embedded/AndroidManifest.xml:31:17-53
+44-->/Users/ravi/Downloads/newlandscanner/zxing-android-embedded/AndroidManifest.xml:31:17-53
 45        android:required="false" />
-45-->/Users/swetha/Projects/barcode-lib/zxing-android-embedded/AndroidManifest.xml:31:54-78
+45-->/Users/ravi/Downloads/newlandscanner/zxing-android-embedded/AndroidManifest.xml:31:54-78
 46
 47    <application>
-47-->/Users/swetha/Projects/barcode-lib/zxing-android-embedded/AndroidManifest.xml:34:3-42:17
+47-->/Users/ravi/Downloads/newlandscanner/zxing-android-embedded/AndroidManifest.xml:34:3-42:17
 48        <activity
-48-->/Users/swetha/Projects/barcode-lib/zxing-android-embedded/AndroidManifest.xml:35:7-41:13
+48-->/Users/ravi/Downloads/newlandscanner/zxing-android-embedded/AndroidManifest.xml:35:7-41:13
 49            android:name="com.journeyapps.barcodescanner.CaptureActivity"
-49-->/Users/swetha/Projects/barcode-lib/zxing-android-embedded/AndroidManifest.xml:35:17-78
+49-->/Users/ravi/Downloads/newlandscanner/zxing-android-embedded/AndroidManifest.xml:35:17-78
 50            android:clearTaskOnLaunch="true"
-50-->/Users/swetha/Projects/barcode-lib/zxing-android-embedded/AndroidManifest.xml:36:17-49
+50-->/Users/ravi/Downloads/newlandscanner/zxing-android-embedded/AndroidManifest.xml:36:17-49
 51            android:screenOrientation="sensorLandscape"
-51-->/Users/swetha/Projects/barcode-lib/zxing-android-embedded/AndroidManifest.xml:37:17-60
+51-->/Users/ravi/Downloads/newlandscanner/zxing-android-embedded/AndroidManifest.xml:37:17-60
 52            android:stateNotNeeded="true"
-52-->/Users/swetha/Projects/barcode-lib/zxing-android-embedded/AndroidManifest.xml:38:17-46
+52-->/Users/ravi/Downloads/newlandscanner/zxing-android-embedded/AndroidManifest.xml:38:17-46
 53            android:theme="@style/zxing_CaptureTheme"
-53-->/Users/swetha/Projects/barcode-lib/zxing-android-embedded/AndroidManifest.xml:39:17-58
+53-->/Users/ravi/Downloads/newlandscanner/zxing-android-embedded/AndroidManifest.xml:39:17-58
 54            android:windowSoftInputMode="stateAlwaysHidden" />
-54-->/Users/swetha/Projects/barcode-lib/zxing-android-embedded/AndroidManifest.xml:40:17-64
+54-->/Users/ravi/Downloads/newlandscanner/zxing-android-embedded/AndroidManifest.xml:40:17-64
 55    </application>
 56
 57</manifest>

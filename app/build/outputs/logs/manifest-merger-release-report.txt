@@ -1,10 +1,10 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:2:1-39:12
-INJECTED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:2:1-39:12
-INJECTED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:2:1-39:12
-INJECTED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:2:1-39:12
-MERGED from [:barcodereader] /Users/ravi/Downloads/newlandscanner/barcodereader/build/intermediates/library_manifest/release/AndroidManifest.xml:2:1-11:12
+ADDED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:2:1-40:12
+INJECTED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:2:1-40:12
+INJECTED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:2:1-40:12
+INJECTED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:2:1-40:12
+MERGED from [:barcodereader] /Users/ravi/Downloads/newlandscanner/barcodereader/build/intermediates/library_manifest/release/AndroidManifest.xml:2:1-20:12
 MERGED from [com.mikepenz:aboutlibraries:6.2.3] /Users/ravi/.gradle/caches/transforms-2/files-2.1/2e33f2ce65d22b42b397567bf14e2e65/jetified-aboutlibraries-6.2.3/AndroidManifest.xml:2:1-15:12
 MERGED from [com.mikepenz:iconics-core:3.2.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/d247755fae7b574508d31b5dbf081be4/iconics-core-3.2.0/AndroidManifest.xml:2:1-11:12
 MERGED from [com.mikepenz:fastadapter:3.3.1] /Users/ravi/.gradle/caches/transforms-2/files-2.1/ae746acca68651e034c04f3936722be5/jetified-fastadapter-3.3.1/AndroidManifest.xml:2:1-11:12
@@ -50,22 +50,23 @@ MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/ravi/.gradle/caches/tr
 MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/6bab464d6f87c28d12265b5475d79454/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/367a1bce94c6148c2354d5ab0cd078ec/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/67e09ddbc76b0ac1e204b1abedfe5a8e/print-1.0.0/AndroidManifest.xml:17:1-22:12
-INJECTED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:2:1-39:12
-INJECTED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:2:1-39:12
-INJECTED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:2:1-39:12
+MERGED from [io.reactivex.rxjava2:rxandroid:2.0.2] /Users/ravi/.gradle/caches/transforms-2/files-2.1/851c6ae4dfa7231260586342e099fe13/rxandroid-2.0.2/AndroidManifest.xml:15:1-21:12
+INJECTED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:2:1-40:12
+INJECTED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:2:1-40:12
+INJECTED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:2:1-40:12
 	package
 		ADDED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:4:5-37
 		INJECTED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml
-		ADDED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:2:1-39:12
+		ADDED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:2:1-40:12
 		INJECTED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml
 	xmlns:tools
 		ADDED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml
-		ADDED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:2:1-39:12
+		ADDED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:2:1-40:12
 		INJECTED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:2:11-69
@@ -104,7 +105,9 @@ MERGED from [:zxing-android-embedded] /Users/ravi/Downloads/newlandscanner/zxing
 	android:name
 		ADDED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:11:19-55
 application
-ADDED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:13:5-37:19
+ADDED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:13:5-38:19
+MERGED from [:barcodereader] /Users/ravi/Downloads/newlandscanner/barcodereader/build/intermediates/library_manifest/release/AndroidManifest.xml:14:5-18:19
+MERGED from [:barcodereader] /Users/ravi/Downloads/newlandscanner/barcodereader/build/intermediates/library_manifest/release/AndroidManifest.xml:14:5-18:19
 MERGED from [com.mikepenz:aboutlibraries:6.2.3] /Users/ravi/.gradle/caches/transforms-2/files-2.1/2e33f2ce65d22b42b397567bf14e2e65/jetified-aboutlibraries-6.2.3/AndroidManifest.xml:11:5-13:19
 MERGED from [com.mikepenz:aboutlibraries:6.2.3] /Users/ravi/.gradle/caches/transforms-2/files-2.1/2e33f2ce65d22b42b397567bf14e2e65/jetified-aboutlibraries-6.2.3/AndroidManifest.xml:11:5-13:19
 MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/b09e2ae9acad8541b1062bfca08e6466/lifecycle-extensions-2.0.0/AndroidManifest.xml:22:5-23:19
@@ -122,51 +125,53 @@ MERGED from [androidx.lifecycle:lifecycle-process:2.0.0] /Users/ravi/.gradle/cac
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.2.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/d2da4d231d5bb16fc9b06788df71bfab/core-1.2.0/AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:18:9-35
+		ADDED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:19:9-35
 	android:label
-		ADDED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:16:9-41
+		ADDED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:17:9-41
 	tools:ignore
-		ADDED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:20:9-48
+		ADDED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:21:9-48
 	android:roundIcon
-		ADDED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:17:9-54
+		ADDED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:18:9-54
 	android:icon
-		ADDED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:15:9-43
+		ADDED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:16:9-43
 	android:allowBackup
-		ADDED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:14:9-35
+		ADDED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:15:9-35
 	android:theme
-		ADDED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:19:9-40
+		ADDED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:20:9-40
+	android:name
+		ADDED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:14:9-38
 activity#com.poc.newlandscanner.ZxingScanActivity
-ADDED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:21:9-55
+ADDED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:22:9-55
 	android:name
-		ADDED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:21:19-52
+		ADDED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:22:19-52
 activity#com.poc.newlandscanner.ZebraActivity
-ADDED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:23:9-51
+ADDED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:24:9-51
 	android:name
-		ADDED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:23:19-48
+		ADDED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:24:19-48
 activity#com.poc.newlandscanner.ZxingActivity
-ADDED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:25:9-32:20
+ADDED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:26:9-33:20
 	android:theme
-		ADDED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:26:13-44
+		ADDED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:27:13-44
 	android:name
-		ADDED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:25:19-48
+		ADDED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:26:19-48
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:27:13-31:29
+ADDED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:28:13-32:29
 action#android.intent.action.MAIN
-ADDED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:28:17-69
+ADDED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:29:17-69
 	android:name
-		ADDED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:28:25-66
+		ADDED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:29:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:30:17-77
+ADDED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:31:17-77
 	android:name
-		ADDED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:30:27-74
+		ADDED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:31:27-74
 activity#com.poc.newlandscanner.MainActivity
-ADDED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:34:9-50
+ADDED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:35:9-50
 	android:name
-		ADDED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:34:19-47
+		ADDED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:35:19-47
 activity#com.poc.newlandscanner.SmallCaptureActivity
-ADDED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:35:9-58
+ADDED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:36:9-58
 	android:name
-		ADDED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:35:19-55
+		ADDED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml:36:19-55
 uses-sdk
 INJECTED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml
@@ -263,6 +268,8 @@ MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/367a1bce94c6148c2354d5ab0cd078ec/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.print:print:1.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/67e09ddbc76b0ac1e204b1abedfe5a8e/print-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.print:print:1.0.0] /Users/ravi/.gradle/caches/transforms-2/files-2.1/67e09ddbc76b0ac1e204b1abedfe5a8e/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [io.reactivex.rxjava2:rxandroid:2.0.2] /Users/ravi/.gradle/caches/transforms-2/files-2.1/851c6ae4dfa7231260586342e099fe13/rxandroid-2.0.2/AndroidManifest.xml:19:5-43
+MERGED from [io.reactivex.rxjava2:rxandroid:2.0.2] /Users/ravi/.gradle/caches/transforms-2/files-2.1/851c6ae4dfa7231260586342e099fe13/rxandroid-2.0.2/AndroidManifest.xml:19:5-43
 INJECTED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml
 INJECTED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml
 	android:targetSdkVersion
@@ -273,6 +280,20 @@ INJECTED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.
 		INJECTED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml
 		ADDED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/ravi/Downloads/newlandscanner/app/src/main/AndroidManifest.xml
+uses-permission#android.permission.BLUETOOTH
+ADDED from [:barcodereader] /Users/ravi/Downloads/newlandscanner/barcodereader/build/intermediates/library_manifest/release/AndroidManifest.xml:11:5-68
+	android:name
+		ADDED from [:barcodereader] /Users/ravi/Downloads/newlandscanner/barcodereader/build/intermediates/library_manifest/release/AndroidManifest.xml:11:22-65
+uses-permission#android.permission.BLUETOOTH_ADMIN
+ADDED from [:barcodereader] /Users/ravi/Downloads/newlandscanner/barcodereader/build/intermediates/library_manifest/release/AndroidManifest.xml:12:5-74
+	android:name
+		ADDED from [:barcodereader] /Users/ravi/Downloads/newlandscanner/barcodereader/build/intermediates/library_manifest/release/AndroidManifest.xml:12:22-71
+activity#com.pharmeasy.barcode.scanners.bluetoothScanner.DevicesActivity
+ADDED from [:barcodereader] /Users/ravi/Downloads/newlandscanner/barcodereader/build/intermediates/library_manifest/release/AndroidManifest.xml:15:9-17:59
+	android:theme
+		ADDED from [:barcodereader] /Users/ravi/Downloads/newlandscanner/barcodereader/build/intermediates/library_manifest/release/AndroidManifest.xml:17:13-56
+	android:name
+		ADDED from [:barcodereader] /Users/ravi/Downloads/newlandscanner/barcodereader/build/intermediates/library_manifest/release/AndroidManifest.xml:16:13-91
 activity#com.mikepenz.aboutlibraries.ui.LibsActivity
 ADDED from [com.mikepenz:aboutlibraries:6.2.3] /Users/ravi/.gradle/caches/transforms-2/files-2.1/2e33f2ce65d22b42b397567bf14e2e65/jetified-aboutlibraries-6.2.3/AndroidManifest.xml:12:9-80
 	android:name

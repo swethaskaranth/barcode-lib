@@ -19,6 +19,10 @@
     <uses-feature
         android:name="android.hardware.wifi"
         android:required="false" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
     <uses-feature
         android:name="android.hardware.camera.front"
         android:required="false" />
@@ -27,6 +31,7 @@
         android:required="false" />
 
     <application
+        android:name="com.poc.newlandscanner.MyApplication"
         android:allowBackup="true"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:icon="@mipmap/ic_launcher"
@@ -47,6 +52,9 @@
         </activity>
         <activity android:name="com.poc.newlandscanner.MainActivity" />
         <activity android:name="com.poc.newlandscanner.SmallCaptureActivity" />
+        <activity
+            android:name="com.pharmeasy.barcode.scanners.bluetoothScanner.DevicesActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name="com.mikepenz.aboutlibraries.ui.LibsActivity" />
         <activity
             android:name="com.journeyapps.barcodescanner.CaptureActivity"

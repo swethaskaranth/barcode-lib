@@ -6,25 +6,25 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="21"
-8-->/Users/swetha/Projects/barcode-lib/barcodereader/src/main/AndroidManifest.xml
+8-->/Users/ravi/Downloads/newlandscanner/barcodereader/src/main/AndroidManifest.xml
 9        android:targetSdkVersion="28" />
-9-->/Users/swetha/Projects/barcode-lib/barcodereader/src/main/AndroidManifest.xml
+9-->/Users/ravi/Downloads/newlandscanner/barcodereader/src/main/AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.BLUETOOTH" />
-11-->/Users/swetha/Projects/barcode-lib/barcodereader/src/main/AndroidManifest.xml:4:5-67
-11-->/Users/swetha/Projects/barcode-lib/barcodereader/src/main/AndroidManifest.xml:4:22-65
+11-->/Users/ravi/Downloads/newlandscanner/barcodereader/src/main/AndroidManifest.xml:4:5-67
+11-->/Users/ravi/Downloads/newlandscanner/barcodereader/src/main/AndroidManifest.xml:4:22-65
 12    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
-12-->/Users/swetha/Projects/barcode-lib/barcodereader/src/main/AndroidManifest.xml:5:5-74
-12-->/Users/swetha/Projects/barcode-lib/barcodereader/src/main/AndroidManifest.xml:5:22-71
+12-->/Users/ravi/Downloads/newlandscanner/barcodereader/src/main/AndroidManifest.xml:5:5-74
+12-->/Users/ravi/Downloads/newlandscanner/barcodereader/src/main/AndroidManifest.xml:5:22-71
 13
 14    <application>
-14-->/Users/swetha/Projects/barcode-lib/barcodereader/src/main/AndroidManifest.xml:7:5-10:19
+14-->/Users/ravi/Downloads/newlandscanner/barcodereader/src/main/AndroidManifest.xml:7:5-10:19
 15        <activity
-15-->/Users/swetha/Projects/barcode-lib/barcodereader/src/main/AndroidManifest.xml:8:9-9:58
+15-->/Users/ravi/Downloads/newlandscanner/barcodereader/src/main/AndroidManifest.xml:8:9-9:58
 16            android:name="com.pharmeasy.barcode.scanners.bluetoothScanner.DevicesActivity"
-16-->/Users/swetha/Projects/barcode-lib/barcodereader/src/main/AndroidManifest.xml:8:19-76
+16-->/Users/ravi/Downloads/newlandscanner/barcodereader/src/main/AndroidManifest.xml:8:19-76
 17            android:theme="@style/AppTheme.NoActionBar" />
-17-->/Users/swetha/Projects/barcode-lib/barcodereader/src/main/AndroidManifest.xml:9:13-56
+17-->/Users/ravi/Downloads/newlandscanner/barcodereader/src/main/AndroidManifest.xml:9:13-56
 18    </application>
 19
 20</manifest>

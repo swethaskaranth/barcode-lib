@@ -479,6 +479,9 @@ color background_floating_material_dark
 color background_floating_material_light
 color background_material_dark
 color background_material_light
+color bg_line
+color blue
+color bottom_sheet_bg
 color bright_foreground_disabled_material_dark
 color bright_foreground_disabled_material_light
 color bright_foreground_inverse_material_dark
@@ -494,6 +497,8 @@ color cardview_shadow_start_color
 color colorAccent
 color colorPrimary
 color colorPrimaryDark
+color color_16325c
+color dark_gray
 color dim_foreground_disabled_material_dark
 color dim_foreground_disabled_material_light
 color dim_foreground_material_dark
@@ -502,8 +507,16 @@ color error_color_material_dark
 color error_color_material_light
 color foreground_material_dark
 color foreground_material_light
+color google_blue
+color gray_line
+color gray_track
+color green
+color green_button
 color highlighted_text_material_dark
 color highlighted_text_material_light
+color less_black
+color light_gray
+color list_bg
 color material_blue_grey_800
 color material_blue_grey_900
 color material_blue_grey_950
@@ -519,6 +532,7 @@ color material_grey_900
 color notification_action_color_filter
 color notification_icon_bg_color
 color notification_material_background_media_default_color
+color orange
 color primary_dark_material_dark
 color primary_dark_material_light
 color primary_material_dark
@@ -527,8 +541,11 @@ color primary_text_default_material_dark
 color primary_text_default_material_light
 color primary_text_disabled_material_dark
 color primary_text_disabled_material_light
+color red
 color ripple_material_dark
 color ripple_material_light
+color roles_bg
+color roles_text
 color secondary_text_default_material_dark
 color secondary_text_default_material_light
 color secondary_text_disabled_material_dark
@@ -539,11 +556,15 @@ color switch_thumb_material_dark
 color switch_thumb_material_light
 color switch_thumb_normal_material_dark
 color switch_thumb_normal_material_light
+color text_primary
+color text_secondary
 color theme_accent
 color theme_default_primary
 color theme_default_primary_dark
 color tooltip_background_dark
 color tooltip_background_light
+color txt_color
+color white
 color zxing_custom_possible_result_points
 color zxing_custom_result_view
 color zxing_custom_viewfinder_laser
@@ -790,6 +811,7 @@ drawable ic_flash_off_black_24dp
 drawable ic_flash_on_black_24dp
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable ic_refresh
 drawable notification_action_background
 drawable notification_bg
 drawable notification_bg_low
@@ -900,6 +922,7 @@ id chronometer
 id clip_horizontal
 id clip_vertical
 id collapseActionView
+id connect
 id content
 id contentPanel
 id custom
@@ -913,7 +936,9 @@ id direct
 id disable
 id disableBtn
 id disableHome
+id editText
 id edit_query
+id empty_panel
 id enable
 id enableBtn
 id end
@@ -959,6 +984,7 @@ id libraryVersion
 id library_item_id
 id line1
 id line3
+id list
 id listMode
 id list_item
 id loader_item_id
@@ -966,6 +992,7 @@ id media_actions
 id message
 id middle
 id multiply
+id name
 id never
 id none
 id normal
@@ -980,10 +1007,12 @@ id packed
 id parent
 id parentPanel
 id percent
+id progress
 id progressBar
 id progress_circular
 id progress_horizontal
 id radio
+id refresh
 id right
 id right_icon
 id right_side
@@ -1116,7 +1145,9 @@ layout barcode_layout
 layout capture_small
 layout custom_barcode_scanner
 layout custom_dialog
+layout devices_content
 layout fragment_opensource
+layout item_device
 layout listheader_opensource
 layout listitem_opensource
 layout listloader_opensource
@@ -1142,6 +1173,7 @@ layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
 layout zxing_barcode_scanner
 layout zxing_capture
+menu refresh
 mipmap ic_launcher
 mipmap ic_launcher_round
 raw zxing_beep
@@ -1176,6 +1208,9 @@ string aboutlibrary_lib_version
 string activity_intent_filter_action
 string app_name
 string app_version
+string bt_not_enabled
+string cancel
+string continu
 string datawedge_api_intent_action
 string datawedge_api_intent_extra_config
 string datawedge_intent_key_create_profile
@@ -1442,6 +1477,8 @@ string define_processor_blink_alpha
 string define_processor_blink_scale
 string define_processor_spin
 string define_zxingandroidembedded
+string devices
+string disconnect
 string ext_support_lib_version
 string fastadapter_lib_version
 string iconics_lib_version
@@ -3999,7 +4036,10 @@ string license_mit_licenseName
 string license_mit_licenseShortDescription
 string license_mit_licenseWebsite
 string newland_scanner_result
+string no_scanners
+string refresh
 string search_menu_title
+string select_scanner
 string status_bar_notification_info_overflow
 string version
 string zebra_scanner_extra_param
@@ -4019,6 +4059,7 @@ style Animation_AppCompat_Dialog
 style Animation_AppCompat_DropDownUp
 style Animation_AppCompat_Tooltip
 style AppTheme
+style AppTheme_NoActionBar
 style Base_AlertDialog_AppCompat
 style Base_AlertDialog_AppCompat_Light
 style Base_Animation_AppCompat_Dialog
@@ -4206,6 +4247,7 @@ style RtlOverlay_Widget_AppCompat_Search_DropDown_Text
 style RtlOverlay_Widget_AppCompat_SearchView_MagIcon
 style RtlUnderlay_Widget_AppCompat_ActionButton
 style RtlUnderlay_Widget_AppCompat_ActionButton_Overflow
+style SwitchStyle
 style TextAppearance_AppCompat
 style TextAppearance_AppCompat_Body1
 style TextAppearance_AppCompat_Body2
