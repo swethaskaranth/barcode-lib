@@ -151,9 +151,11 @@ class BarcodeReader private constructor(context: Context) : DecoratedBarcodeView
 
         mode = items[2]
 
+        Toast.makeText(activity,"Index - "+items.indexOf(mode)+", Item - "+mode,Toast.LENGTH_SHORT).show()
+
         val builder = AlertDialog.Builder(activity)//ERROR ShowDialog cannot be resolved to a type
         builder.setTitle("Choose Scanner")
-        builder.setSingleChoiceItems(items, 2) { dialog, item ->
+        builder.setSingleChoiceItems(items, if(mode != null) items.indexOf(mode) else 2) { dialog, item ->
             mode = items[item]
         }
 
