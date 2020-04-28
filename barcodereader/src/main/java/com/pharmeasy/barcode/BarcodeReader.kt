@@ -122,8 +122,8 @@ class BarcodeReader private constructor(context: Context) : DecoratedBarcodeView
     fun initializeScanner(activity: Activity, intent: Intent, i: Int, editText: EditText?, listener : ModeSelectedListener) {
 
         if (mode == null) {
-
-            showAlertDialog(activity, intent, i, editText,listener)
+            setupZxingScanner(activity,intent,i)
+            listener.onModeSelected(ScannerType.CAMERA_SCANNER.displayName)
         } else {
             when (mode) {
                 ScannerType.OTG_SCANNER.displayName -> {
@@ -135,6 +135,10 @@ class BarcodeReader private constructor(context: Context) : DecoratedBarcodeView
             }
             listener.onModeSelected(mode!!)
         }
+    }
+
+    fun selectScanner(activity: Activity, intent: Intent, i: Int, editText: EditText?, listener : ModeSelectedListener){
+        showAlertDialog(activity, intent, i, editText,listener)
     }
 
     fun clearMode() {
@@ -344,7 +348,7 @@ class BarcodeReader private constructor(context: Context) : DecoratedBarcodeView
         val handler = Handler()
 
         val task = Runnable {
-            BarcodeReader.barcodeData.value = Event(editText?.text.toString())
+            BarcodeReader.barcodeData.value = Event(editText?.text.toString().trim())
             editText?.text?.clear()
         }
 
