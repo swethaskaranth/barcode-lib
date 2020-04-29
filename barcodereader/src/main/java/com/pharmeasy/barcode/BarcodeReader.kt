@@ -122,8 +122,8 @@ class BarcodeReader private constructor(context: Context) : DecoratedBarcodeView
     fun initializeScanner(activity: Activity, intent: Intent, i: Int, editText: EditText?, listener : ModeSelectedListener) {
 
         if (mode == null) {
-
-            showAlertDialog(activity, intent, i, editText,listener)
+            setupZxingScanner(activity,intent,i)
+            listener.onModeSelected(ScannerType.CAMERA_SCANNER.displayName)
         } else {
             when (mode) {
                 ScannerType.OTG_SCANNER.displayName -> {
@@ -137,6 +137,10 @@ class BarcodeReader private constructor(context: Context) : DecoratedBarcodeView
         }
     }
 
+    fun selectScanner(activity: Activity, intent: Intent, i: Int, editText: EditText?, listener : ModeSelectedListener){
+        showAlertDialog(activity, intent, i, editText,listener)
+    }
+
     fun clearMode() {
         mode = null
         ScannerService.deregister(this)
@@ -145,12 +149,10 @@ class BarcodeReader private constructor(context: Context) : DecoratedBarcodeView
     private fun showAlertDialog(activity: Activity, intent: Intent, i: Int, editText: EditText?, listener: ModeSelectedListener) {
         val items = ScannerType.toStringList().toTypedArray()
 
-        mode = items[2].toString()
-
         val builder = AlertDialog.Builder(activity)//ERROR ShowDialog cannot be resolved to a type
         builder.setTitle("Choose Scanner")
-        builder.setSingleChoiceItems(items, 2) { dialog, item ->
-            mode = items[item].toString()
+        builder.setSingleChoiceItems(items, if(mode != null) items.indexOf(mode) else 2) { dialog, item ->
+            mode = items[item]
         }
 
 
@@ -344,7 +346,7 @@ class BarcodeReader private constructor(context: Context) : DecoratedBarcodeView
         val handler = Handler()
 
         val task = Runnable {
-            BarcodeReader.barcodeData.value = Event(editText?.text.toString())
+            BarcodeReader.barcodeData.value = Event(editText?.text.toString().trim())
             editText?.text?.clear()
         }
 
