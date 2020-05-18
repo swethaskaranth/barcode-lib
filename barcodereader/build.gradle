@@ -82,7 +82,7 @@ publishing {
         maven(MavenPublication) {
             groupId = "com.pharmeasy"
             artifactId = "barcodereader"
-            version = "1.2.2"
+            version = "1.2.3"
 
             artifact source: "${projectDir}/build/outputs/aar/barcodereader-release.aar", extension: 'aar'
         }
