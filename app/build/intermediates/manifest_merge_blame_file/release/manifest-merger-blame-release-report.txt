@@ -107,8 +107,8 @@
 56            android:theme="@style/AppTheme.NoActionBar" />
 56-->[:barcodereader] /Users/ravi/Downloads/newlandscanner/barcodereader/build/intermediates/library_manifest/release/AndroidManifest.xml:17:13-56
 57        <activity android:name="com.mikepenz.aboutlibraries.ui.LibsActivity" />
-57-->[com.mikepenz:aboutlibraries:6.2.3] /Users/ravi/.gradle/caches/transforms-2/files-2.1/2e33f2ce65d22b42b397567bf14e2e65/jetified-aboutlibraries-6.2.3/AndroidManifest.xml:12:9-80
-57-->[com.mikepenz:aboutlibraries:6.2.3] /Users/ravi/.gradle/caches/transforms-2/files-2.1/2e33f2ce65d22b42b397567bf14e2e65/jetified-aboutlibraries-6.2.3/AndroidManifest.xml:12:19-77
+57-->[com.mikepenz:aboutlibraries:6.2.3] /Users/ravi/.gradle/caches/transforms-2/files-2.1/8995f6982f9eadcef67c4640ee8a00b6/jetified-aboutlibraries-6.2.3/AndroidManifest.xml:12:9-80
+57-->[com.mikepenz:aboutlibraries:6.2.3] /Users/ravi/.gradle/caches/transforms-2/files-2.1/8995f6982f9eadcef67c4640ee8a00b6/jetified-aboutlibraries-6.2.3/AndroidManifest.xml:12:19-77
 58        <activity
 58-->[:zxing-android-embedded] /Users/ravi/Downloads/newlandscanner/zxing-android-embedded/build/intermediates/library_manifest/release/AndroidManifest.xml:48:9-54:63
 59            android:name="com.journeyapps.barcodescanner.CaptureActivity"
