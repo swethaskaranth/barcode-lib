@@ -1,16 +1,22 @@
 package com.pharmeasy.barcode
 
 import android.app.Activity
-import android.content.*
+import android.content.BroadcastReceiver
+import android.content.Context
+import android.content.Intent
+import android.content.IntentFilter
 import android.device.ScanManager
 import android.os.Build
 import android.os.Bundle
 import android.os.Handler
 import android.text.Editable
+import android.text.InputType
 import android.text.TextWatcher
 import android.util.Log
 import android.view.View
-import android.widget.Toast
+import android.view.inputmethod.InputMethodManager
+import android.widget.EditText
+import androidx.appcompat.app.AlertDialog
 import androidx.lifecycle.MutableLiveData
 import com.google.zxing.BarcodeFormat
 import com.google.zxing.ResultPoint
@@ -27,14 +33,10 @@ import com.pharmeasy.barcode.interfaces.Scanner
 import com.pharmeasy.barcode.scanners.NewlandScanner
 import com.pharmeasy.barcode.scanners.UrovoScanner
 import com.pharmeasy.barcode.scanners.ZebraScanner
-import android.view.WindowManager.LayoutParams.TYPE_SYSTEM_ALERT
-import android.view.inputmethod.InputMethodManager
-import android.widget.EditText
-import androidx.appcompat.app.AlertDialog
-import androidx.core.content.ContextCompat.getSystemService
 import com.pharmeasy.barcode.scanners.bluetoothScanner.DevicesActivity
 import com.pharmeasy.barcode.scanners.bluetoothScanner.ScannerActionListener
 import com.pharmeasy.barcode.scanners.bluetoothScanner.ScannerService
+
 
 
 class BarcodeReader private constructor(context: Context) : DecoratedBarcodeView.TorchListener, ScannerActionListener {
@@ -351,20 +353,27 @@ class BarcodeReader private constructor(context: Context) : DecoratedBarcodeView
         }
 
         editText?.requestFocus()
+        editText?.setTextIsSelectable(true)
+        editText?.inputType = InputType.TYPE_NULL
+        val imm = mContext.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager?
+
         editText?.addTextChangedListener(object : TextWatcher {
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
+                imm?.hideSoftInputFromWindow(editText.windowToken,0)
                 handler.removeCallbacks(task)
             }
 
             override fun afterTextChanged(s: Editable?) {
-
+              //  val imm = mContext.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager?
+                imm?.hideSoftInputFromWindow(editText.windowToken,0)
                 if (s != null && s.isNotEmpty()) {
                     handler.postDelayed(task, 500)
                 }
             }
 
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
-
+             //   val imm = mContext.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager?
+                imm?.hideSoftInputFromWindow(editText.windowToken,0)
             }
         })
 
