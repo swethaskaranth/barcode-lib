@@ -163,6 +163,8 @@ class BarcodeReader private constructor(context: Context) : DecoratedBarcodeView
 
 
         builder.setPositiveButton("OK") { dialog, id ->
+            if(mode == null)
+                mode = items[2]
             when (mode) {
                 ScannerType.BLUETOOTH_SCANNER.displayName -> {
                     ScannerService.register(this@BarcodeReader)
@@ -384,11 +386,17 @@ class BarcodeReader private constructor(context: Context) : DecoratedBarcodeView
             }
         })
 
+
+
         editText?.onFocusChangeListener = View.OnFocusChangeListener { v, hasFocus ->
             editText?.requestFocus()
             val imm1 = activity.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
             imm1.hideSoftInputFromWindow(editText?.windowToken, 0)
         }
+    }
+
+    fun focusScanner(editText: EditText?){
+        editText?.requestFocus()
     }
 
     private fun setupZxingScanner(activity: Activity, intent: Intent, i: Int) {
