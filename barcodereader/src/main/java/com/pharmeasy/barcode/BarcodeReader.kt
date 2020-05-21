@@ -126,6 +126,7 @@ class BarcodeReader private constructor(context: Context) : DecoratedBarcodeView
 
     fun initializeScanner(activity: Activity, intent: Intent, i: Int, editText: EditText?, listener: ModeSelectedListener) {
 
+        etScan = editText
         if (mode == null) {
             setupZxingScanner(activity, intent, i)
             listener.onModeSelected(ScannerType.CAMERA_SCANNER.displayName)
