@@ -357,6 +357,7 @@ class BarcodeReader private constructor(context: Context) : DecoratedBarcodeView
         val task = Runnable {
             BarcodeReader.barcodeData.value = Event(editText?.text.toString().trim())
             editText?.text?.clear()
+            editText?.requestFocus()
         }
 
         editText?.requestFocus()
@@ -367,14 +368,12 @@ class BarcodeReader private constructor(context: Context) : DecoratedBarcodeView
         editText?.addTextChangedListener(object : TextWatcher {
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
                 val r = imm?.hideSoftInputFromWindow(editText.windowToken, 0)
-                Log.d("IMM", "Ontextchanged - " + r)
                 handler.removeCallbacks(task)
             }
 
             override fun afterTextChanged(s: Editable?) {
                 //  val imm = mContext.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager?
                 val res = imm?.hideSoftInputFromWindow(editText.windowToken, 0)
-                Log.d("IMM", "afterTextChanged - " + res)
                 if (s != null && s.isNotEmpty()) {
                     handler.postDelayed(task, 500)
                 }
@@ -383,7 +382,6 @@ class BarcodeReader private constructor(context: Context) : DecoratedBarcodeView
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
                 //   val imm = mContext.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager?
                 val res = imm?.hideSoftInputFromWindow(editText.windowToken, 0)
-                Log.d("IMM", "OnBeforetextchanged - " + res)
             }
         })
 
