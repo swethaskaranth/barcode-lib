@@ -16,6 +16,7 @@ import android.util.Log
 import android.view.View
 import android.view.inputmethod.InputMethodManager
 import android.widget.EditText
+import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.lifecycle.MutableLiveData
 import com.google.zxing.BarcodeFormat
@@ -61,7 +62,7 @@ class BarcodeReader private constructor(context: Context) : DecoratedBarcodeView
 
     private var mode: String? = null
 
-   // private var etScan: EditText? = null
+    // private var etScan: EditText? = null
 
     companion object : SingletonHolder<BarcodeReader, Context>(::BarcodeReader) {
         val barcodeData = MutableLiveData<Event<String>>()
@@ -74,7 +75,7 @@ class BarcodeReader private constructor(context: Context) : DecoratedBarcodeView
                 return
             }
 
-                    //etScan?.setText(result.text)
+            //etScan?.setText(result.text)
 
             lastText = result.text
             barcodeView?.setStatusText(result.text)
@@ -126,7 +127,7 @@ class BarcodeReader private constructor(context: Context) : DecoratedBarcodeView
 
     fun initializeScanner(activity: Activity, intent: Intent, i: Int, editText: EditText?, listener: ModeSelectedListener) {
 
-      //  etScan = editText
+        //  etScan = editText
         if (mode == null) {
             setupZxingScanner(activity, intent, i)
             listener.onModeSelected(ScannerType.CAMERA_SCANNER.displayName)
@@ -163,7 +164,7 @@ class BarcodeReader private constructor(context: Context) : DecoratedBarcodeView
 
 
         builder.setPositiveButton("OK") { dialog, id ->
-            if(mode == null)
+            if (mode == null)
                 mode = items[2]
             when (mode) {
                 ScannerType.BLUETOOTH_SCANNER.displayName -> {
@@ -365,15 +366,15 @@ class BarcodeReader private constructor(context: Context) : DecoratedBarcodeView
 
         editText?.addTextChangedListener(object : TextWatcher {
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-               val r= imm?.hideSoftInputFromWindow(editText.windowToken, 0)
-                Log.d("IMM","Ontextchanged - "+r)
+                val r = imm?.hideSoftInputFromWindow(editText.windowToken, 0)
+                Log.d("IMM", "Ontextchanged - " + r)
                 handler.removeCallbacks(task)
             }
 
             override fun afterTextChanged(s: Editable?) {
                 //  val imm = mContext.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager?
                 val res = imm?.hideSoftInputFromWindow(editText.windowToken, 0)
-                Log.d("IMM","afterTextChanged - "+res)
+                Log.d("IMM", "afterTextChanged - " + res)
                 if (s != null && s.isNotEmpty()) {
                     handler.postDelayed(task, 500)
                 }
@@ -382,7 +383,7 @@ class BarcodeReader private constructor(context: Context) : DecoratedBarcodeView
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
                 //   val imm = mContext.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager?
                 val res = imm?.hideSoftInputFromWindow(editText.windowToken, 0)
-                Log.d("IMM","OnBeforetextchanged - "+res)
+                Log.d("IMM", "OnBeforetextchanged - " + res)
             }
         })
 
@@ -390,13 +391,17 @@ class BarcodeReader private constructor(context: Context) : DecoratedBarcodeView
 
         editText?.onFocusChangeListener = View.OnFocusChangeListener { v, hasFocus ->
             editText?.requestFocus()
+            Toast.makeText(activity,"Focus changed "+hasFocus,Toast.LENGTH_SHORT).show()
             val imm1 = activity.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
             imm1.hideSoftInputFromWindow(editText?.windowToken, 0)
         }
     }
 
-    fun focusScanner(editText: EditText?){
-        editText?.requestFocus()
+    fun focusScanner(editText: EditText?) {
+        if (mode == ScannerType.OTG_SCANNER.displayName) {
+            editText?.requestFocus()
+            Toast.makeText(mContext,"Focus changed manually",Toast.LENGTH_SHORT).show()
+        }
     }
 
     private fun setupZxingScanner(activity: Activity, intent: Intent, i: Int) {
