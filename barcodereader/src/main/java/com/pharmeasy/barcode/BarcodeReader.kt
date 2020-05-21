@@ -61,7 +61,7 @@ class BarcodeReader private constructor(context: Context) : DecoratedBarcodeView
 
     private var mode: String? = null
 
-    private var etScan: EditText? = null
+   // private var etScan: EditText? = null
 
     companion object : SingletonHolder<BarcodeReader, Context>(::BarcodeReader) {
         val barcodeData = MutableLiveData<Event<String>>()
@@ -74,7 +74,7 @@ class BarcodeReader private constructor(context: Context) : DecoratedBarcodeView
                 return
             }
 
-            etScan?.setText(result.text)
+                    //etScan?.setText(result.text)
 
             lastText = result.text
             barcodeView?.setStatusText(result.text)
@@ -126,7 +126,7 @@ class BarcodeReader private constructor(context: Context) : DecoratedBarcodeView
 
     fun initializeScanner(activity: Activity, intent: Intent, i: Int, editText: EditText?, listener: ModeSelectedListener) {
 
-        etScan = editText
+      //  etScan = editText
         if (mode == null) {
             setupZxingScanner(activity, intent, i)
             listener.onModeSelected(ScannerType.CAMERA_SCANNER.displayName)
@@ -359,7 +359,7 @@ class BarcodeReader private constructor(context: Context) : DecoratedBarcodeView
         editText?.requestFocus()
         editText?.setTextIsSelectable(true)
         editText?.inputType = InputType.TYPE_NULL
-        val imm = mContext.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager?
+        val imm = activity.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager?
 
         editText?.addTextChangedListener(object : TextWatcher {
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
@@ -384,13 +384,10 @@ class BarcodeReader private constructor(context: Context) : DecoratedBarcodeView
             }
         })
 
-
-
-
         editText?.onFocusChangeListener = View.OnFocusChangeListener { v, hasFocus ->
             editText?.requestFocus()
-            val imm = activity.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
-            imm.showSoftInput(editText, InputMethodManager.SHOW_IMPLICIT)
+            val imm1 = activity.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
+            imm1.hideSoftInputFromWindow(editText?.windowToken, 0)
         }
     }
 
