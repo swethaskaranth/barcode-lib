@@ -385,20 +385,28 @@ class BarcodeReader private constructor(context: Context) : DecoratedBarcodeView
             }
         })
 
+      /*  editText?.setOnKeyListener { v, keyCode, event ->
+            Log.d("KEYCODE","Keycode $keyCode")
+            if(keyCode == 66)
+                setupOTGScanner(editText,activity)
+           // editText.requestFocus()
+            false
+        }*/
 
 
-        editText?.onFocusChangeListener = View.OnFocusChangeListener { v, hasFocus ->
+
+       /* editText?.onFocusChangeListener = View.OnFocusChangeListener { v, hasFocus ->
             editText?.requestFocus()
             Toast.makeText(activity,"Focus changed "+hasFocus,Toast.LENGTH_SHORT).show()
             val imm1 = activity.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
             imm1.hideSoftInputFromWindow(editText?.windowToken, 0)
-        }
+        }*/
     }
 
     fun focusScanner(editText: EditText?) {
         if (mode == ScannerType.OTG_SCANNER.displayName) {
             editText?.requestFocus()
-            Toast.makeText(mContext,"Focus changed manually",Toast.LENGTH_SHORT).show()
+           // Toast.makeText(mContext,"Focus changed manually",Toast.LENGTH_SHORT).show()
         }
     }
 
