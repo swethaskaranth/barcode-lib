@@ -376,6 +376,7 @@ class BarcodeReader private constructor(context: Context) : DecoratedBarcodeView
         editText?.requestFocus()
 
         val imm = activity.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager?
+        imm?.hideSoftInputFromWindow(editText?.windowToken, 0)
 
         editText?.addTextChangedListener(object : TextWatcher {
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
