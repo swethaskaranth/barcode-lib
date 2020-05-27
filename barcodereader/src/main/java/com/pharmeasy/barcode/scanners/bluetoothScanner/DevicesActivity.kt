@@ -26,12 +26,12 @@ class DevicesActivity : AppCompatActivity(), ScannerActionListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.devices_content)
 
-        title = getString(R.string.devices)
+        /*title = getString(R.string.devices)
 
-        toolbar.setTitleTextColor(ContextCompat.getColor(this, R.color.white))
+        toolbar.setTitleTextColor(ContextCompat.getColor(this, R.color.white))*/
 
         setSupportActionBar(toolbar)
-        supportActionBar!!.setDisplayHomeAsUpEnabled(true)
+        supportActionBar!!.setDisplayHomeAsUpEnabled(false)
 
         val layoutManager = LinearLayoutManager(this)
         layoutManager.orientation = LinearLayoutManager.VERTICAL
@@ -45,6 +45,10 @@ class DevicesActivity : AppCompatActivity(), ScannerActionListener {
         for (bt in pairedDevices)
             s.add(bt.name)
 
+        ivBack.setOnClickListener { finish() }
+
+        ivRefresh.setOnClickListener { reload() }
+
         //setListAdapter(ArrayAdapter(this, R.layout.list, s))
     }
 
@@ -53,7 +57,7 @@ class DevicesActivity : AppCompatActivity(), ScannerActionListener {
     //    BarcodeReader.clearMode()
     }
 
-    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+  /*  override fun onCreateOptionsMenu(menu: Menu): Boolean {
         menuInflater.inflate(R.menu.refresh, menu)
         return true
     }
@@ -68,7 +72,7 @@ class DevicesActivity : AppCompatActivity(), ScannerActionListener {
             }
             else -> super.onOptionsItemSelected(item)
         }
-    }
+    }*/
 
     public override fun onResume() {
         super.onResume()

@@ -70,4 +70,7 @@
         <!-- Inactive track color(30% transparency) -->
         <item name="android:colorForeground">@color/gray_track</item>
     </style>
+    <style name="ToolbarTheme" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="homeAsUpIndicator">@drawable/ic_arrow_back_black_24dp</item>
+    </style>
 </resources>
