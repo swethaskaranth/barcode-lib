@@ -196,6 +196,10 @@ class BarcodeReader private constructor(context: Context) : DecoratedBarcodeView
         alert.show()
     }
 
+    fun clearMode(){
+        mode = null
+    }
+
     fun registerBroadcast(context: Context) {
         context.registerReceiver(broadcastReceiver, intentFilter)
         if (isZebraDevice) {
