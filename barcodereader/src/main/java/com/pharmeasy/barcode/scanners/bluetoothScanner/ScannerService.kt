@@ -4,6 +4,7 @@ import android.bluetooth.BluetoothAdapter
 import android.bluetooth.BluetoothDevice
 import android.bluetooth.BluetoothSocket
 import android.util.Log
+import com.pharmeasy.barcode.BarcodeReader
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.subjects.PublishSubject
 import java.io.Closeable
@@ -122,6 +123,7 @@ object ScannerService {
 
         setState(ScannerState.CONNECTED)
         statePublisher.onNext(ScannerState.CONNECTED)
+
     }
 
     private fun onConnectionFailed() {
