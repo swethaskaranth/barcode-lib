@@ -20,6 +20,7 @@ class DevicesActivity : AppCompatActivity(), ScannerActionListener {
 
     private val TAG = "DA"
     private val ENABLE_BT = 1000
+    private var connected = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
@@ -54,25 +55,25 @@ class DevicesActivity : AppCompatActivity(), ScannerActionListener {
 
     override fun onBackPressed() {
         super.onBackPressed()
-    //    BarcodeReader.clearMode()
+        //    BarcodeReader.clearMode()
     }
 
-  /*  override fun onCreateOptionsMenu(menu: Menu): Boolean {
-        menuInflater.inflate(R.menu.refresh, menu)
-        return true
-    }
+    /*  override fun onCreateOptionsMenu(menu: Menu): Boolean {
+          menuInflater.inflate(R.menu.refresh, menu)
+          return true
+      }
 
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        return when (item.itemId) {
-            R.id.refresh -> reload()
-            android.R.id.home -> {
-              //  BarcodeReader.clearMode()
-                finish()
-                true
-            }
-            else -> super.onOptionsItemSelected(item)
-        }
-    }*/
+      override fun onOptionsItemSelected(item: MenuItem): Boolean {
+          return when (item.itemId) {
+              R.id.refresh -> reload()
+              android.R.id.home -> {
+                //  BarcodeReader.clearMode()
+                  finish()
+                  true
+              }
+              else -> super.onOptionsItemSelected(item)
+          }
+      }*/
 
     public override fun onResume() {
         super.onResume()
@@ -127,6 +128,7 @@ class DevicesActivity : AppCompatActivity(), ScannerActionListener {
         // hideProgress()
 
         //  if(mode != null)
+        connected = true
         finish()
     }
 
@@ -142,7 +144,8 @@ class DevicesActivity : AppCompatActivity(), ScannerActionListener {
 
     override fun onDestroy() {
         super.onDestroy()
-        BarcodeReader.clearMode()
+        if (!connected)
+            BarcodeReader.clearMode()
     }
 
     override fun onData(barcode: String) {

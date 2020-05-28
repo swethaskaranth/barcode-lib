@@ -39,7 +39,7 @@ import com.pharmeasy.barcode.scanners.bluetoothScanner.ScannerActionListener
 import com.pharmeasy.barcode.scanners.bluetoothScanner.ScannerService
 
 
-class BarcodeReader private constructor(context: Context) : DecoratedBarcodeView.TorchListener, ScannerActionListener {
+class BarcodeReader private constructor(context: Context) : DecoratedBarcodeView.TorchListener/*, ScannerActionListener*/ {
 
     private val TAG: String = BarcodeReader::class.java.simpleName
     private val mContext = context
@@ -71,11 +71,32 @@ class BarcodeReader private constructor(context: Context) : DecoratedBarcodeView
 
         var modeListener : ModeSelectedListener? = null
 
+        var actionListener = object : ScannerActionListener{
+            override fun onConnected() {
+                modeListener?.onModeSelected(ScannerType.BLUETOOTH_SCANNER.displayName)
+            }
+
+            override fun onConnecting() {
+
+            }
+
+            override fun onData(barcode: String) {
+                barcodeData.value = Event(barcode)
+            }
+
+            override fun onDisconnected() {
+
+            }
+        }
+
+
         fun clearMode() {
             mode = null
             modeListener?.onModeSelected(ScannerType.CAMERA_SCANNER.displayName)
+            ScannerService.deregister(actionListener)
         }
     }
+
 
     private val callback = object : BarcodeCallback {
         override fun barcodeResult(result: BarcodeResult) {
@@ -176,16 +197,18 @@ class BarcodeReader private constructor(context: Context) : DecoratedBarcodeView
                 mode = items[2]
             when (mode) {
                 ScannerType.BLUETOOTH_SCANNER.displayName -> {
-                    ScannerService.register(this@BarcodeReader)
+                    ScannerService.register(actionListener)
                     startDevicesActivity(activity)
                 }
                 ScannerType.OTG_SCANNER.displayName -> {
                     setupOTGScanner(editText, activity)
                     listener.onModeSelected(mode!!)
+                    ScannerService.deregister(actionListener)
                 }
                 ScannerType.CAMERA_SCANNER.displayName -> {
                     setupZxingScanner(activity, intent, i)
                     listener.onModeSelected(mode!!)
+                    ScannerService.deregister(actionListener)
                 }
             }
 
@@ -348,7 +371,7 @@ class BarcodeReader private constructor(context: Context) : DecoratedBarcodeView
         activity.startActivity(Intent(mContext, DevicesActivity::class.java))
     }
 
-    override fun onConnected() {
+  /*  override fun onConnected() {
 
     }
 
@@ -362,7 +385,7 @@ class BarcodeReader private constructor(context: Context) : DecoratedBarcodeView
 
     override fun onDisconnected() {
 
-    }
+    }*/
 
     private fun setupOTGScanner(editText: EditText?, activity: Activity) {
         val handler = Handler()
