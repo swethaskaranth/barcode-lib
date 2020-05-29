@@ -93,7 +93,7 @@ class BarcodeReader private constructor(context: Context) : DecoratedBarcodeView
 
 
         fun clearMode() {
-            mode = null
+            mode = lastMode
             modeListener?.onModeSelected(lastMode?:ScannerType.CAMERA_SCANNER.displayName)
             ScannerService.deregister(actionListener)
         }
