@@ -69,6 +69,8 @@ class BarcodeReader private constructor(context: Context) : DecoratedBarcodeView
 
         var mode: String? = null
 
+        var lastMode : String? = null
+
         var modeListener : ModeSelectedListener? = null
 
         var actionListener = object : ScannerActionListener{
@@ -92,7 +94,7 @@ class BarcodeReader private constructor(context: Context) : DecoratedBarcodeView
 
         fun clearMode() {
             mode = null
-            modeListener?.onModeSelected(ScannerType.CAMERA_SCANNER.displayName)
+            modeListener?.onModeSelected(lastMode?:ScannerType.CAMERA_SCANNER.displayName)
             ScannerService.deregister(actionListener)
         }
     }
@@ -193,6 +195,7 @@ class BarcodeReader private constructor(context: Context) : DecoratedBarcodeView
 
 
         builder.setPositiveButton("OK") { dialog, id ->
+
             if (mode == null)
                 mode = items[2]
             when (mode) {
@@ -211,6 +214,8 @@ class BarcodeReader private constructor(context: Context) : DecoratedBarcodeView
                     ScannerService.deregister(actionListener)
                 }
             }
+
+            lastMode = mode
 
 
         }
