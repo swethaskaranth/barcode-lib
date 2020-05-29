@@ -76,6 +76,7 @@ class BarcodeReader private constructor(context: Context) : DecoratedBarcodeView
         var actionListener = object : ScannerActionListener{
             override fun onConnected() {
                 modeListener?.onModeSelected(ScannerType.BLUETOOTH_SCANNER.displayName)
+                lastMode = mode
             }
 
             override fun onConnecting() {
@@ -207,15 +208,15 @@ class BarcodeReader private constructor(context: Context) : DecoratedBarcodeView
                     setupOTGScanner(editText, activity)
                     listener.onModeSelected(mode!!)
                     ScannerService.deregister(actionListener)
+                    lastMode = mode
                 }
                 ScannerType.CAMERA_SCANNER.displayName -> {
                     setupZxingScanner(activity, intent, i)
                     listener.onModeSelected(mode!!)
                     ScannerService.deregister(actionListener)
+                    lastMode = mode
                 }
             }
-
-            lastMode = mode
 
 
         }
