@@ -44,6 +44,7 @@
         android:focusableInTouchMode="true"
         android:focusable="true"
         android:textCursorDrawable="@null"
+        android:maxLines="1"
         android:background="@android:color/transparent"
         android:textColor="@android:color/transparent"/>
 

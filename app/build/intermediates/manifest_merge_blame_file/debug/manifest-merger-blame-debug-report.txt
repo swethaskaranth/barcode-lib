@@ -109,8 +109,8 @@
 58            android:theme="@style/AppTheme.NoActionBar" />
 58-->[:barcodereader] /Users/swetha/Projects/barcode-lib/barcodereader/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-56
 59        <activity android:name="com.mikepenz.aboutlibraries.ui.LibsActivity" />
-59-->[com.mikepenz:aboutlibraries:6.2.3] /Users/swetha/.gradle/caches/transforms-2/files-2.1/fd14bcf6f3413ca58348fd13a3649774/jetified-aboutlibraries-6.2.3/AndroidManifest.xml:12:9-80
-59-->[com.mikepenz:aboutlibraries:6.2.3] /Users/swetha/.gradle/caches/transforms-2/files-2.1/fd14bcf6f3413ca58348fd13a3649774/jetified-aboutlibraries-6.2.3/AndroidManifest.xml:12:19-77
+59-->[com.mikepenz:aboutlibraries:6.2.3] /Users/swetha/.gradle/caches/transforms-2/files-2.1/0522d674b67ee36070f92b42585ddb09/jetified-aboutlibraries-6.2.3/AndroidManifest.xml:12:9-80
+59-->[com.mikepenz:aboutlibraries:6.2.3] /Users/swetha/.gradle/caches/transforms-2/files-2.1/0522d674b67ee36070f92b42585ddb09/jetified-aboutlibraries-6.2.3/AndroidManifest.xml:12:19-77
 60        <activity
 60-->[:zxing-android-embedded] /Users/swetha/Projects/barcode-lib/zxing-android-embedded/build/intermediates/library_manifest/debug/AndroidManifest.xml:49:9-55:63
 61            android:name="com.journeyapps.barcodescanner.CaptureActivity"
