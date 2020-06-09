@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                     if(barcode!=null){
                         Log.d(TAG,"barcodeData:${barcode}")
                       // barcodeTv.text=barcodeData
-                        barcodeTypeTv.text=barcode
+                    //    barcodeTypeTv.text=barcode
 
                     } else{
                         Toast.makeText(context,"Unable to fetch barcodeData",Toast.LENGTH_SHORT).show()
@@ -52,12 +52,17 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         this.sendBroadcast(intent)
 
         this.registerReceiver(newlandBroadcast, IntentFilter("nlscan.action.SCANNER_RESULT"))
-
+        barcodeTypeTv.setOnKeyListener { v, keyCode, event ->
+            Log.d("KEYCODE","Keycode $keyCode")
+            // editText.requestFocus()
+            false
+        }
 
     }
 
 
     override fun onKeyDown(keyCode: Int, event: KeyEvent?): Boolean {
+        Log.d("KEYCODE1","Keycode $keyCode")
         when(keyCode){
 
             KeyEvent.KEYCODE_F1->{
@@ -101,4 +106,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             }
         }
     }
+
+
 }

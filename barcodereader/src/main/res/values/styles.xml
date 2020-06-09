@@ -8,6 +8,10 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+
+    <style name="ToolbarTheme"  parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="homeAsUpIndicator">@drawable/ic_arrow_back_black_24dp</item>
+    </style>
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>

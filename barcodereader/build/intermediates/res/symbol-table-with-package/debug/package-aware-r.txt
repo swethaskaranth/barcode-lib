@@ -749,6 +749,8 @@ drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
 drawable button_rect_normal
+drawable circle_border_white
+drawable ic_arrow_back_black_24dp
 drawable ic_refresh
 drawable notification_action_background
 drawable notification_bg
@@ -869,6 +871,8 @@ id image
 id info
 id italic
 id item_touch_helper_previous_elevation
+id ivBack
+id ivRefresh
 id left
 id libraryBottomContainer
 id libraryBottomDivider
@@ -955,6 +959,7 @@ id title_template
 id toolbar
 id top
 id topPanel
+id tvTitle
 id unchecked
 id uniform
 id up
@@ -4217,6 +4222,7 @@ style Theme_AppCompat_Light_Dialog_Alert
 style Theme_AppCompat_Light_Dialog_MinWidth
 style Theme_AppCompat_Light_NoActionBar
 style Theme_AppCompat_NoActionBar
+style ToolbarTheme
 style Widget_AppCompat_ActionBar
 style Widget_AppCompat_ActionBar_Solid
 style Widget_AppCompat_ActionBar_TabBar

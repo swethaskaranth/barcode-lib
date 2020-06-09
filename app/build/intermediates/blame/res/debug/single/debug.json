@@ -313,7 +313,7 @@
     },
     {
         "merged": "/Users/ravi/Downloads/newlandscanner/app/build/intermediates/res/merged/debug/layout_listitem_opensource.xml.flat",
-        "source": "/Users/ravi/.gradle/caches/transforms-2/files-2.1/8995f6982f9eadcef67c4640ee8a00b6/jetified-aboutlibraries-6.2.3/res/layout/listitem_opensource.xml"
+        "source": "/Users/ravi/.gradle/caches/transforms-2/files-2.1/3d17d32ee81ceda72e88acff6fe63089/jetified-aboutlibraries-6.2.3/res/layout/listitem_opensource.xml"
     },
     {
         "merged": "/Users/ravi/Downloads/newlandscanner/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_text_select_handle_left_mtrl_dark.png.flat",
@@ -441,7 +441,7 @@
     },
     {
         "merged": "/Users/ravi/Downloads/newlandscanner/app/build/intermediates/res/merged/debug/layout_listloader_opensource.xml.flat",
-        "source": "/Users/ravi/.gradle/caches/transforms-2/files-2.1/8995f6982f9eadcef67c4640ee8a00b6/jetified-aboutlibraries-6.2.3/res/layout/listloader_opensource.xml"
+        "source": "/Users/ravi/.gradle/caches/transforms-2/files-2.1/3d17d32ee81ceda72e88acff6fe63089/jetified-aboutlibraries-6.2.3/res/layout/listloader_opensource.xml"
     },
     {
         "merged": "/Users/ravi/Downloads/newlandscanner/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher.png.flat",
@@ -682,6 +682,10 @@
     {
         "merged": "/Users/ravi/Downloads/newlandscanner/app/build/intermediates/res/merged/debug/interpolator_btn_checkbox_unchecked_mtrl_animation_interpolator_0.xml.flat",
         "source": "/Users/ravi/.gradle/caches/transforms-2/files-2.1/566d1e46e0838bf61e19abf304a5091c/appcompat-1.1.0/res/interpolator/btn_checkbox_unchecked_mtrl_animation_interpolator_0.xml"
+    },
+    {
+        "merged": "/Users/ravi/Downloads/newlandscanner/app/build/intermediates/res/merged/debug/drawable_circle_border_white.xml.flat",
+        "source": "/Users/ravi/Downloads/newlandscanner/barcodereader/build/intermediates/packaged_res/debug/drawable/circle_border_white.xml"
     },
     {
         "merged": "/Users/ravi/Downloads/newlandscanner/app/build/intermediates/res/merged/debug/drawable_abc_list_selector_holo_dark.xml.flat",
@@ -1105,11 +1109,15 @@
     },
     {
         "merged": "/Users/ravi/Downloads/newlandscanner/app/build/intermediates/res/merged/debug/layout_fragment_opensource.xml.flat",
-        "source": "/Users/ravi/.gradle/caches/transforms-2/files-2.1/8995f6982f9eadcef67c4640ee8a00b6/jetified-aboutlibraries-6.2.3/res/layout/fragment_opensource.xml"
+        "source": "/Users/ravi/.gradle/caches/transforms-2/files-2.1/3d17d32ee81ceda72e88acff6fe63089/jetified-aboutlibraries-6.2.3/res/layout/fragment_opensource.xml"
     },
     {
         "merged": "/Users/ravi/Downloads/newlandscanner/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_scrubber_control_to_pressed_mtrl_000.png.flat",
         "source": "/Users/ravi/.gradle/caches/transforms-2/files-2.1/566d1e46e0838bf61e19abf304a5091c/appcompat-1.1.0/res/drawable-mdpi-v4/abc_scrubber_control_to_pressed_mtrl_000.png"
+    },
+    {
+        "merged": "/Users/ravi/Downloads/newlandscanner/app/build/intermediates/res/merged/debug/drawable_ic_arrow_back_black_24dp.xml.flat",
+        "source": "/Users/ravi/Downloads/newlandscanner/barcodereader/build/intermediates/packaged_res/debug/drawable/ic_arrow_back_black_24dp.xml"
     },
     {
         "merged": "/Users/ravi/Downloads/newlandscanner/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_textfield_search_default_mtrl_alpha.9.png.flat",
@@ -1117,7 +1125,7 @@
     },
     {
         "merged": "/Users/ravi/Downloads/newlandscanner/app/build/intermediates/res/merged/debug/layout_listheader_opensource.xml.flat",
-        "source": "/Users/ravi/.gradle/caches/transforms-2/files-2.1/8995f6982f9eadcef67c4640ee8a00b6/jetified-aboutlibraries-6.2.3/res/layout/listheader_opensource.xml"
+        "source": "/Users/ravi/.gradle/caches/transforms-2/files-2.1/3d17d32ee81ceda72e88acff6fe63089/jetified-aboutlibraries-6.2.3/res/layout/listheader_opensource.xml"
     },
     {
         "merged": "/Users/ravi/Downloads/newlandscanner/app/build/intermediates/res/merged/debug/layout_abc_expanded_menu_layout.xml.flat",
@@ -1233,7 +1241,7 @@
     },
     {
         "merged": "/Users/ravi/Downloads/newlandscanner/app/build/intermediates/res/merged/debug/layout_activity_opensource.xml.flat",
-        "source": "/Users/ravi/.gradle/caches/transforms-2/files-2.1/8995f6982f9eadcef67c4640ee8a00b6/jetified-aboutlibraries-6.2.3/res/layout/activity_opensource.xml"
+        "source": "/Users/ravi/.gradle/caches/transforms-2/files-2.1/3d17d32ee81ceda72e88acff6fe63089/jetified-aboutlibraries-6.2.3/res/layout/activity_opensource.xml"
     },
     {
         "merged": "/Users/ravi/Downloads/newlandscanner/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_notification_bg_low_pressed.9.png.flat",
@@ -1537,7 +1545,7 @@
     },
     {
         "merged": "/Users/ravi/Downloads/newlandscanner/app/build/intermediates/res/merged/debug/drawable-v21_button_rect_normal.xml.flat",
-        "source": "/Users/ravi/.gradle/caches/transforms-2/files-2.1/8995f6982f9eadcef67c4640ee8a00b6/jetified-aboutlibraries-6.2.3/res/drawable-v21/button_rect_normal.xml"
+        "source": "/Users/ravi/.gradle/caches/transforms-2/files-2.1/3d17d32ee81ceda72e88acff6fe63089/jetified-aboutlibraries-6.2.3/res/drawable-v21/button_rect_normal.xml"
     },
     {
         "merged": "/Users/ravi/Downloads/newlandscanner/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_list_focused_holo.9.png.flat",

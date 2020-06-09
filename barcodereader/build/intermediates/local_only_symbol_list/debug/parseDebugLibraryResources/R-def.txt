@@ -24,14 +24,19 @@ color text_primary
 color text_secondary
 color txt_color
 color white
+drawable circle_border_white
+drawable ic_arrow_back_black_24dp
 drawable ic_refresh
 id connect
 id empty_panel
+id ivBack
+id ivRefresh
 id list
 id name
 id progress
 id refresh
 id toolbar
+id tvTitle
 layout devices_content
 layout item_device
 menu refresh
@@ -63,3 +68,4 @@ string zebra_scanner_intent_action
 style AppTheme
 style AppTheme.NoActionBar
 style SwitchStyle
+style ToolbarTheme

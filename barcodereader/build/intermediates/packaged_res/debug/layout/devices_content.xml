@@ -12,7 +12,45 @@
         android:layout_width="match_parent"
         android:layout_height="54dp"
         android:background="#121d2e"
-        />
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/ivBack"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/circle_border_white"
+                android:padding="5dp"
+                android:src="@drawable/ic_arrow_back_black_24dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/list_bg"
+                android:textSize="17sp"
+                android:layout_centerInParent="true"
+                android:text="@string/devices" />
+
+
+            <ImageView
+                android:id="@+id/ivRefresh"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/ic_refresh"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"/>
+
+
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
 
     <ProgressBar
         android:id="@+id/progress"

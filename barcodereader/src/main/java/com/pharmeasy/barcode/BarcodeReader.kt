@@ -1,16 +1,23 @@
 package com.pharmeasy.barcode
 
 import android.app.Activity
-import android.content.*
+import android.content.BroadcastReceiver
+import android.content.Context
+import android.content.Intent
+import android.content.IntentFilter
 import android.device.ScanManager
 import android.os.Build
 import android.os.Bundle
 import android.os.Handler
 import android.text.Editable
+import android.text.InputType
 import android.text.TextWatcher
 import android.util.Log
 import android.view.View
+import android.view.inputmethod.InputMethodManager
+import android.widget.EditText
 import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import androidx.lifecycle.MutableLiveData
 import com.google.zxing.BarcodeFormat
 import com.google.zxing.ResultPoint
@@ -27,17 +34,12 @@ import com.pharmeasy.barcode.interfaces.Scanner
 import com.pharmeasy.barcode.scanners.NewlandScanner
 import com.pharmeasy.barcode.scanners.UrovoScanner
 import com.pharmeasy.barcode.scanners.ZebraScanner
-import android.view.WindowManager.LayoutParams.TYPE_SYSTEM_ALERT
-import android.view.inputmethod.InputMethodManager
-import android.widget.EditText
-import androidx.appcompat.app.AlertDialog
-import androidx.core.content.ContextCompat.getSystemService
 import com.pharmeasy.barcode.scanners.bluetoothScanner.DevicesActivity
 import com.pharmeasy.barcode.scanners.bluetoothScanner.ScannerActionListener
 import com.pharmeasy.barcode.scanners.bluetoothScanner.ScannerService
 
 
-class BarcodeReader private constructor(context: Context) : DecoratedBarcodeView.TorchListener, ScannerActionListener {
+class BarcodeReader private constructor(context: Context) : DecoratedBarcodeView.TorchListener/*, ScannerActionListener*/ {
 
     private val TAG: String = BarcodeReader::class.java.simpleName
     private val mContext = context
@@ -58,11 +60,46 @@ class BarcodeReader private constructor(context: Context) : DecoratedBarcodeView
 
     var UIView: Boolean? = false
 
-    private var mode: String? = null
+   // private var mode: String? = null
+
+    // private var etScan: EditText? = null
 
     companion object : SingletonHolder<BarcodeReader, Context>(::BarcodeReader) {
         val barcodeData = MutableLiveData<Event<String>>()
+
+        var mode: String? = null
+
+        var lastMode : String? = null
+
+        var modeListener : ModeSelectedListener? = null
+
+        var actionListener = object : ScannerActionListener{
+            override fun onConnected() {
+                modeListener?.onModeSelected(ScannerType.BLUETOOTH_SCANNER.displayName)
+                lastMode = mode
+            }
+
+            override fun onConnecting() {
+
+            }
+
+            override fun onData(barcode: String) {
+                barcodeData.value = Event(barcode)
+            }
+
+            override fun onDisconnected() {
+
+            }
+        }
+
+
+        fun clearMode() {
+            mode = lastMode
+            modeListener?.onModeSelected(lastMode?:ScannerType.CAMERA_SCANNER.displayName)
+            ScannerService.deregister(actionListener)
+        }
     }
+
 
     private val callback = object : BarcodeCallback {
         override fun barcodeResult(result: BarcodeResult) {
@@ -70,6 +107,8 @@ class BarcodeReader private constructor(context: Context) : DecoratedBarcodeView
                 // Prevent duplicate scans
                 return
             }
+
+            //etScan?.setText(result.text)
 
             lastText = result.text
             barcodeView?.setStatusText(result.text)
@@ -119,62 +158,75 @@ class BarcodeReader private constructor(context: Context) : DecoratedBarcodeView
 
     }
 
-    fun initializeScanner(activity: Activity, intent: Intent, i: Int, editText: EditText?, listener : ModeSelectedListener) {
+    fun initializeScanner(activity: Activity, intent: Intent, i: Int, editText: EditText?, listener: ModeSelectedListener) {
 
+        modeListener = listener
+        //  etScan = editText
         if (mode == null) {
-            setupZxingScanner(activity,intent,i)
+            setupZxingScanner(activity, intent, i)
             listener.onModeSelected(ScannerType.CAMERA_SCANNER.displayName)
         } else {
             when (mode) {
                 ScannerType.OTG_SCANNER.displayName -> {
-                    setupOTGScanner(editText,activity)
+                    setupOTGScanner(editText, activity)
                 }
                 ScannerType.CAMERA_SCANNER.displayName -> {
-                    setupZxingScanner(activity,intent,i)
+                    setupZxingScanner(activity, intent, i)
                 }
             }
             listener.onModeSelected(mode!!)
         }
     }
 
-    fun selectScanner(activity: Activity, intent: Intent, i: Int, editText: EditText?, listener : ModeSelectedListener){
-        showAlertDialog(activity, intent, i, editText,listener)
+    fun selectScanner(activity: Activity, intent: Intent, i: Int, editText: EditText?, listener: ModeSelectedListener) {
+        modeListener = listener
+        showAlertDialog(activity, intent, i, editText, listener)
     }
 
-    fun clearMode() {
-        mode = null
-        ScannerService.deregister(this)
-    }
+
 
     private fun showAlertDialog(activity: Activity, intent: Intent, i: Int, editText: EditText?, listener: ModeSelectedListener) {
         val items = ScannerType.toStringList().toTypedArray()
 
         val builder = AlertDialog.Builder(activity)//ERROR ShowDialog cannot be resolved to a type
         builder.setTitle("Choose Scanner")
-        builder.setSingleChoiceItems(items, if(mode != null) items.indexOf(mode) else 2) { dialog, item ->
+        builder.setSingleChoiceItems(items, if (mode != null) items.indexOf(mode) else 2) { dialog, item ->
             mode = items[item]
         }
 
 
         builder.setPositiveButton("OK") { dialog, id ->
+
+            if (mode == null)
+                mode = items[2]
             when (mode) {
                 ScannerType.BLUETOOTH_SCANNER.displayName -> {
-                    ScannerService.register(this@BarcodeReader)
+                    ScannerService.register(actionListener)
                     startDevicesActivity(activity)
                 }
                 ScannerType.OTG_SCANNER.displayName -> {
-                    setupOTGScanner(editText,activity)
+                    setupOTGScanner(editText, activity)
+                    listener.onModeSelected(mode!!)
+                    ScannerService.deregister(actionListener)
+                    lastMode = mode
                 }
                 ScannerType.CAMERA_SCANNER.displayName -> {
-                   setupZxingScanner(activity,intent,i)
+                    setupZxingScanner(activity, intent, i)
+                    listener.onModeSelected(mode!!)
+                    ScannerService.deregister(actionListener)
+                    lastMode = mode
                 }
             }
 
-            listener.onModeSelected(mode!!)
+
         }
 
         val alert = builder.create()
         alert.show()
+    }
+
+    fun clearMode(){
+        mode = null
     }
 
     fun registerBroadcast(context: Context) {
@@ -325,7 +377,7 @@ class BarcodeReader private constructor(context: Context) : DecoratedBarcodeView
         activity.startActivity(Intent(mContext, DevicesActivity::class.java))
     }
 
-    override fun onConnected() {
+  /*  override fun onConnected() {
 
     }
 
@@ -334,51 +386,73 @@ class BarcodeReader private constructor(context: Context) : DecoratedBarcodeView
     }
 
     override fun onData(barcode: String) {
-        // Toast.makeText(mContext, barcode, Toast.LENGTH_SHORT).show()
-        BarcodeReader.barcodeData.value = Event(barcode)
+        barcodeData.value = Event(barcode)
     }
 
     override fun onDisconnected() {
 
-    }
+    }*/
 
-    private fun setupOTGScanner(editText: EditText?, activity: Activity){
+    private fun setupOTGScanner(editText: EditText?, activity: Activity) {
         val handler = Handler()
 
         val task = Runnable {
-            BarcodeReader.barcodeData.value = Event(editText?.text.toString().trim())
+            barcodeData.value = Event(editText?.text.toString().trim())
             editText?.text?.clear()
+            editText?.requestFocus()
         }
 
         editText?.requestFocus()
+
+        val imm = activity.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager?
+        imm?.hideSoftInputFromWindow(editText?.windowToken, 0)
+
         editText?.addTextChangedListener(object : TextWatcher {
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
+                val r = imm?.hideSoftInputFromWindow(editText.windowToken, 0)
                 handler.removeCallbacks(task)
             }
 
             override fun afterTextChanged(s: Editable?) {
-
+                //  val imm = mContext.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager?
+                val res = imm?.hideSoftInputFromWindow(editText.windowToken, 0)
                 if (s != null && s.isNotEmpty()) {
                     handler.postDelayed(task, 500)
                 }
             }
 
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
-
+                //   val imm = mContext.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager?
+                val res = imm?.hideSoftInputFromWindow(editText.windowToken, 0)
             }
         })
 
+      /*  editText?.setOnKeyListener { v, keyCode, event ->
+            Log.d("KEYCODE","Keycode $keyCode")
+            if(keyCode == 66)
+                setupOTGScanner(editText,activity)
+           // editText.requestFocus()
+            false
+        }*/
 
 
 
-        editText?.onFocusChangeListener = View.OnFocusChangeListener { v, hasFocus ->
+       /* editText?.onFocusChangeListener = View.OnFocusChangeListener { v, hasFocus ->
             editText?.requestFocus()
-            val imm = activity.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
-            imm.showSoftInput(editText, InputMethodManager.SHOW_IMPLICIT)
+            Toast.makeText(activity,"Focus changed "+hasFocus,Toast.LENGTH_SHORT).show()
+            val imm1 = activity.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
+            imm1.hideSoftInputFromWindow(editText?.windowToken, 0)
+        }*/
+    }
+
+    fun focusScanner(editText: EditText?) {
+        if (mode == ScannerType.OTG_SCANNER.displayName) {
+            editText?.requestFocus()
+           // Toast.makeText(mContext,"Focus changed manually",Toast.LENGTH_SHORT).show()
         }
     }
 
-    private fun setupZxingScanner(activity: Activity, intent: Intent, i: Int){
+    private fun setupZxingScanner(activity: Activity, intent: Intent, i: Int) {
         barcodeView = activity.findViewById(i)
         val formats = listOf(BarcodeFormat.QR_CODE, BarcodeFormat.CODE_39)
         barcodeView?.barcodeView?.decoderFactory = DefaultDecoderFactory(formats)

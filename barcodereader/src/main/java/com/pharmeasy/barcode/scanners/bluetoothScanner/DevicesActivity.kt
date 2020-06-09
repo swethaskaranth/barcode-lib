@@ -12,6 +12,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.pharmeasy.barcode.BarcodeReader
 import com.pharmeasy.barcode.R
 import kotlinx.android.synthetic.main.devices_content.*
 
@@ -19,15 +20,16 @@ class DevicesActivity : AppCompatActivity(), ScannerActionListener {
 
     private val TAG = "DA"
     private val ENABLE_BT = 1000
+    private var connected = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
         super.onCreate(savedInstanceState)
         setContentView(R.layout.devices_content)
 
-        title = getString(R.string.devices)
+        /*title = getString(R.string.devices)
 
-        toolbar.setTitleTextColor(ContextCompat.getColor(this,R.color.white))
+        toolbar.setTitleTextColor(ContextCompat.getColor(this, R.color.white))*/
 
         setSupportActionBar(toolbar)
         supportActionBar!!.setDisplayHomeAsUpEnabled(false)
@@ -44,25 +46,34 @@ class DevicesActivity : AppCompatActivity(), ScannerActionListener {
         for (bt in pairedDevices)
             s.add(bt.name)
 
+        ivBack.setOnClickListener { finish() }
+
+        ivRefresh.setOnClickListener { reload() }
+
         //setListAdapter(ArrayAdapter(this, R.layout.list, s))
     }
 
     override fun onBackPressed() {
-       // if(mode == null)
-           // super.onBackPressed()
+        super.onBackPressed()
+        //    BarcodeReader.clearMode()
     }
 
-    override fun onCreateOptionsMenu(menu: Menu): Boolean {
-        menuInflater.inflate(R.menu.refresh, menu)
-        return true
-    }
+    /*  override fun onCreateOptionsMenu(menu: Menu): Boolean {
+          menuInflater.inflate(R.menu.refresh, menu)
+          return true
+      }
 
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        return when (item.itemId) {
-            R.id.refresh -> reload()
-            else -> super.onOptionsItemSelected(item)
-        }
-    }
+      override fun onOptionsItemSelected(item: MenuItem): Boolean {
+          return when (item.itemId) {
+              R.id.refresh -> reload()
+              android.R.id.home -> {
+                //  BarcodeReader.clearMode()
+                  finish()
+                  true
+              }
+              else -> super.onOptionsItemSelected(item)
+          }
+      }*/
 
     public override fun onResume() {
         super.onResume()
@@ -73,7 +84,7 @@ class DevicesActivity : AppCompatActivity(), ScannerActionListener {
             val intent = Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE)
 
             startActivityForResult(intent, ENABLE_BT)
-        }else
+        } else
             reload()
     }
 
@@ -88,10 +99,10 @@ class DevicesActivity : AppCompatActivity(), ScannerActionListener {
         val devices = ScannerService.getPairedDevices()
         list.adapter = DeviceAdapter(this, devices)
 
-        if(devices.isEmpty()) {
+        if (devices.isEmpty()) {
             empty_panel.visibility = View.VISIBLE
             list.visibility = View.GONE
-        }else{
+        } else {
             empty_panel.visibility = View.GONE
             list.visibility = View.VISIBLE
         }
@@ -109,33 +120,40 @@ class DevicesActivity : AppCompatActivity(), ScannerActionListener {
                 message(getString(R.string.bt_not_enabled))
                 finish()
             }
-        }else
+        } else
             super.onActivityResult(requestCode, resultCode, data)
     }
 
     override fun onConnected() {
-       // hideProgress()
+        // hideProgress()
 
-      //  if(mode != null)
-            finish()
+        //  if(mode != null)
+        connected = true
+        finish()
     }
 
     override fun onConnecting() {
-       // showProgress()
+        // showProgress()
     }
 
     override fun onDisconnected() {
-      //  hideProgress()
+        //  hideProgress()
 
         reload()
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        if (!connected)
+            BarcodeReader.clearMode()
     }
 
     override fun onData(barcode: String) {
         Log.d("newlander", barcode)
     }
 
-    private fun message(msg : String){
-        Toast.makeText(this,msg,Toast.LENGTH_SHORT).show()
+    private fun message(msg: String) {
+        Toast.makeText(this, msg, Toast.LENGTH_SHORT).show()
     }
 
 
