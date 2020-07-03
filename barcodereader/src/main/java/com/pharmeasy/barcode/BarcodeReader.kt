@@ -105,7 +105,7 @@ class BarcodeReader private constructor(context: Context) : DecoratedBarcodeView
 
     private val callback = object : BarcodeCallback {
         override fun barcodeResult(result: BarcodeResult) {
-            if (result.text == null || System.currentTimeMillis() - lastTimestamp < DELAY ) {
+            if (result.text == null || result.text == lastText || System.currentTimeMillis() - lastTimestamp < DELAY ) {
                 // Prevent duplicate scans
                 return
             }
