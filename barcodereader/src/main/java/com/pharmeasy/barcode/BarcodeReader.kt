@@ -10,13 +10,10 @@ import android.os.Build
 import android.os.Bundle
 import android.os.Handler
 import android.text.Editable
-import android.text.InputType
 import android.text.TextWatcher
 import android.util.Log
-import android.view.View
 import android.view.inputmethod.InputMethodManager
 import android.widget.EditText
-import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.lifecycle.MutableLiveData
 import com.google.zxing.BarcodeFormat
@@ -60,7 +57,12 @@ class BarcodeReader private constructor(context: Context) : DecoratedBarcodeView
 
     var UIView: Boolean? = false
 
-   // private var mode: String? = null
+    private val DELAY = 300 // 3 seconds
+
+    private var lastTimestamp: Long = 0
+
+
+    // private var mode: String? = null
 
     // private var etScan: EditText? = null
 
@@ -103,13 +105,13 @@ class BarcodeReader private constructor(context: Context) : DecoratedBarcodeView
 
     private val callback = object : BarcodeCallback {
         override fun barcodeResult(result: BarcodeResult) {
-            if (result.text == null || result.text == lastText) {
+            if (result.text == null || result.text == lastText || System.currentTimeMillis() - lastTimestamp < DELAY ) {
                 // Prevent duplicate scans
                 return
             }
 
             //etScan?.setText(result.text)
-
+            lastTimestamp = System.currentTimeMillis()
             lastText = result.text
             barcodeView?.setStatusText(result.text)
             beepManager?.playBeepSoundAndVibrate()
